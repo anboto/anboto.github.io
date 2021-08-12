@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>Traveling salesman problem (TSP)  :: Ultimate++</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#800000;vertical-align:middle;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.E{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.F{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.G{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.H{color:#0000ff;}
+.I{color:#008000;font-weight:bold;}
+.J{font-weight:bold;}
+.K{text-decoration:underline;}
+.L{color:#800000;font-weight:bold;}
+.M{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.N{display:list-item;list-style-type:disc;margin:0px 0px 0px 77px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="B"><p class="C">Traveling salesman problem (TSP)</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="D">&nbsp;</p>
+<p class="E">&nbsp;</p>
+<p class="F">The symmetric <a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling salesman problem</a> (TSP) of a list of points calculates the shortest possible route that visits each point and returns to the origin, considering that it does not matter the direction (sense) of the movement.</p>
+<p class="F">&nbsp;</p>
+<p class="F">This is a <a href="https://en.wikipedia.org/wiki/NP-hardness">NP-hard</a> problem that for medium sets could be impractical to be solved by an exact algorithm as brute force or <a href="https://en.wikipedia.org/wiki/Linear_programming">linear programming</a>. Because of that, for practical reasons, its resolution using heuristics and approximations is advised.</p>
+<p class="F">&nbsp;</p>
+<p class="F">This implementation can use a consecutive, random, or a <a href="https://en.wikipedia.org/wiki/Nearest_neighbour_algorithm">Nearest neighbor algorithm</a> to get an initial guess, and follows with a <a href="https://en.wikipedia.org/wiki/2-opt">2-opt algorithm</a>. Since it uses templates, the input data can be either integer or floating point.</p>
+<p class="F">&nbsp;</p>
+<p class="F">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::TSP(const Upp::Vector<Upp::Point_<T>>&,Upp::Vector<int>&,TSP_Init)" class="G"><span class="H">template</span>&nbsp;&lt;<span class="H">typename</span>&nbsp;<span class="I">T</span>&gt;&nbsp;<span class="I">T</span>&nbsp;<span class="J">TSP</span>(<span class="H">const</span>&nbsp;<a href="Upp::Vector"><span class="K">Vector</span></a>&lt;<a href="Upp::Point_"><span class="K">Point_</span></a>&lt;<span class="I">T</span>&gt;&gt;&amp;&nbsp;<span class="L">points</span>, <a href="Upp::Vector"><span class="K">Vector</span></a>&lt;<span class="H">int</span>&gt;&nbsp;&amp;<span class="L">order</span>, TSP_Init&nbsp;<span class="L">init</span>)</p>
+<p class="M">Returns the total distance of a traveling salesman problem defined by a list of euclidean coordinates of the <span class="L">points</span>. It also returns the most optimal <span class="L">order</span> between the nodes.</p>
+<p class="M"><span class="L">init </span>defines the initial conditions, as:</p>
+<p class="N">TSP_CONSECUTIVE: The actual order of supplied points. <span class="L">order</span> is neglected.</p>
+<p class="N">TSP_RANDOM: A random order of &nbsp;supplied points. <span class="L">order</span> is neglected.</p>
+<p class="N">TSP_USER: <span class="L">order</span> has to include an initial guess of the right ordering.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::TSP(const Upp::Vector<Upp::Vector<T>>&,Upp::Vector<int>&,TSP_Init)" class="G"><span class="H">template</span>&nbsp;&lt;<span class="H">typename</span>&nbsp;<span class="I">T</span>&gt;&nbsp;<span class="I">T</span>&nbsp;<span class="J">TSP</span>(<span class="H">const</span>&nbsp;<a href="Upp::Vector"><span class="K">Vector</span></a>&lt;<a href="Upp::Vector"><span class="K">Vector</span></a>&lt;<span class="I">T</span>&gt;&gt;&amp;&nbsp;<span class="L">matrix</span>, <a href="Upp::Vector"><span class="K">Vector</span></a>&lt;<span class="H">int</span>&gt;&nbsp;&amp;<span class="L">order</span>, TSP_Init&nbsp;<span class="L">init</span>)</p>
+<p class="M">Returns the total distance of a traveling salesman problem defined by a <span class="L">matrix</span> of distances between nodes. All the elements of the diagonal of this matrix have to be zero and, as the problem is symmetric, only the elements above the diagonal are considered. It also returns the most optimal <span class="L">order</span> between the nodes. </p>
+<p class="M"><span class="L">init </span>defines the initial conditions, as:</p>
+<p class="N">TSP_CONSECUTIVE: The actual order of supplied points. <span class="L">order</span> is neglected.</p>
+<p class="N">TSP_RANDOM: A random order of &nbsp;supplied points. <span class="L">order</span> is neglected.</p>
+<p class="N">TSP_USER: <span class="L">order</span> has to include an initial guess of the right ordering.</p>
+<p class="D">&nbsp;</p>
+<p class="E">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>

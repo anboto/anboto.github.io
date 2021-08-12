@@ -1,0 +1,990 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>1 ScatterDraw :: Ultimate++</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#800000;vertical-align:middle;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e5e5e5;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.E{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.F{color:#0000ff;font-weight:normal;}
+.G{font-weight:normal;}
+.H{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.I{border-collapse:collapse;table-layout:auto;border: 0px solid #000000;}
+.J{padding: 3px 5px 3px 5px;border-left: 0px solid #000000;border-top: 0px solid #000000;border-right: 0px solid #000000;border-bottom: 0px solid #000000;background-color:#FFFFFF;vertical-align:top;}
+.K{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.L{padding: 3px 5px 3px 5px;border-left: 0px solid #000000;border-top: 0px solid #000000;border-right: 0px solid #000000;border-bottom: 0px solid #000000;background-color:#FFFFFF;vertical-align:middle;}
+.M{margin:0px 0px 0px 0px;text-indent:0px;text-align:right;color:#000000;font-family:serif;font-size:8pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.N{display:list-item;list-style-type:disc;margin:0px 0px 0px 20px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.O{border-collapse:collapse;table-layout:auto;border: 2px solid #808080;}
+.P{padding: 3px 5px 3px 5px;border-left: 1px solid #808080;border-top: 1px solid #808080;border-right: 1px solid #808080;border-bottom: 1px solid #808080;background-color:#C0C0C0;vertical-align:middle;}
+.Q{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.R{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.S{font-weight:bold;}
+.T{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.U{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.V{font-weight:normal;text-decoration:underline;}
+.W{text-decoration:underline;}
+.X{color:#0000ff;}
+.Y{color:#800000;font-weight:bold;}
+.Z{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#0000ff;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.AA{color:#000000;}
+.AB{color:#000000;text-decoration:underline;}
+.AC{color:#000000;font-weight:bold;}
+.AD{color:#800000;}
+.AE{display:list-item;list-style-type:disc;margin:0px 0px 0px 77px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.AF{margin:0px 0px 0px 0px;text-indent:0px;text-align:center;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.AG{display:list-item;list-style-type:disc;margin:0px 0px 0px 109px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.AH{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#1c00c8;font-family:sans-serif;font-size:8pt;font-weight:bold;font-style:normal;text-decoration:none;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="B"><p class="C">ScatterDraw</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="D">&nbsp;</p>
+<p id="ScatterDraw::class" class="E"><span class="F">class</span><span class="G">&nbsp;</span>ScatterDraw</p>
+<p class="H">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="I"><colgroup><col width="49%"><col width="50%"></colgroup>
+<tr><td class="J"><p class="K"><a href="src$ScatterDraw$ScatterDraw$en-us.html_0.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_0.png" border="0" alt="" style="width: 369px; height: 219px"></a></p>
+</td>
+<td class="L"><p class="M"><a href="src$ScatterDraw$ScatterDraw$en-us.html_1.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_1.png" border="0" alt="" style="width: 381px; height: 215px"></a></p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="H">&nbsp;</p>
+<p class="K">Versatile 2D scatter graph control. It does not require GUI so it works in command line programs.</p>
+<p class="K">&nbsp;</p>
+<p class="K">In case of GUI it can be used <a href="src$ScatterCtrl$ScatterCtrl$en-us.html#ScatterCtrl::class">ScatterCtrl</a> that is based on ScatterDraw.</p>
+<p class="D">&nbsp;</p>
+<p class="K">ScatterDraw data is included in <a href="src$ScatterDraw$DataSource$en-us.html">DataSource</a>.</p>
+<p class="K">&nbsp;</p>
+<p class="K">In <a href="topic://ScatterDraw/srcdoc/Overview$en-us">ScatterCtrl_demo</a> there is an overview of control possibilities.</p>
+<p class="K">&nbsp;</p>
+<p class="K">Special characteristics are explained apart:</p>
+<p class="N"><a href="topic://ScatterDraw/srcdoc/Overview_en-us">Overview</a></p>
+<p class="N"><a href="srcdoc$ScatterDraw$LegendTable_en-us.html">LegendTable</a></p>
+<p class="N"><a href="srcdoc$ScatterDraw$Units_en-us.html">Units</a></p>
+<p class="N"><a href="srcdoc$ScatterDraw$Responsiveness_en-us.html">Responsiveness</a></p>
+<p class="N"><a href="srcdoc$ScatterDraw$2DSurfaces_en-us.html">2D surfaces</a></p>
+<p class="H">&nbsp;</p>
+<p class="D">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="O"><colgroup><col width="100%"></colgroup>
+<tr><td class="P"><p class="Q">Constructor Detail</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::ScatterDraw()" class="R"><span class="S">ScatterDraw</span>()</p>
+<p class="T">Initializes the class.</p>
+<p class="D">&nbsp;</p>
+<p class="H">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="O"><colgroup><col width="100%"></colgroup>
+<tr><td class="P"><p class="Q">Public Member List</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::cbModifFormatX" class="U"><a href="Callback3"><span class="V">Callback3</span></a><span class="G">&lt;String</span><span class="F">&amp;</span><span class="G">, </span><span class="F">int</span><span class="G">, </span><span class="F">double</span><span class="G">&gt;&nbsp;</span>cbModifFormatX</p>
+<p class="T">If set this callback will give the String to be painted in the pop window and table data to refer X axis data.</p>
+<p class="T">The input values are the X axis value index and value.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::cbModifFormatXGridUnits" class="U"><a href="Upp::Callback3"><span class="V">Callback3</span></a><span class="G">&lt;String</span><span class="F">&amp;</span><span class="G">, </span><span class="F">int</span><span class="G">, </span><span class="F">double</span><span class="G">&gt;&nbsp;</span>cbModifFormatXGridUnits</p>
+<p class="T">If set this callback will give the String to be painted beside every X axis grid line.</p>
+<p class="T">The input values are the X axis value index and value.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::cbModifFormatDeltaX" class="U"><a href="Callback3"><span class="V">Callback3</span></a><span class="G">&lt;String</span><span class="F">&amp;</span><span class="G">, </span><span class="F">int</span><span class="G">, </span><span class="F">double</span><span class="G">&gt;&nbsp;</span>cbModifFormatDeltaX</p>
+<p class="T">If set this callback will give the String to be painted in the pop window representing the delta between two X axis points.</p>
+<p class="T">The input values are the X axis value index and value.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::cbModifFormatY" class="U"><a href="Callback3"><span class="V">Callback3</span></a><span class="G">&lt;String</span><span class="F">&amp;</span><span class="G">, </span><span class="F">int</span><span class="G">, </span><span class="F">double</span><span class="G">&gt;&nbsp;</span>cbModifFormatY</p>
+<p class="T">If set this callback will give the String to be painted in the pop window and table data to refer Y axis data.</p>
+<p class="T">The input values are the Y axis value index and value.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::cbModifFormatYGridUnits" class="U"><a href="Upp::Callback3"><span class="V">Callback3</span></a><span class="G">&lt;String</span><span class="F">&amp;</span><span class="G">, </span><span class="F">int</span><span class="G">, </span><span class="F">double</span><span class="G">&gt;&nbsp;</span>cbModifFormatYGridUnits</p>
+<p class="T">If set this callback will give the String to be painted beside every Y axis grid line.</p>
+<p class="T">The input values are the Y axis value index and value.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::cbModifFormatDeltaY" class="U"><a href="Callback3"><span class="V">Callback3</span></a><span class="G">&lt;String</span><span class="F">&amp;</span><span class="G">, </span><span class="F">int</span><span class="G">, </span><span class="F">double</span><span class="G">&gt;&nbsp;</span>cbModifFormatDeltaY</p>
+<p class="T">If set this callback will give the String to be painted in the pop window representing the delta between two Y axis points. The input values are the Y axis value index and value.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::cbModifFormatY2" class="U"><a href="Callback3"><span class="V">Callback3</span></a><span class="G">&lt;String</span><span class="F">&amp;</span><span class="G">, </span><span class="F">int</span><span class="G">, </span><span class="F">double</span><span class="G">&gt;&nbsp;</span>cbModifFormatY2</p>
+<p class="T">If set this callback will give the String to be painted in the pop window and table data to refer secondary Y axis data.</p>
+<p class="T">The input values are the Y axis value index and value.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::cbModifFormatY2GridUnits" class="U"><a href="Upp::Callback3"><span class="V">Callback3</span></a><span class="G">&lt;String</span><span class="F">&amp;</span><span class="G">, </span><span class="F">int</span><span class="G">, </span><span class="F">double</span><span class="G">&gt;&nbsp;</span>cbModifFormatY2GridUnits</p>
+<p class="T">If set this callback will give the String to be painted beside every secondary Y axis grid line.</p>
+<p class="T">The input values are the secondary Y axis value index and value.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::cbModifFormatDeltaY2" class="U"><a href="Callback3"><span class="V">Callback3</span></a><span class="G">&lt;String</span><span class="F">&amp;</span><span class="G">, </span><span class="F">int</span><span class="G">, </span><span class="F">double</span><span class="G">&gt;&nbsp;</span>cbModifFormatDeltaY2</p>
+<p class="T">If set this callback will give the String to be painted in the pop window representing the secondary delta between two Y axis points. The input values are the Y axis value index and value.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetGridLinesX" class="U"><a href="Upp::Callback1"><span class="V">Callback1</span></a><span class="G">&lt;</span><a href="Upp::Vector"><span class="V">Vector</span></a><span class="G">&lt;</span><span class="F">double</span><span class="G">&gt;&amp;&gt;&nbsp;</span>SetGridLinesX</p>
+<p class="T">If set this callback will return the locations to set the X axis grid lines, and these values will be used instead of the set by SetMinUnits.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetGridLinesY" class="U"><a href="Upp::Callback1"><span class="V">Callback1</span></a><span class="G">&lt;</span><a href="Upp::Vector"><span class="V">Vector</span></a><span class="G">&lt;</span><span class="F">double</span><span class="G">&gt;&amp;&gt;&nbsp;</span>SetGridLinesY</p>
+<p class="T">If set this callback will return the locations to set the Y axis grid lines, and these values will be used instead of the set by SetMinUnits.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::WhenZoomScroll" class="U"><a href="Callback"><span class="V">Callback</span></a><span class="G">&nbsp;</span>WhenZoomScroll</p>
+<p class="T">Callback called when the user does a zoom or a scroll.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::WhenSetRange" class="U"><a href="Callback"><span class="V">Callback</span></a><span class="G">&nbsp;</span>WhenSetRange</p>
+<p class="T">Callback called when some of the control ranges is changed.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::WhenSetXYMin" class="U"><a href="Callback"><span class="V">Callback</span></a><span class="G">&nbsp;</span>WhenSetXYMin</p>
+<p class="T">Callback called when scatter plot origin is changed.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::WhenPainter" class="U"><a href="Upp::Callback1"><span class="V">Callback1</span></a><span class="G">&lt;Painter</span><span class="F">&amp;</span><span class="G">&gt;&nbsp;</span>WhenPainter</p>
+<p class="T">Callback called before control Paint with Painter to draw additional graphics.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::WhenDraw" class="U"><a href="Upp::Callback1"><span class="V">Callback1</span></a><span class="G">&lt;Draw</span><span class="F">&amp;</span><span class="G">&gt;&nbsp;</span>WhenDraw</p>
+<p class="T">Callback called before control Paint with Draw to draw additional graphics</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::WhenZoomToFit" class="U"><a href="Upp::Callback"><span class="V">Callback</span></a><span class="G">&nbsp;</span>WhenZoomToFit</p>
+<p class="T">Callback called after ZoomToFit() function.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ScatterDraw::WhenRemoveSeries" class="U"><a href="Upp::Function"><span class="V">Function</span></a><span class="G">&nbsp;&lt;</span><span class="F">bool</span><span class="G">(</span><span class="F">int</span><span class="G">)&gt;&nbsp;</span>WhenRemoveSeries</p>
+<p class="T">Callback called just before a data series is removed. The argument is the data series to remove. If returns false, the series is not removed.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ScatterDraw::WhenSwapSeries" class="U"><a href="Upp::Function"><span class="V">Function</span></a><span class="G">&nbsp;&lt;</span><span class="F">bool</span><span class="G">(</span><span class="F">int</span><span class="G">, </span><span class="F">int</span><span class="G">)&gt;&nbsp;</span>WhenSwapSeries</p>
+<p class="T">Callback called just before two data series are swapped. The arguments are the data series to be swapped. If returns false, the series are not swapped.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetSize(const Upp::Size&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetSize</span>(<a href="Size"><span class="W">Size</span></a>&nbsp;<span class="Y">sz</span>)</p>
+<p class="T">Sets the control size with <span class="Y">sz</span>. Functions like GetImage() will return a bitmap of <span class="Y">sz</span> size.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetSize()const" class="Z">virtual<span class="AA"> </span><a href="Size"><span class="AB">Size</span></a><span class="AA">&nbsp;</span><span class="AC">GetSize</span><span class="AA">()&nbsp;</span>const</p>
+<p class="T">Returns the control size. Functions like GetImage() will return a bitmap of <span class="Y">sz</span> size.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Responsive(bool,double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">Responsive</span>(<span class="X">bool</span>&nbsp;<span class="Y">responsive</span>&nbsp;=&nbsp;<span class="X">true</span>, <span class="X">double</span>&nbsp;<span class="Y">factor</span>&nbsp;=&nbsp;<span class="AD">1</span>)</p>
+<p class="T">If <span class="Y">responsive</span> is true, ScatterDraw size will not affect significatively to control look.</p>
+<p class="T">Normal <span class="Y">factor</span> is 1. If higher, fonts, margins and lines scale will be higher with control scale..</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::IsResponsive()" class="R"><span class="X">bool</span>&nbsp;<span class="S">IsResponsive</span>()</p>
+<p class="T">Returns true if responsiveness is set.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetResponsivenessFactor()" class="R"><span class="X">double</span>&nbsp;<span class="S">GetResponsivenessFactor</span>()</p>
+<p class="T">Returns responsiveness factor.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetPlotScaleX()" class="R"><span class="X">double</span>&nbsp;<span class="S">GetPlotScaleX</span>()</p>
+<p class="T">Returns responsiveness scale in X axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetPlotScaleY()" class="R"><span class="X">double</span>&nbsp;<span class="S">GetPlotScaleY</span>()</p>
+<p class="T">Returns responsiveness scale in Y axis</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetPlotScaleAvg()" class="R"><span class="X">double</span>&nbsp;<span class="S">GetPlotScaleAvg</span>()</p>
+<p class="T">Returns average responsiveness scale</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetColor(const Upp::Color&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetColor</span>(<span class="X">const</span>&nbsp;<a href="Color"><span class="W">Color</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">color</span>)</p>
+<p class="T">Sets <span class="Y">color</span> .as graph background color.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetTitle(const Upp::String&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetTitle</span>(<span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">title</span>)</p>
+<p class="T">Sets <span class="Y">title</span> as graph title.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetTitle()" class="R"><span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a><span class="X">&amp;</span>&nbsp;<span class="S">GetTitle</span>()</p>
+<p class="T">Returns graph title.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetTitleFont(const Upp::Font&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetTitleFont</span>(<span class="X">const</span>&nbsp;<a href="Font"><span class="W">Font</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">fontTitle</span>)</p>
+<p class="T">Sets <span class="Y">fontTitle</span> as title font.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetTitleColor(const Upp::Color&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetTitleColor</span>(<span class="X">const</span>&nbsp;<a href="Color"><span class="W">Color</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">colorTitle</span>)</p>
+<p class="T">Sets <span class="Y">colorTitle</span> as title text color.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetTitleColor()" class="R"><a href="Upp::Color"><span class="W">Upp::Color</span></a><span class="X">&amp;</span>&nbsp;<span class="S">GetTitleColor</span>()</p>
+<p class="T">Returns the title color.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetTitleFont()" class="R"><a href="Font"><span class="W">Font</span></a><span class="X">&amp;</span>&nbsp;<span class="S">GetTitleFont</span>()</p>
+<p class="T">Returns the title font.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLabels(const Upp::String&,const Upp::String&,const Upp::String&)" class="R"><span class="X">void</span>&nbsp;<span class="S">SetLabels</span>(<span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">xLabel</span>, <span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">yLabel</span>, <span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">yLabel2</span>&nbsp;=&nbsp;&quot;&quot;)</p>
+<p class="T">Sets the labels of the horizontal axis (<span class="Y">xLabel</span>), vertical axis (<span class="Y">yLabel</span>) and secondary vertical axis (<span class="Y">yLabel2</span>).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLabelX(const Upp::String&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLabelX</span>(<span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">xLabel</span>)</p>
+<p class="T">Sets <span class="Y">xLabel</span> as the label of the horizontal axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetLabelX()" class="R"><span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a>&nbsp;&amp;<span class="S">GetLabelX</span>()</p>
+<p class="T">Returns the label of the horizontal axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLabelY(const Upp::String&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLabelY</span>(<span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">yLabel</span>)</p>
+<p class="T">Sets <span class="Y">yLabel</span> as the label of the vertical axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetLabelY()" class="R"><span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a>&nbsp;&amp;<span class="S">GetLabelY</span>()</p>
+<p class="T">Returns the label of the vertical axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLabelY2(const Upp::String&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLabelY2</span>(<span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">yLabel</span>)</p>
+<p class="T">Sets <span class="Y">yLabel</span> as the label of the secondary vertical axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetLabelY2()" class="R"><span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a>&nbsp;&amp;<span class="S">GetLabelY2</span>()</p>
+<p class="T">Returns the label of the secondary vertical axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLabelsFont(const Upp::Font&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLabelsFont</span>(<span class="X">const</span>&nbsp;<a href="Font"><span class="W">Font</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">fontLabels</span>)</p>
+<p class="T">Sets <span class="Y">fontLabels</span> as the labels font.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetLabelsFont()" class="R"><a href="Font"><span class="W">Font</span></a>&nbsp;<span class="S">GetLabelsFont</span>()</p>
+<p class="T">Returns labels font.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLabelsColor(const Upp::Color&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLabelsColor</span>(<span class="X">const</span>&nbsp;<a href="Color"><span class="W">Color</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">colorLabels</span>)</p>
+<p class="T">Sets <span class="Y">colorLabels</span> as the color of the labels.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetLabelsColor()" class="R"><a href="Upp::Color"><span class="W">Upp::Color</span></a>&nbsp;<span class="S">GetLabelsColor</span>()</p>
+<p class="T">Returns labels color.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetPlotAreaMargin(int,int,int,int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetPlotAreaMargin</span>(<span class="X">int</span>&nbsp;<span class="Y">hLeft</span>, <span class="X">int</span>&nbsp;<span class="Y">hRight</span>, <span class="X">int</span>&nbsp;<span class="Y">vTop</span>, <span class="X">int</span>&nbsp;<span class="Y">vBottom</span>)</p>
+<p class="T">Sets the left(<span class="Y">hLeft</span>), right (<span class="Y">hRight</span>), top(<span class="Y">vTop</span>) and bottom (<span class="Y">vBottom</span>) margins of the scatter plots inside ScatterDraw control.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetPlotAreaLeftMargin(int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetPlotAreaLeftMargin</span>(<span class="X">int</span>&nbsp;<span class="Y">margin</span>)</p>
+<p class="T">Sets the left <span class="Y">margin</span> of scatter plot inside ScatterDraw control.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetPlotAreaLeftMargin()" class="R"><span class="X">int</span>&nbsp;<span class="S">GetPlotAreaLeftMargin</span>()</p>
+<p class="T">Returns the plot area left margin.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetPlotAreaRightMargin(int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetPlotAreaRightMargin</span>(<span class="X">int</span>&nbsp;<span class="Y">margin</span>)</p>
+<p class="T">Sets the right <span class="Y">margin</span> of scatter plot inside ScatterDraw control.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetPlotAreaRightMargin()" class="R"><span class="X">int</span>&nbsp;<span class="S">GetPlotAreaRightMargin</span>()</p>
+<p class="T">Returns the plot area right margin.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetPlotAreaTopMargin(int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetPlotAreaTopMargin</span>(<span class="X">int</span>&nbsp;<span class="Y">margin</span>)</p>
+<p class="T">Sets the top <span class="Y">margin</span> of scatter plot inside ScatterDraw control.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetPlotAreaTopMargin()" class="R"><span class="X">int</span>&nbsp;<span class="S">GetPlotAreaTopMargin</span>()</p>
+<p class="T">Returns the plot area top margin.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetPlotAreaBottomMargin(int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetPlotAreaBottomMargin</span>(<span class="X">int</span>&nbsp;<span class="Y">margin</span>)</p>
+<p class="T">Sets the bottom <span class="Y">margin</span> of scatter plot inside ScatterDraw control.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetPlotAreaBottomMargin()" class="R"><span class="X">int</span>&nbsp;<span class="S">GetPlotAreaBottomMargin</span>()</p>
+<p class="T">Returns the plot area bottom margin.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetPlotAreaColor(const Upp::Color&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetPlotAreaColor</span>(<span class="X">const</span>&nbsp;<a href="Color"><span class="W">Color</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">p_a_color</span>)</p>
+<p class="T">Sets <span class="Y">p_a_color</span> as the plot area background color.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetPlotAreaColor()" class="R"><a href="Color"><span class="W">Color</span></a><span class="X">&amp;</span>&nbsp;<span class="S">GetPlotAreaColor</span>()</p>
+<p class="T">Returns the plot area background color.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetAxisColor(const Upp::Color&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetAxisColor</span>(<span class="X">const</span>&nbsp;<a href="Color"><span class="W">Color</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">axis_color</span>)</p>
+<p class="T">Sets <span class="Y">axis_color</span> as the color of the axis.</p>
+<p class="H">&nbsp;&nbsp;&nbsp;&nbsp;<a href="src$ScatterDraw$ScatterDraw$en-us.html_2.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_2.png" border="0" alt="" style="width: 121px; height: 65px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetAxisWidth(double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetAxisWidth</span>(<span class="X">int</span>&nbsp;<span class="Y">axis_width</span>)</p>
+<p class="T">Sets <span class="Y">axis_width</span> as the width of the axis in pixels.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetGridColor(const Upp::Color&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetGridColor</span>(<span class="X">const</span>&nbsp;<a href="Color"><span class="W">Color</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">grid_color</span>)</p>
+<p class="T">Sets <span class="Y">grid_color</span> as the color of the grid.</p>
+<p class="H">&nbsp;&nbsp;&nbsp;&nbsp;<a href="src$ScatterDraw$ScatterDraw$en-us.html_3.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_3.png" border="0" alt="" style="width: 118px; height: 64px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetGridColor()" class="R"><a href="Upp::Color"><span class="W">Color</span></a>&nbsp;&amp;<span class="S">GetGridColor</span>()</p>
+<p class="T">Returns grid color.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetGridWidth(double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetGridWidth</span>(<span class="X">double</span>&nbsp;<span class="Y">grid_width</span>)</p>
+<p class="T">Sets <span class="Y">grid_width</span> as the width of the grid.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetGridWidth()" class="R"><span class="X">double</span>&nbsp;<span class="S">GetGridWidth</span>()</p>
+<p class="T">Returns the grid width.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetGridDash(const char*)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetGridDash</span>(<span class="X">const</span>&nbsp;<span class="X">char</span>&nbsp;*<span class="Y">dash</span>)</p>
+<p class="T">Sets <span class="Y">dash</span> as the grid dash style.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetGridDash()" class="R"><span class="X">const</span>&nbsp;<span class="X">char</span>&nbsp;*<span class="S">GetGridDash</span>()</p>
+<p class="T">Gets grid dash style.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetGridWidth(int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetGridWidth</span>(<span class="X">int</span>&nbsp;<span class="Y">grid_width</span>)</p>
+<p class="T">Sets <span class="Y">grid_width</span> as the width of the grid in pixels.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::ShowVGrid(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">ShowVGrid</span>(<span class="X">bool</span>&nbsp;<span class="Y">show</span>)</p>
+<p class="T">If <span class="Y">show</span> is true the vertical grid is shown</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::ShowHGrid(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">ShowHGrid</span>(<span class="X">bool</span>&nbsp;<span class="Y">show</span>)</p>
+<p class="T">If <span class="Y">show</span> is true the horizontal grid is shown</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::ShowLegend(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">ShowLegend</span>(<span class="X">bool</span>&nbsp;<span class="Y">show</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">If <span class="Y">show</span> is true graphs name, color and style will be shown.</p>
+<p class="T"><a href="srcdoc$ScatterDraw$LegendTable$en-us.html">Here </a>there are described legend details.</p>
+<p class="H">&nbsp;&nbsp;&nbsp;&nbsp;<a href="src$ScatterDraw$ScatterDraw$en-us.html_4.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_4.png" border="0" alt="" style="width: 220px; height: 80px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetShowLegend()" class="R"><span class="X">bool</span>&nbsp;<span class="S">GetShowLegend</span>()</p>
+<p class="T">Returns true if legend is shown.</p>
+<p class="T"><a href="srcdoc$ScatterDraw$LegendTable$en-us.html">Here </a>there are described legend details.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLegendPos(const Upp::Point&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLegendPos</span>(<span class="X">const</span>&nbsp;<a href="Point"><span class="W">Point</span></a>&nbsp;&amp;<span class="Y">pos</span>)</p>
+<p class="T">Sets the coordinates (<span class="Y">pos</span>) of the legend table corner relative to the plot corner.</p>
+<p class="T"><a href="srcdoc$ScatterDraw$LegendTable$en-us.html">Here </a>there are described legend details.</p>
+<p class="H">&nbsp;&nbsp;&nbsp;&nbsp;<a href="src$ScatterDraw$ScatterDraw$en-us.html_5.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_5.png" border="0" alt="" style="width: 213px; height: 111px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLegendPosX(int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLegendPosX</span>(<span class="X">int</span>&nbsp;<span class="Y">x</span>)</p>
+<p class="T">Sets the <span class="Y">x</span> coordinate.of the legend table corner relative to the plot corner.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLegendPosY(int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLegendPosY</span>(<span class="X">int</span>&nbsp;<span class="Y">y</span>)</p>
+<p class="T">Sets the <span class="Y">y</span> coordinate.of the legend table corner relative to the plot corner.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetLegendPos()" class="R"><a href="Point"><span class="W">Point</span></a><span class="X">&amp;</span>&nbsp;<span class="S">GetLegendPos</span>()</p>
+<p class="T">Returns the pos of the legend corner relative to the plot corner.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLegendFont(const Upp::Font&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLegendFont</span>(<span class="X">const</span>&nbsp;<a href="Upp::Font"><span class="W">Font</span></a>&nbsp;&amp;<span class="Y">fnt</span>)</p>
+<p class="T">Sets <span class="Y">fnt</span> as the legend font.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetLegendFont()" class="R"><a href="Upp::Font"><span class="W">Font</span></a>&nbsp;&amp;<span class="S">GetLegendFont</span>()</p>
+<p class="T">Gets legend font.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLegendNumCols(int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLegendNumCols</span>(<span class="X">int</span>&nbsp;<span class="Y">num</span>)</p>
+<p class="T">Sets the number <span class="Y">num</span> of legend columns.</p>
+<p class="AE">3 columns</p>
+<p class="T">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="src$ScatterDraw$ScatterDraw$en-us.html_6.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_6.png" border="0" alt="" style="width: 300px; height: 75px"></a></p>
+<p class="AE">2 columns</p>
+<p class="T">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="src$ScatterDraw$ScatterDraw$en-us.html_7.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_7.png" border="0" alt="" style="width: 211px; height: 87px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetLegendNumCols()" class="R"><span class="X">int</span>&nbsp;<span class="S">GetLegendNumCols</span>()</p>
+<p class="T">Returns the number of legend columns.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLegendRowSpacing(int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLegendRowSpacing</span>(<span class="X">int</span>&nbsp;<span class="Y">num</span>)</p>
+<p class="T">Sets the height (<span class="Y">num</span>) between legend rows.</p>
+<p class="AE">num = 0</p>
+<p class="T">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="src$ScatterDraw$ScatterDraw$en-us.html_8.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_8.png" border="0" alt="" style="width: 124px; height: 98px"></a></p>
+<p class="AE">num = 5</p>
+<p class="T">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="src$ScatterDraw$ScatterDraw$en-us.html_9.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_9.png" border="0" alt="" style="width: 117px; height: 118px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetLegendRowSpacing()" class="R"><span class="X">int</span>&nbsp;<span class="S">GetLegendRowSpacing</span>()</p>
+<p class="T">Returns the height between legend rows.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::LEGEND_TOP" class="U"><span class="F">enum</span><span class="G">&nbsp;LEGEND_POS&nbsp;</span>LEGEND_TOP</p>
+<p class="T"><a href="src$ScatterDraw$ScatterDraw$en-us.html_10.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_10.png" border="0" alt="" style="width: 288px; height: 52px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::LEGEND_ANCHOR_LEFT_TOP" class="U"><span class="F">enum</span><span class="G">&nbsp;LEGEND_POS&nbsp;</span>LEGEND_ANCHOR_LEFT_TOP</p>
+<p class="T"><a href="src$ScatterDraw$ScatterDraw$en-us.html_11.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_11.png" border="0" alt="" style="width: 158px; height: 135px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::LEGEND_ANCHOR_RIGHT_TOP" class="U"><span class="F">enum</span><span class="G">&nbsp;LEGEND_POS&nbsp;</span>LEGEND_ANCHOR_RIGHT_TOP</p>
+<p class="T"><a href="src$ScatterDraw$ScatterDraw$en-us.html_12.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_12.png" border="0" alt="" style="width: 129px; height: 124px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::LEGEND_ANCHOR_LEFT_BOTTOM" class="U"><span class="F">enum</span><span class="G">&nbsp;LEGEND_POS&nbsp;</span>LEGEND_ANCHOR_LEFT_BOTTOM</p>
+<p class="T"><a href="src$ScatterDraw$ScatterDraw$en-us.html_13.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_13.png" border="0" alt="" style="width: 163px; height: 164px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::LEGEND_ANCHOR_RIGHT_BOTTOM" class="U"><span class="F">enum</span><span class="G">&nbsp;LEGEND_POS&nbsp;</span>LEGEND_ANCHOR_RIGHT_BOTTOM</p>
+<p class="T"><a href="src$ScatterDraw$ScatterDraw$en-us.html_14.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_14.png" border="0" alt="" style="width: 140px; height: 152px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLegendAnchor(LEGEND_POS)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLegendAnchor</span>(<span class="X">LEGEND_POS</span>&nbsp;<span class="Y">anchor</span>)</p>
+<p class="T">Sets with <span class="Y">anchor </span>the legend table position:</p>
+<p class="AE">LEGEND_TOP,</p>
+<p class="AE">LEGEND_ANCHOR_LEFT_TOP, </p>
+<p class="AE">LEGEND_ANCHOR_RIGHT_TOP, </p>
+<p class="AE">LEGEND_ANCHOR_LEFT_BOTTOM, </p>
+<p class="AE">LEGEND_ANCHOR_RIGHT_BOTTOM</p>
+<p class="H">&nbsp;</p>
+<p class="AF"><a href="src$ScatterDraw$ScatterDraw$en-us.html_15.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_15.png" border="0" alt="" style="width: 612px; height: 414px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetLegendAnchor()" class="R"><span class="X">LEGEND_POS</span>&nbsp;<span class="S">GetLegendAnchor</span>()</p>
+<p class="T">Returns the legend table position.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLegendFillColor(const Upp::Color&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLegendFillColor</span>(<span class="X">const</span>&nbsp;<a href="Color"><span class="W">Color</span></a>&nbsp;&amp;<span class="Y">color</span>)</p>
+<p class="T">Sets with <span class="Y">color</span> the legend background color.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetLegendBorderColor(const Upp::Color&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetLegendBorderColor</span>(<span class="X">const</span>&nbsp;<a href="Color"><span class="W">Color</span></a>&nbsp;&amp;<span class="Y">color</span>)</p>
+<p class="T">Sets with <span class="Y">color</span> the legend border color.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetLegendFillColor()" class="R"><a href="Color"><span class="W">Color</span></a><span class="X">&amp;</span>&nbsp;<span class="S">GetLegendFillColor</span>()</p>
+<p class="T">Returns the legend background color</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetLegendBorderColor()" class="R"><a href="Color"><span class="W">Color</span></a><span class="X">&amp;</span>&nbsp;<span class="S">GetLegendBorderColor</span>()</p>
+<p class="T">Returns the legend border color.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetMode(int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetMode</span>(<span class="X">int</span>&nbsp;<span class="Y">_mode</span>&nbsp;=&nbsp;MD_ANTIALIASED)</p>
+<p class="T">Sets the drawing <span class="Y">mode</span>. Values are:</p>
+<p class="AE">Drawn with Draw</p>
+<p class="AG">MD_DRAW</p>
+<p class="AE">Drawn with PAINTER</p>
+<p class="AG">MD_ANTIALIASED&nbsp;&nbsp;&nbsp;&nbsp;= MODE_ANTIALIASED,</p>
+<p class="AG">MD_NOAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= MODE_NOAA,</p>
+<p class="AG">MD_SUBPIXEL&nbsp;&nbsp;&nbsp;&nbsp;= MODE_SUBPIXEL</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetMode()" class="R"><span class="X">int</span>&nbsp;<span class="S">GetMode</span>()</p>
+<p class="T">Returns the drawing mode as documented in SetMode().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::ZoomToFit(bool,bool,double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">ZoomToFit</span>(<span class="X">bool</span>&nbsp;<span class="Y">horizontal</span>, <span class="X">bool</span>&nbsp;<span class="Y">vertical</span>&nbsp;=&nbsp;<span class="X">false</span>, <span class="X">double</span>&nbsp;<span class="Y">factor</span>&nbsp;=&nbsp;<span class="AD">0</span>)</p>
+<p class="T">Rescales the x axis if <span class="Y">horizontal </span>is true and y axis if <span class="Y">vertical</span> is true to show all graphs data.on the control. <span class="Y">factor</span> indicates the fit factor (0 fills the control) .</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Zoom(double,bool,bool)" class="R"><span class="X">void</span>&nbsp;<span class="S">Zoom</span>(<span class="X">double</span>&nbsp;<span class="Y">scale</span>, <span class="X">bool</span>&nbsp;<span class="Y">hor</span>&nbsp;=&nbsp;<span class="X">true</span>, <span class="X">bool</span>&nbsp;<span class="Y">ver</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">Zooms plots by <span class="Y">scale</span> factor horizontally if <span class="Y">hor</span> is true and vertically if <span class="Y">ver</span> is true.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Scroll(double,double)" class="R"><span class="X">void</span>&nbsp;<span class="S">Scroll</span>(<span class="X">double</span>&nbsp;<span class="Y">factorX</span>, <span class="X">double</span>&nbsp;<span class="Y">factorY</span>)</p>
+<p class="T">Scrolls plots horizontally by <span class="Y">factorX</span> and vertically by factor <span class="Y">factorY</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::LinkedWith(ScatterDraw&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">LinkedWith</span>(<a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="Y">ctrl</span>)</p>
+<p class="T">Links zoom and scroll events with <span class="Y">ctrl</span>.</p>
+<p class="T">All zoom and scroll in either of both controls will affect the other control.</p>
+<p class="D">&nbsp;</p>
+<p class="T"><a href="src$ScatterDraw$ScatterDraw$en-us.html_16.png"><img src="src$ScatterDraw$ScatterDraw$en-us.html_16.png" border="0" alt="" style="width: 438px; height: 337px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Unlinked()" class="R"><span class="X">void</span>&nbsp;<span class="S">Unlinked</span>()</p>
+<p class="T">Unlinks series.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::AddSurf(Upp::DataSourceSurf&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">AddSurf</span>(<a href="Upp::DataSourceSurf"><span class="W">DataSourceSurf</span></a>&nbsp;&amp;<span class="Y">surf</span>)</p>
+<p class="T">Adds the 2D surface <span class="Y">surf</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetSurfMinZ(double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetSurfMinZ</span>(<span class="X">double</span>&nbsp;<span class="Y">val</span>)</p>
+<p class="T">Sets <span class="Y">val</span> as the minimum 2D surface Z value.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetSurfMinZ()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetSurfMinZ</span><span class="AA">()&nbsp;</span>const</p>
+<p class="T">Returns the minimum 2D surface Z value.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetSurfMaxZ(double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetSurfMaxZ</span>(<span class="X">double</span>&nbsp;<span class="Y">val</span>)</p>
+<p class="T">Sets <span class="Y">val</span> as the maximum 2D surface Z value.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetSurfMaxZ()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetSurfMaxZ</span><span class="AA">()&nbsp;</span>const</p>
+<p class="T">Returns the maximum 2D surface Z value.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::ZoomToFitZ()" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">ZoomToFitZ</span>()</p>
+<p class="T">Calculates the minimum and maximum 2D surface Z values and sets them as minimum ans maximum values to be plotted.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::ShowRainbowPalette(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">ShowRainbowPalette</span>(<span class="X">bool</span>&nbsp;<span class="Y">show</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">If <span class="Y">show</span> is true 2D surface rainbow color palette will be shown.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetShowRainbowPalette()" class="R"><span class="X">bool</span>&nbsp;<span class="S">GetShowRainbowPalette</span>()</p>
+<p class="T">Returns true if 2D surface rainbow color palette is shown.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetRainbowPalettePos(const Upp::Point&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetRainbowPalettePos</span>(<span class="X">const</span>&nbsp;<a href="Upp::Point"><span class="W">Point</span></a>&nbsp;&amp;<span class="Y">p</span>)</p>
+<p class="T">Sets <span class="Y">p</span> as the position of 2D surface rainbow color palette.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetRainbowPalettePos()" class="R"><a href="Upp::Point"><span class="W">Point</span></a><span class="X">&amp;</span>&nbsp;<span class="S">GetRainbowPalettePos</span>()</p>
+<p class="T">Returns the 2D surface rainbow color palette position.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetRainbowPaletteSize(const Upp::Size&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetRainbowPaletteSize</span>(<span class="X">const</span>&nbsp;<a href="Upp::Size"><span class="W">Size</span></a>&nbsp;&amp;<span class="Y">sz</span>)</p>
+<p class="T">Sets &nbsp;<span class="Y">sz</span> as the Size of 2D surface rainbow color palette.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetRainbowPaletteSize()" class="R"><a href="Upp::Size"><span class="W">Size</span></a><span class="X">&amp;</span>&nbsp;<span class="S">GetRainbowPaletteSize</span>()</p>
+<p class="T">Returns the 2D surface rainbow color palette size.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ScatterDraw::SetDefaultCSVSeparator(Upp::String)" class="R"><a href="Upp::ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetDefaultCSVSeparator</span>(<a href="Upp::String"><span class="W">String</span></a>&nbsp;<span class="Y">sep</span>)</p>
+<p class="T">Sets <span class="Y">sep</span> as the default .csv files field separator.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ScatterDraw::GetDefaultCSVSeparator()" class="R"><a href="Upp::String"><span class="W">String</span></a>&nbsp;<span class="S">GetDefaultCSVSeparator</span>()</p>
+<p class="T">Gets the the default .csv files field separator.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetZoomStyleX(ZoomStyle)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">SetZoomStyleX</span>(ZoomStyle&nbsp;<span class="Y">style</span>&nbsp;=&nbsp;TO_CENTER)</p>
+<p class="T">Sets the X zoom <span class="Y">style</span>. Valid values are:</p>
+<p class="AE">TO_CENTER: Zoom is centered to the control center.</p>
+<p class="AE">FROM_BASE: Zoom is centered to the X origin.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetZoomStyleY(ZoomStyle)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">SetZoomStyleY</span>(ZoomStyle&nbsp;<span class="Y">style</span>&nbsp;=&nbsp;TO_CENTER)</p>
+<p class="T">Sets the Y zoom <span class="Y">style</span>. Valid values are:</p>
+<p class="AE">TO_CENTER: Zoom is centered to the control center.</p>
+<p class="AE">FROM_BASE: Zoom is centered to the Y origin.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetRange(double,double,double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetRange</span>(<span class="X">double</span>&nbsp;<span class="Y">rx</span>, <span class="X">double</span>&nbsp;<span class="Y">ry</span><span class="S"> = Null</span>, <span class="X">double</span>&nbsp;<span class="Y">ry2</span><span class="S"> = Null</span>)</p>
+<p class="T">Sets the horizontal (<span class="Y">rx</span>), vertical (<span class="Y">ry</span>) and secondary vertical (<span class="Y">ry2</span>) axis ranges.</p>
+<p class="T">Range is the visible with of the plot in series units (not in pixels).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetXRange()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetXRange</span><span class="AA">()</span>const</p>
+<p class="T">Returns the x axis range.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetYRange()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetYRange</span><span class="AA">()</span>const</p>
+<p class="T">Returns the y axis range.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetY2Range()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetY2Range</span><span class="AA">()</span>const</p>
+<p class="T">Returns the secondary y axis range.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ScatterDraw::SetMajorUnits(double,double,double)" class="R"><a href="Upp::ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">SetMajorUnits</span>(<span class="X">double</span>&nbsp;<span class="Y">ux</span>, <span class="X">double</span>&nbsp;<span class="Y">uy</span>, <span class="X">double</span>&nbsp;<span class="Y">uy2</span>)</p>
+<p class="T">Sets the horizontal (<span class="Y">ux</span>), vertical (<span class="Y">uy</span>) or secondary vertical (<span class="Y">uy2</span>) distance between grid lines.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetMajorUnitsNum(int,int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">SetMajorUnitsNum</span>(<span class="X">int</span>&nbsp;<span class="Y">nx</span>, <span class="X">int</span>&nbsp;<span class="Y">ny</span>)</p>
+<p class="T">Sets the horizontal (<span class="Y">nx</span>) and vertical (<span class="Y">ny</span>) number of grid lines.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetMajorUnitsX()" class="R"><span class="X">double</span>&nbsp;<span class="S">GetMajorUnitsX</span>()</p>
+<p class="T">Returns the distance between grid lines in X axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetMajorUnitsY()" class="R"><span class="X">double</span>&nbsp;<span class="S">GetMajorUnitsY</span>()</p>
+<p class="T">Returns the distance between grid lines in Y axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetMajorUnitsY2()" class="R"><span class="X">double</span>&nbsp;<span class="S">GetMajorUnitsY2</span>()</p>
+<p class="T">Returns the distance between grid lines in secondary Y axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetMinUnits(double,double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetMinUnits</span>(<span class="X">double</span>&nbsp;<span class="Y">ux</span>, <span class="X">double</span>&nbsp;<span class="Y">uy</span>)</p>
+<p class="T">Sets with <span class="Y">ux</span> and <span class="Y">uy</span> the first X and Y axis grid lines location in real units from the lower left corner. If either <span class="Y">ux</span> or <span class="Y">uy</span> is not visible, it ensures that values obtained adding or substracting SetMajorUnits() values will be visible.</p>
+<p class="T">If <a href="src$ScatterDraw$ScatterDraw_en-us.html#ScatterDraw::SetGridLinesX">SetGridLinesX </a>or <a href="src$ScatterDraw$ScatterDraw_en-us.html#ScatterDraw::SetGridLinesY">SetGridLinesY </a>callback is set, the values of X or Y axis respectively will not be used.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetXMinUnit()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetXMinUnit</span><span class="AA">&nbsp;()&nbsp;</span>const</p>
+<p class="T">Returns the first X axis grid line location.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetYMinUnit()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetYMinUnit</span><span class="AA">&nbsp;()&nbsp;</span>const</p>
+<p class="T">Returns the first Y axis grid line location.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetYMinUnit2()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetYMinUnit2</span><span class="AA">&nbsp;()&nbsp;</span>const</p>
+<p class="T">Returns the first secondary Y axis grid line location-</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetXYMin(double,double,double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetXYMin</span>(<span class="X">double</span>&nbsp;<span class="Y">xmin</span>,<span class="X">double</span>&nbsp;<span class="Y">ymin</span>,<span class="X">double</span>&nbsp;<span class="Y">ymin2</span>&nbsp;=&nbsp;<span class="AD">0</span>)</p>
+<p class="T">Sets with <span class="Y">xmin</span>, <span class="Y">ymin</span> and <span class="Y">ymin2</span> the X, Y and secondary Y axis origin.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetXMin()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetXMin</span><span class="AA">&nbsp;()&nbsp;</span>const</p>
+<p class="T">Returns the X axis origin.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetYMin()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetYMin</span><span class="AA">&nbsp;()&nbsp;</span>const</p>
+<p class="T">Returns the Y axis origin.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetYMin2()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetYMin2</span><span class="AA">&nbsp;()&nbsp;</span>const</p>
+<p class="T">Returns the secondary Y axis origin.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetY2Min()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetY2Min</span><span class="AA">&nbsp;()&nbsp;</span>const</p>
+<p class="T">Returns the secondary Y axis origin.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetXMax()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetXMax</span><span class="AA">()&nbsp;</span>const</p>
+<p class="T">Returns the X axis end.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetYMax()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetYMax</span><span class="AA">()&nbsp;</span>const</p>
+<p class="T">Returns the Y axis end.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetY2Max()const" class="Z">double<span class="AA">&nbsp;</span><span class="AC">GetY2Max</span><span class="AA">()&nbsp;</span>const</p>
+<p class="T">Returns the secondary Y axis end.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::AddSeries(double*,int,double,double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">AddSeries</span>(<span class="X">double</span>&nbsp;*<span class="Y">yData</span>, <span class="X">int</span>&nbsp;<span class="Y">numData</span>, <span class="X">double</span>&nbsp;<span class="Y">x0</span>&nbsp;=&nbsp;<span class="AD">0</span>, <span class="X">double</span>&nbsp;<span class="Y">deltaX</span>&nbsp;=&nbsp;<span class="AD">1</span>)</p>
+<p class="T">Adds a new series stored in <span class="Y">yData </span>C array with <span class="Y">numData</span> where the <span class="Y">yData[0] </span>X value is <span class="Y">x0</span> and the horizontal distance between <span class="Y">yData</span> values is <span class="Y">deltaX</span>.</p>
+<p class="T"><span class="Y">yData</span> has to be stored in a permanent location during ScatterDraw life to avoid memory problems.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::AddSeries(double*,double*,int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">AddSeries</span>(<span class="X">double</span>&nbsp;*<span class="Y">xData</span>, <span class="X">double</span>&nbsp;*<span class="Y">yData</span>, <span class="X">int</span>&nbsp;<span class="Y">numData</span>)</p>
+<p class="T">Adds a new series stored in <span class="Y">xData</span> and <span class="Y">yData</span> C arrays with <span class="Y">numData</span>.</p>
+<p class="T"><span class="Y">xData</span> and <span class="Y">yData</span> has to be stored in a permanent location during ScatterDraw life to avoid memory problems.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::AddSeries(Upp::Vector<double>&,Upp::Vector<double>&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">AddSeries</span>(<a href="Vector"><span class="W">Vector</span></a>&lt;<span class="X">double</span>&gt;&nbsp;&amp;<span class="Y">xData</span>, <a href="Vector"><span class="W">Vector</span></a>&lt;<span class="X">double</span>&gt;&nbsp;&amp;<span class="Y">yData</span>)</p>
+<p class="T">Adds a new series stored in <span class="Y">xData</span> and <span class="Y">yData</span> <a href="Vector"><span class="W">Vector</span></a>&lt;<span class="X">double</span>&gt;.</p>
+<p class="T"><span class="Y">xData</span> and <span class="Y">yData</span> has to be stored in a permanent location during ScatterDraw life to avoid memory problems.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::AddSeries(Upp::Array<double>&,Upp::Array<double>&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">AddSeries</span>(<a href="Array"><span class="W">Array</span></a>&lt;<span class="X">double</span>&gt;&nbsp;&amp;<span class="Y">xData</span>, <a href="Array"><span class="W">Array</span></a>&lt;<span class="X">double</span>&gt;&nbsp;&amp;<span class="Y">yData</span>)</p>
+<p class="T">Adds a new series stored in <span class="Y">xData</span> and <span class="Y">yData</span> <a href="Vector"><span class="W">Array</span></a>&lt;<span class="X">double</span>&gt;.</p>
+<p class="T"><span class="Y">xData</span> and <span class="Y">yData</span> has to be stored in a permanent location during ScatterDraw life to avoid memory problems.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::AddSeries(Upp::Vector<Upp::Pointf>&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">AddSeries</span>(<a href="Vector"><span class="W">Vector</span></a>&lt;<a href="Pointf"><span class="W">Pointf</span></a>&gt;&nbsp;&amp;<span class="Y">points</span>)</p>
+<p class="T">Adds a new series stored in <span class="Y">points</span> <a href="Vector"><span class="W">Vector</span></a>&lt;<a href="Pointf"><span class="W">Pointf</span></a>&gt;.</p>
+<p class="T"><span class="Y">points</span> has to be stored in a permanent location during ScatterDraw life to avoid memory problems.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::AddSeries(Upp::Array<Upp::Pointf>&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">AddSeries</span>(<a href="Array"><span class="W">Array</span></a>&lt;<a href="Pointf"><span class="W">Pointf</span></a>&gt;&nbsp;&amp;<span class="Y">points</span>)</p>
+<p class="T">Adds a new series stored in <span class="Y">points</span> <a href="Vector"><span class="W">Array</span></a>&lt;<a href="Pointf"><span class="W">Pointf</span></a>&gt;.</p>
+<p class="T"><span class="Y">points</span> has to be stored in a permanent location during ScatterDraw life to avoid memory problems.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ScatterDraw::AddSeries(Upp::Vector<Upp::Vector<double>>&)" class="R"><a href="Upp::ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">AddSeries</span>(<a href="Upp::Vector"><span class="W">Vector</span></a>&lt;<a href="Upp::Vector"><span class="W">Vector</span></a>&nbsp;&lt;<span class="X">double</span>&gt;&nbsp;&gt;&nbsp;&amp;<span class="Y">data</span>)</p>
+<p class="T">Adds a new series stored in <span class="Y">data</span> .</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Opacity(double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">Opacity</span>(<span class="X">double</span>&nbsp;<span class="Y">opacity</span>&nbsp;=&nbsp;<span class="AD">1</span>)</p>
+<p class="T">Sets the series <span class="Y">opacity</span> .from 1 (opaque) to 0 (transparent/invisible).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Legend(const Upp::String)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">Legend</span>(<span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a>&nbsp;<span class="Y">legend</span>)</p>
+<p class="T">Sets the series <span class="Y">legend</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Legend(int,const Upp::String)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">Legend</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>, <span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a>&nbsp;<span class="Y">legend</span>)</p>
+<p class="T">Sets the <span class="Y">legend</span> for <span class="Y">index</span> series.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetLegend(int)" class="R"><span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a><span class="X">&amp;</span>&nbsp;<span class="S">GetLegend</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>)</p>
+<p class="T">Returns the legend for <span class="Y">index</span> series.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Units(const Upp::String,const Upp::String)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">Units</span>(<span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a>&nbsp;<span class="Y">unitsY</span>, <span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a>&nbsp;<span class="Y">unitsX</span>&nbsp;=&nbsp;&quot;&quot;)</p>
+<p class="T">Sets the series units for Y axis (<span class="Y">unitsY</span>) and X axis (<span class="Y">unitsX</span>).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Units(int,const Upp::String,const Upp::String)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">Units</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>, <span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a>&nbsp;<span class="Y">unitsY</span>, <span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a>&nbsp;<span class="Y">unitsX</span>&nbsp;=&nbsp;&quot;&quot;)</p>
+<p class="T">Sets the <span class="Y">index</span> series units for Y axis (<span class="Y">unitsY</span>) and X axis (<span class="Y">unitsX</span>).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetUnitsX(int)" class="R"><span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a>&nbsp;<span class="S">GetUnitsX</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>)</p>
+<p class="T">Returns the X axis units for <span class="Y">index</span> series.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetUnitsY(int)" class="R"><span class="X">const</span>&nbsp;<a href="String"><span class="W">String</span></a>&nbsp;<span class="S">GetUnitsY</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>)</p>
+<p class="T">Returns the Y axis units for <span class="Y">index</span> series.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ScatterDraw::LegendLine(bool)" class="R"><a href="Upp::ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">LegendLine</span>(<span class="X">bool</span>&nbsp;<span class="Y">b</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">Draw line in series legend even if the series does not plot lines (NoPlot).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::IsValid(int)const" class="Z">bool<span class="AA">&nbsp;</span><span class="AC">IsValid</span><span class="AA">(</span>int<span class="AA">&nbsp;</span><span class="Y">index</span><span class="AA">)&nbsp;</span>const</p>
+<p class="T">Returns true if <span class="Y">index</span> is between 0 and GetCount()-1..</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetDrawXReticle(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetDrawXReticle</span>(<span class="X">bool</span>&nbsp;<span class="Y">set</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">If <span class="Y">set</span> is true the small lines and texts beside every X grid line are shown.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetDrawYReticle(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetDrawYReticle</span>(<span class="X">bool</span>&nbsp;<span class="Y">set</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">If <span class="Y">set</span> is true the small lines and texts to the left of every Y grid line are shown.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetDrawY2Reticle(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetDrawY2Reticle</span>(<span class="X">bool</span>&nbsp;<span class="Y">set</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">If <span class="Y">set</span> is true the small lines and texts to the right of every Y grid line are shown.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetDrawXReticle()" class="R"><span class="X">bool</span>&nbsp;<span class="S">GetDrawXReticle</span>()</p>
+<p class="T">Returns true if the the small lines and texts beside every X grid line are shown.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetDrawYReticle()" class="R"><span class="X">bool</span>&nbsp;<span class="S">GetDrawYReticle</span>()</p>
+<p class="T">Returns true if the the small lines and texts to the left of every Y grid line are shown.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetDrawY2Reticle()" class="R"><span class="X">bool</span>&nbsp;<span class="S">GetDrawY2Reticle</span>()</p>
+<p class="T">Returns true if the the small lines and texts to the right of every Y grid line are shown.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetReticleFont(const Upp::Font&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">SetReticleFont</span>(<span class="X">const</span>&nbsp;<a href="Upp::Font"><span class="W">Font</span></a>&nbsp;&amp;<span class="Y">fnt</span>)</p>
+<p class="T">Sets <span class="Y">fnt</span> as reticle font..</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetReticleFont()" class="R"><a href="Upp::Font"><span class="W">Font</span></a>&nbsp;&amp;<span class="S">GetReticleFont</span>()</p>
+<p class="T">Gets reticle font.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetReticleColor(const Upp::Color&)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">SetReticleColor</span>(<span class="X">const</span>&nbsp;<a href="Upp::Color"><span class="W">Color</span></a>&nbsp;&amp;<span class="Y">col</span>)</p>
+<p class="T">Sets <span class="Y">col</span> as reticle color.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetReticleColor()" class="R"><a href="Upp::Color"><span class="W">Color</span></a>&nbsp;&amp;<span class="S">GetReticleColor</span>()</p>
+<p class="T">Gets reticle color</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetDataPrimaryY(int,bool)" class="R"><span class="X">void</span>&nbsp;<span class="S">SetDataPrimaryY</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>, <span class="X">bool</span>&nbsp;<span class="Y">primary</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">If <span class="Y">primary</span> is true, <span class="Y">index</span> series is considered to be a primary series so it uses the left vertical axis. If false it uses the right vertical axis. In this case right vertical grid is activated.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetDataPrimaryY(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">SetDataPrimaryY</span>(<span class="X">bool</span>&nbsp;<span class="Y">primary</span>)</p>
+<p class="T">If <span class="Y">primary</span> is true, last added series is considered to be a primary series so it uses the left vertical axis. </p>
+<p class="T">If false it uses the right vertical axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetDataSecondaryY(int,bool)" class="R"><span class="X">void</span>&nbsp;<span class="S">SetDataSecondaryY</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>, <span class="X">bool</span>&nbsp;<span class="Y">secondary</span>)</p>
+<p class="T">Opposed to SetDataPrimaryY() if <span class="Y">secondary</span> is true, <span class="Y">index</span> series is considered to be a secondary series so it uses the right vertical axis. In this case right vertical grid is activated.</p>
+<p class="T">If false it uses the left vertical axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetDataSecondaryY(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">SetDataSecondaryY</span>(<span class="X">bool</span>&nbsp;<span class="Y">secondary</span>)</p>
+<p class="T">Opposed to SetDataPrimaryY() if <span class="Y">secondary</span> is true, last added series is considered to be a secondary series so it uses the right vertical axis. In this case right vertical grid is activated.</p>
+<p class="T">If false it uses the left vertical axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::IsDataPrimaryY(int)" class="R"><span class="X">bool</span>&nbsp;<span class="S">IsDataPrimaryY</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>)</p>
+<p class="T">Returns true if <span class="Y">index</span> series is primary..</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetSequentialX(int,bool)" class="R"><span class="X">void</span>&nbsp;<span class="S">SetSequentialX</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>, <span class="X">bool</span>&nbsp;<span class="Y">sequential</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">If <span class="Y">sequential</span> is true, <span class="Y">index</span> series is considered to be sequential so all data points are ordered following the X axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetSequentialX(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">SetSequentialX</span>(<span class="X">bool</span>&nbsp;<span class="Y">sequential</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">If <span class="Y">sequential</span> is true the last added series is considered to be sequential so all data points are ordered following the X axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetSequentialXAll(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">SetSequentialXAll</span>(<span class="X">bool</span>&nbsp;<span class="Y">sequential</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">If <span class="Y">sequential</span> is true all series are considered to be sequential so all data points are ordered following the X axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetSequentialX(int)" class="R"><span class="X">bool</span>&nbsp;<span class="S">GetSequentialX</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>)</p>
+<p class="T">Returns true if <span class="Y">index</span> data series is considered to be sequential so all data points are ordered following the X axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetSequentialX()" class="R"><span class="X">bool</span>&nbsp;<span class="S">GetSequentialX</span>()</p>
+<p class="T">Returns true if &nbsp;the last added series is considered to be sequential so all data points are ordered following the X axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Show(int,bool)" class="R"><span class="X">void</span>&nbsp;<span class="S">Show</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>, <span class="X">bool</span>&nbsp;<span class="Y">show</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">If <span class="Y">show</span> is true it sets the opacity of <span class="Y">index</span> data series to 1. If false, the opacity will be set to 0.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::IsVisible(int)" class="R"><span class="X">bool</span>&nbsp;<span class="S">IsVisible</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>)</p>
+<p class="T">Returns true if <span class="Y">index</span> data series opacity is greater than 0.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::ShowAll(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">ShowAll</span>(<span class="X">bool</span>&nbsp;<span class="Y">show</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">If <span class="Y">show</span> is true it sets the opacity of all series to 1. If false, the opacity will be set to 0.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::RemoveSeries(int)" class="R"><span class="X">bool</span>&nbsp;<span class="S">RemoveSeries</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>)</p>
+<p class="T">Remove <span class="Y">index</span> data series from control. It does not delete the series data.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::RemoveAllSeries()" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">RemoveAllSeries</span>()</p>
+<p class="T">Remove all data series from control. It does not delete the series data.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ScatterDraw::SwapSeries(int,int)" class="R"><span class="X">bool</span>&nbsp;<span class="S">SwapSeries</span>(<span class="X">int</span>&nbsp;<span class="Y">i1</span>, <span class="X">int</span>&nbsp;<span class="Y">i2</span>)</p>
+<p class="T">Swaps the series <span class="Y">i1</span> with <span class="Y">i2</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetImage()" class="R"><a href="Upp::Image"><span class="W">Image</span></a>&nbsp;<span class="S">GetImage</span>()</p>
+<p class="T">Returns the scatter plot as an Image.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Id(int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">Id</span>(<span class="X">int</span>&nbsp;<span class="Y">id</span>)</p>
+<p class="T">Sets the <span class="Y">id</span> of the last added data series.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Id(int,int)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">Id</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>, <span class="X">int</span>&nbsp;<span class="Y">id</span>)</p>
+<p class="T">Sets the <span class="Y">id</span> if <span class="Y">index</span> data series.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetId(int)" class="R"><span class="X">int</span>&nbsp;<span class="S">GetId</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>)</p>
+<p class="T">Returns the id of <span class="Y">index</span> data series.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetDrawing()" class="R"><a href="Drawing"><span class="W">Drawing</span></a>&nbsp;<span class="S">GetDrawing</span>()</p>
+<p class="T">Returns the control Drawing.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetXByPoint(double)" class="R"><span class="X">double</span>&nbsp;<span class="S">GetXByPoint</span>(<span class="X">double</span>&nbsp;<span class="Y">x</span>)</p>
+<p class="T">Returns the X axis value of pixel <span class="Y">x</span> in data set units.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetYByPoint(double)" class="R"><span class="X">double</span>&nbsp;<span class="S">GetYByPoint</span>(<span class="X">double</span>&nbsp;<span class="Y">y</span>)</p>
+<p class="T">Returns theY axis value of pixel <span class="Y">y</span> in data set units.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetY2ByPoint(double)" class="R"><span class="X">double</span>&nbsp;<span class="S">GetY2ByPoint</span>(<span class="X">double</span>&nbsp;<span class="Y">y</span>)</p>
+<p class="T">Returns the secondary Y axis value of pixel <span class="Y">y</span> in data set units.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetXPointByValue(double)" class="R"><span class="X">double</span>&nbsp;<span class="S">GetXPointByValue</span>(<span class="X">double</span>&nbsp;<span class="Y">x</span>)</p>
+<p class="T">Returns the X axis pixel value of <span class="Y">x</span> in data set units.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetYPointByValue(double)" class="R"><span class="X">double</span>&nbsp;<span class="S">GetYPointByValue</span>(<span class="X">double</span>&nbsp;<span class="Y">y</span>)</p>
+<p class="T">Returns the Y axis pixel value of <span class="Y">y</span> in data set units.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SaveAsMetafile(const char*)const" class="Z">void<span class="AA">&nbsp;</span><span class="AC">SaveAsMetafile</span><span class="AA">(</span>const<span class="AA">&nbsp;</span>char*<span class="AA">&nbsp;</span><span class="Y">file</span><span class="AA">)&nbsp;</span>const</p>
+<p class="AH">Windows</p>
+<p class="T">Saves the control as a windows metafile in <span class="Y">file</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetMinZoom(double,double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetMinZoom</span>(<span class="X">double</span>&nbsp;<span class="Y">x</span>, <span class="X">double</span>&nbsp;<span class="Y">y</span>&nbsp;=&nbsp;-<span class="AD">1</span>)</p>
+<p class="T">Sets <span class="Y">x</span> and <span class="Y">y</span> as the minimum visible range. If <span class="Y">y</span> is -1, only <span class="Y">x</span> zoom is considered.</p>
+<p class="T">Equal to SetMinRange().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetMaxZoom(double,double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetMaxZoom</span>(<span class="X">double</span>&nbsp;<span class="Y">x</span>, <span class="X">double</span>&nbsp;<span class="Y">y</span>&nbsp;=&nbsp;-<span class="AD">1</span>)</p>
+<p class="T">Sets <span class="Y">x</span> and <span class="Y">y</span> as the maximum visible range. If <span class="Y">y</span> is -1, only <span class="Y">x</span> zoom is considered.</p>
+<p class="T">Equal to SetMaxRange().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetMinRange(double,double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetMinRange</span>(<span class="X">double</span>&nbsp;<span class="Y">x</span>, <span class="X">double</span>&nbsp;<span class="Y">y</span>&nbsp;=&nbsp;-<span class="AD">1</span>)</p>
+<p class="T">Sets <span class="Y">x</span> and <span class="Y">y</span> as the minimum visible range. If <span class="Y">y</span> is -1, only <span class="Y">x</span> zoom is considered.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetMaxRange(double,double)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetMaxRange</span>(<span class="X">double</span>&nbsp;<span class="Y">x</span>, <span class="X">double</span>&nbsp;<span class="Y">y</span>&nbsp;=&nbsp;-<span class="AD">1</span>)</p>
+<p class="T">Sets <span class="Y">x</span> and <span class="Y">y</span> as the maximum visible range. If <span class="Y">y</span> is -1, only <span class="Y">x</span> zoom is considered.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::SetFastViewX(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a><span class="X">&amp;</span>&nbsp;<span class="S">SetFastViewX</span>(<span class="X">bool</span>&nbsp;<span class="Y">set</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">If <span class="Y">set</span> is true, only one point per screen pixel will be drawn. The Y value of this point will be the average of all data points between two pixels.</p>
+<p class="T">In case of big datasets and zoom in with big detail, this option can accelerate strongly the control refresh.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetFastViewX()" class="R"><span class="X">bool</span>&nbsp;<span class="S">GetFastViewX</span>()</p>
+<p class="T">Returns true if FastViewX has been set.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetCount()" class="R"><span class="X">int</span>&nbsp;<span class="S">GetCount</span>()</p>
+<p class="T">Returns the number of series loaded.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::IsEmpty()" class="R"><span class="X">bool</span>&nbsp;<span class="S">IsEmpty</span>()</p>
+<p class="T">Returns true if there are no series.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::NoPlot()" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">NoPlot</span>()</p>
+<p class="T">Set to avoid showing the series. However the mar can be shown.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Stacked(bool)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">Stacked</span>(<span class="X">bool</span>&nbsp;<span class="Y">stacked</span>&nbsp;=&nbsp;<span class="X">true</span>)</p>
+<p class="T">If <span class="Y">stacked</span> is true it is considered that all series are stacked.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::NoMark()" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">NoMark</span>()</p>
+<p class="T">Set to avoid showing mark in series. However the series can be shown.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Stroke(int,double,Upp::Color)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">Stroke</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>, <span class="X">double</span>&nbsp;<span class="Y">thickness</span>, <a href="Upp::Color"><span class="W">Color</span></a>&nbsp;<span class="Y">color</span>)</p>
+<p class="T">Sets <span class="Y">index</span> series <span class="Y">thickness</span> and <span class="Y">color</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::Stroke(double,Upp::Color)" class="R"><a href="ScatterDraw"><span class="W">ScatterDraw</span></a>&nbsp;&amp;<span class="S">Stroke</span>(<span class="X">double</span>&nbsp;<span class="Y">thickness</span>, <a href="Upp::Color"><span class="W">Color</span></a>&nbsp;<span class="Y">color</span>&nbsp;=&nbsp;Null)</p>
+<p class="T">Sets the series line <span class="Y">thickness</span> and <span class="Y">color</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterDraw::GetStroke(int,double&,Upp::Color&)" class="R"><span class="X">void</span>&nbsp;<span class="S">GetStroke</span>(<span class="X">int</span>&nbsp;<span class="Y">index</span>, <span class="X">double</span>&nbsp;&amp;<span class="Y">thickness</span>, <a href="Upp::Color"><span class="W">Color</span></a>&nbsp;&amp;<span class="Y">color</span>)</p>
+<p class="T">Gets <span class="Y">index</span> series <span class="Y">thickness</span> and <span class="Y">color</span>.</p>
+<p class="D">&nbsp;</p>
+<p class="D">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>

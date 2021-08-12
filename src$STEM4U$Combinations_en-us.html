@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>Combinations :: Ultimate++</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#800000;vertical-align:middle;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.E{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.F{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.G{display:list-item;list-style-type:disc;margin:0px 0px 0px 20px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.H{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.I{color:#0000ff;}
+.J{color:#008000;font-weight:bold;}
+.K{text-decoration:underline;}
+.L{font-weight:bold;}
+.M{color:#800000;font-weight:bold;}
+.N{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.O{color:#800000;font-weight:bold;text-decoration:underline;}
+.P{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:underline;}
+.Q{text-decoration:none;}
+.R{color:#800000;font-weight:bold;text-decoration:none;}
+.S{color:#000000;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="B"><p class="C">Combinations</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="D">&nbsp;</p>
+<p class="E">&nbsp;</p>
+<p class="F">Permutation and combinations functions.</p>
+<p class="F">&nbsp;</p>
+<p class="F">These follow a for_each style: The algorithm calls a user supplied function object (functor) for each combination/permutation in the sequence: f(begin, end). That functor can maintain state. The sequence need not be sorted, nor even contain unique objects. The algorithms do not consider the value of the sequence elements at all. That is, the element type need not support LessThanComparable nor EqualityComparable. Furthermore the algorithms follow three additional rules:</p>
+<p class="F">&nbsp;</p>
+<p class="G">On normal (non-exceptional) completion, the sequence is always left in the original order.</p>
+<p class="G">The functor is always called with (first, mid). This enables the functor to also access the elements not in the sequence if it is aware of the sequence: (mid, last). This can come in handy when dealing with nested combination/permutation problems where for each permutation you also need to compute combinations and/or permutations on those elements not selected.</p>
+<p class="G">The functor should return true or false: true if the functor wishes to break out of the for_each_ loop, and otherwise false.</p>
+<p class="F">&nbsp;</p>
+<p class="F">Each of the functions return the number of combinations or zero in case of wrong input or overflow.</p>
+<p class="F">&nbsp;</p>
+<p class="F">&nbsp;</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ForEachPermutation(T&,int,Functor)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>, <span class="I">class</span>&nbsp;<span class="J">Functor</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">ForEachPermutation</span>(<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="I">int</span>&nbsp;<span class="M">mid</span>, <span class="J">Functor</span>&nbsp;<span class="M">f</span>)</p>
+<p class="N">Repeatedly permutes the range [<span class="M">data</span>, <span class="M">data.end</span>()) such that the range [<span class="M">data</span>, <span class="M">mid</span>) represents each permutation of the values in [<span class="M">data</span>, <span class="M">data.end</span>()) taken distance (<span class="M">data</span>, <span class="M">mid</span>) at a time. </p>
+<p class="N">For each permutation calls <span class="M">f</span>(<span class="M">data</span>, <span class="M">mid</span>). On each call, the range [<span class="M">mid</span>, <span class="M">data.end</span>()) holds the values not in the current permutation. If <span class="M">f</span> returns true then returns immediately without permuting the sequence any further. Otherwise, after the last call to <span class="M">f</span>, and prior to returning, the range [<span class="M">data</span>, <span class="M">data.end</span>()) is restored to its original order. [Note: If <span class="M">f</span> always returns false it is called <span class="L">CountEachPermutation</span>(<span class="M">data</span>, <span class="M">mid</span>) times]</p>
+<p class="N">Returns: <span class="M">f</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ForEachPermutation(T&,Functor)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>, <span class="I">class</span>&nbsp;<span class="J">Functor</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">ForEachPermutation</span>(<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="J">Functor</span>&nbsp;<span class="M">f</span>)</p>
+<p class="N">Repeatedly permutes the range [<span class="M">data</span>, <span class="M">data.end</span>()).</p>
+<p class="N">For each permutation calls <span class="M">f</span>(<span class="M">data</span>, <span class="M">data.end</span>()).</p>
+<p class="N">If <span class="M">f</span> returns true then returns immediately without permuting the sequence any further. Otherwise, after the last call to <span class="M">f</span>, and prior to returning, the range [<span class="M">data</span>, <span class="M">data.end</span>()) is restored to its original order. [Note: If <span class="M">f</span> always returns false it is called <span class="L">CountEachPermutation</span>(<span class="M">data</span>) times]</p>
+<p class="N">Returns: <span class="M">f</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ForEachReversiblePermutation(T&,int,Functor)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>, <span class="I">class</span>&nbsp;<span class="J">Functor</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">ForEachReversiblePermutation</span>(<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="I">int</span>&nbsp;<span class="M">mid</span>, <span class="J">Functor</span>&nbsp;<span class="M">f</span>)</p>
+<p class="N">Repeatedly permutes the range [<span class="M">data</span>, <span class="M">data.end</span>()) such that the range [<span class="M">data</span>, <span class="M">mid</span>) represents each permutation of the values in [<span class="M">data</span>, <span class="M">data.end</span>()) taken distance (<span class="M">data</span>, <span class="M">mid</span>) at a time, <span class="K">except that </span><span class="O">f</span><span class="K"> is never called with the reverse of a permutation which has been previously called.</span> </p>
+<p class="N">For each permutation calls <span class="M">f</span>(<span class="M">data</span>, <span class="M">mid</span>). On each call, the range [<span class="M">mid</span>, <span class="M">data.end</span>()) holds the values not in the current permutation. If <span class="M">f</span> returns true then returns immediately without permuting the sequence any further. Otherwise, after the last call to <span class="M">f</span>, and prior to returning, the range [<span class="M">data</span>, <span class="M">data.end</span>()) is restored to its original order. [Note: If <span class="M">f</span> always returns false it is called <span class="L">CountEachReversiblePermutation</span>(<span class="M">data</span>, <span class="M">mid</span>) times]</p>
+<p class="N">Returns: <span class="M">f</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ForEachReversiblePermutation(T&,Functor)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>, <span class="I">class</span>&nbsp;<span class="J">Functor</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">ForEachReversiblePermutation</span>(<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="J">Functor</span>&nbsp;<span class="M">f</span>)</p>
+<p class="N">Repeatedly permutes the range [<span class="M">data</span>, <span class="M">data.end</span>()), <span class="K">except that </span><span class="O">f</span><span class="K"> is never called with the reverse of a permutation which has been previously called.</span> </p>
+<p class="N">For each permutation calls <span class="M">f</span>(<span class="M">data</span>, <span class="M">data.end</span>()).</p>
+<p class="N">If <span class="M">f</span> returns true then returns immediately without permuting the sequence any further. Otherwise, after the last call to <span class="M">f</span>, and prior to returning, the range [<span class="M">data</span>, <span class="M">data.end</span>()) is restored to its original order. [Note: If <span class="M">f</span> always returns false it is called <span class="L">CountEachReversiblePermutation</span>(<span class="M">data</span>) times]</p>
+<p class="N">Returns: <span class="M">f</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ForEachCircularPermutation(T&,int,Functor)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>, <span class="I">class</span>&nbsp;<span class="J">Functor</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">ForEachCircularPermutation</span>(<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="I">int</span>&nbsp;<span class="M">mid</span>, <span class="J">Functor</span>&nbsp;<span class="M">f</span>)</p>
+<p class="P"><span class="Q">Repeatedly permutes the range [</span><span class="R">data</span><span class="Q">, </span><span class="R">data.end</span><span class="Q">()) such that the range [</span><span class="R">data</span><span class="Q">, </span><span class="R">mid</span><span class="Q">) represents each permutation of the values in [</span><span class="R">data</span><span class="Q">, </span><span class="R">data.end</span><span class="Q">()) taken distance (</span><span class="R">data</span><span class="Q">, </span><span class="R">mid</span><span class="Q">) at a time, </span>except that <span class="M">f</span> is never called with a circular permutation which has been previously called. </p>
+<p class="N">For each permutation calls <span class="M">f</span>(<span class="M">data</span>, <span class="M">mid</span>). On each call, the range [<span class="M">mid</span>, <span class="M">data.end</span>()) holds the values not in the current permutation. If <span class="M">f</span> returns true then returns immediately without permuting the sequence any further. Otherwise, after the last call to <span class="M">f</span>, and prior to returning, the range [<span class="M">data</span>, <span class="M">data.end</span>()) is restored to its original order. [Note: If <span class="M">f</span> always returns false it is called <span class="L">CountEachCircularPermutation</span>(<span class="M">data</span>, <span class="M">mid</span>) times]</p>
+<p class="N">Returns: <span class="M">f</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ForEachCircularPermutation(T&,Functor)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>, <span class="I">class</span>&nbsp;<span class="J">Functor</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">ForEachCircularPermutation</span>(<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="J">Functor</span>&nbsp;<span class="M">f</span>)</p>
+<p class="N">Repeatedly permutes the range [<span class="M">data</span>, <span class="M">data.end</span>()), <span class="K">except that </span><span class="O">f</span><span class="K"> is never called with a circular permutation which has been previously called.</span> </p>
+<p class="N">For each permutation calls <span class="M">f</span>(<span class="M">data</span>, <span class="M">data.end</span>()).</p>
+<p class="N">If <span class="M">f</span> returns true then returns immediately without permuting the sequence any further. Otherwise, after the last call to <span class="M">f</span>, and prior to returning, the range [<span class="M">data</span>, <span class="M">data.end</span>()) is restored to its original order. [Note: If <span class="M">f</span> always returns false it is called <span class="L">CountEachCircularPermutation</span>(<span class="M">data</span>) times]</p>
+<p class="N">Returns: <span class="M">f</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ForEachReversibleCircularPermutation(T&,int,Functor)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>, <span class="I">class</span>&nbsp;<span class="J">Functor</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">ForEachReversibleCircularPermutation</span>(<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="I">int</span>&nbsp;<span class="M">mid</span>, <span class="J">Functor</span>&nbsp;<span class="M">f</span>)</p>
+<p class="P"><span class="Q">Repeatedly permutes the range [</span><span class="R">data</span><span class="Q">, </span><span class="R">data.end</span><span class="Q">()) such that the range [</span><span class="R">data</span><span class="Q">, </span><span class="R">mid</span><span class="Q">) represents each permutation of the values in [</span><span class="R">data</span><span class="Q">, </span><span class="R">data.end</span><span class="Q">()) taken distance (</span><span class="R">data</span><span class="Q">, </span><span class="R">mid</span><span class="Q">) at a time, </span>except that <span class="M">f</span> is never called with a circular permutation which has been previously called, or the reverse of that permutation. </p>
+<p class="N">For each permutation calls <span class="M">f</span>(<span class="M">data</span>, <span class="M">mid</span>). On each call, the range [<span class="M">mid</span>, <span class="M">data.end</span>()) holds the values not in the current permutation. If <span class="M">f</span> returns true then returns immediately without permuting the sequence any further. Otherwise, after the last call to <span class="M">f</span>, and prior to returning, the range [<span class="M">data</span>, <span class="M">data.end</span>()) is restored to its original order. [Note: If <span class="M">f</span> always returns false it is called <span class="L">CountEachCircularPermutation</span>(<span class="M">data</span>, <span class="M">mid</span>) times]</p>
+<p class="N">Returns: <span class="M">f</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ForEachReversibleCircularPermutation(T&,Functor)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>, <span class="I">class</span>&nbsp;<span class="J">Functor</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">ForEachReversibleCircularPermutation</span>(<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="J">Functor</span>&nbsp;<span class="M">f</span>)</p>
+<p class="P"><span class="Q">Repeatedly permutes the range [</span><span class="R">data</span><span class="Q">, </span><span class="R">data.end</span><span class="Q">()), </span>except that <span class="M">f</span> is never called with a circular permutation which has been previously called, or the reverse of that permutation. </p>
+<p class="N">For each permutation calls <span class="M">f</span>(<span class="M">data</span>, <span class="M">data.end</span>()).</p>
+<p class="N">If <span class="M">f</span> returns true then returns immediately without permuting the sequence any further. Otherwise, after the last call to <span class="M">f</span>, and prior to returning, the range [<span class="M">data</span>, <span class="M">data.end</span>()) is restored to its original order. [Note: If <span class="M">f</span> always returns false it is called <span class="L">CountEachReversibleCircularPermutation</span>(<span class="M">data</span>) times]</p>
+<p class="N">Returns: <span class="M">f</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ForEachCombination(T&,int,Functor)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>, <span class="I">class</span>&nbsp;<span class="J">Functor</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">ForEachCombination</span>(<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="I">int</span>&nbsp;<span class="M">mid</span>, <span class="J">Functor</span>&nbsp;<span class="M">f</span>)</p>
+<p class="N">Repeatedly permutes the range [<span class="M">data</span>, <span class="M">data.end</span>()) such that the range [<span class="M">data</span>, <span class="M">mid</span>) represents each combination of the values in [<span class="M">data</span>, <span class="M">data.end</span>()) taken distance (<span class="M">data</span>, <span class="M">mid</span>) at a time.</p>
+<p class="N">For each permutation calls <span class="M">f</span>(<span class="M">data</span>, <span class="M">mid</span>). On each call, the range [<span class="M">mid</span>, <span class="M">data.end</span>()) holds the values not in the current permutation. If <span class="M">f</span> returns true then returns immediately without permuting the sequence any further. Otherwise, after the last call to <span class="M">f</span>, and prior to returning, the range [<span class="M">data</span>, <span class="M">data.end</span>()) is restored to its original order. [Note: If <span class="M">f</span> always returns false it is called <span class="L">CountEachCombination</span>(<span class="M">data</span>, <span class="M">mid</span>) times]</p>
+<p class="N">Returns: <span class="M">f</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::ForEachCombination(T&,Functor)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>, <span class="I">class</span>&nbsp;<span class="J">Functor</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">ForEachCombination</span>(<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="J">Functor</span>&nbsp;<span class="M">f</span>)</p>
+<p class="N">Repeatedly combines the range [<span class="M">data</span>, <span class="M">data.end</span>()).</p>
+<p class="N">For each permutation calls <span class="M">f</span>(<span class="M">data</span>, <span class="M">data.end</span>()).</p>
+<p class="N">If <span class="M">f</span> returns true then returns immediately without permuting the sequence any further. Otherwise, after the last call to <span class="M">f</span>, and prior to returning, the range [<span class="M">data</span>, <span class="M">data.end</span>()) is restored to its original order. [Note: If <span class="M">f</span> always returns false it is called <span class="L">CountEachReversibleCircularPermutation</span>(<span class="M">data</span>) times]</p>
+<p class="N">Returns: <span class="M">f</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachPermutation(const T&,int)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">CountEachPermutation</span>(<span class="I">const</span>&nbsp;<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="I">int</span>&nbsp;<span class="M">mid</span>)</p>
+<p class="N">Returns <span class="L">CountEachPermutation</span>(std::distance(<span class="M">data</span>, <span class="M">mid</span>), std::distance(<span class="M">mid</span>, <span class="M">data.end</span>())) .</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachPermutation(const T&)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>&gt;&nbsp;uint64&nbsp;<span class="L">CountEachPermutation</span>(<span class="I">const</span>&nbsp;<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>)</p>
+<p class="N">Returns <span class="L">CountEachPermutation</span>(std::distance(<span class="M">data</span>, <span class="M">data.end</span>()), std::distance(<span class="M">data</span>, <span class="M">data.end</span>())) </p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachReversiblePermutation(const T&,int)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">CountEachReversiblePermutation</span>(<span class="I">const</span>&nbsp;<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="I">int</span>&nbsp;<span class="M">mid</span>)</p>
+<p class="N">Returns <span class="L">CountEachReversiblePermutation</span>(std::distance(<span class="M">data</span>, <span class="M">mid</span>), std::distance(<span class="M">mid</span>, <span class="M">data.end</span>())) .</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachReversiblePermutation(const T&)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>&gt;&nbsp;uint64&nbsp;<span class="L">CountEachReversiblePermutation</span>(<span class="I">const</span>&nbsp;<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>)</p>
+<p class="N">Returns <span class="L">CountEachReversiblePermutation</span>(std::distance(<span class="M">data</span>, <span class="M">data.end</span>()), std::distance(<span class="M">data</span>, <span class="M">data.end</span>())) </p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachCircularPermutation(const T&,int)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">CountEachCircularPermutation</span>(<span class="I">const</span>&nbsp;<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="I">int</span>&nbsp;<span class="M">mid</span>)</p>
+<p class="N">Returns <span class="L">CountEachCircularPermutation</span>(std::distance(<span class="M">data</span>, <span class="M">mid</span>), std::distance(<span class="M">mid</span>, <span class="M">data.end</span>())) .</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachCircularPermutation(const T&)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>&gt;&nbsp;uint64&nbsp;<span class="L">CountEachCircularPermutation</span>(<span class="I">const</span>&nbsp;<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>)</p>
+<p class="N">Returns <span class="L">CountEachCircularPermutation</span>(std::distance(<span class="M">data</span>, <span class="M">data.end</span>()), std::distance(<span class="M">data</span>, <span class="M">data.end</span>())) </p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachReversibleCircularPermutation(const T&,int)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">CountEachReversibleCircularPermutation</span>(<span class="I">const</span>&nbsp;<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="I">int</span>&nbsp;<span class="M">mid</span>)</p>
+<p class="N">Returns <span class="L">CountEachReversibleCircularPermutation</span>(std::distance(<span class="M">data</span>, <span class="M">mid</span>), std::distance(<span class="M">mid</span>, <span class="M">data.end</span>())) .</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachReversibleCircularPermutation(const T&)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>&gt;&nbsp;uint64&nbsp;<span class="L">CountEachReversibleCircularPermutation</span>(<span class="I">const</span>&nbsp;<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>)</p>
+<p class="N">Returns <span class="L">CountEachReversibleCircularPermutation</span>(std::distance(<span class="M">data</span>, <span class="M">data.end</span>()), std::distance(<span class="M">data</span>, <span class="M">data.end</span>())) </p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachCombinationPermutation(const T&,int)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>&gt;&nbsp;<a href="Upp::uint64"><span class="K">uint64</span></a>&nbsp;<span class="L">CountEachCombinationPermutation</span>(<span class="I">const</span>&nbsp;<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>, <span class="I">int</span>&nbsp;<span class="M">mid</span>)</p>
+<p class="N">Returns <span class="L">CountEachCombinationPermutation</span>(std::distance(<span class="M">data</span>, <span class="M">mid</span>), std::distance(<span class="M">mid</span>, <span class="M">data.end</span>())) .</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachCombinationPermutation(const T&)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">T</span>&gt;&nbsp;uint64&nbsp;<span class="L">CountEachCombinationPermutation</span>(<span class="I">const</span>&nbsp;<span class="J">T</span>&nbsp;&amp;<span class="M">data</span>)</p>
+<p class="N">Returns <span class="L">CountEachCombinationPermutation</span>(std::distance(<span class="M">data</span>, <span class="M">data.end</span>()), std::distance(<span class="M">data</span>, <span class="M">data.end</span>())) </p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachPermutation(UInt,UInt)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">UInt</span>&gt;&nbsp;<span class="J">UInt</span>&nbsp;<span class="L">CountEachPermutation</span>(<span class="J">UInt</span>&nbsp;<span class="M">d1</span>, <span class="J">UInt</span>&nbsp;<span class="M">d2</span>)</p>
+<p class="N">Returns (<span class="M">d1</span> + <span class="M">d2</span>!)/<span class="M">d2</span>!.</p>
+<p class="N">If the computed value is not representable in the type <span class="J">UInt</span>, returns 0.</p>
+<p class="N">If <span class="M">d1</span> &lt; <span class="J">UInt</span>(0) or <span class="M">d2 </span>&lt; <span class="J">UInt</span>(0), returns 0. </p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachReversiblePermutation(UInt,UInt)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">UInt</span>&gt;&nbsp;<span class="J">UInt</span>&nbsp;<span class="L">CountEachReversiblePermutation</span>(<span class="J">UInt</span>&nbsp;<span class="M">d1</span>, <span class="J">UInt</span>&nbsp;<span class="M">d2</span>)</p>
+<p class="N">Returns: If <span class="M">d1</span><span class="S"> </span>&lt;= 1 returns (<span class="M">d1</span><span class="S"> </span>+ <span class="M">d2</span>)!/<span class="M">d2</span>!. Else returns (<span class="M">d1</span><span class="S"> </span>+ <span class="M">d2</span>)!/(2*<span class="M">d2</span>!).</p>
+<p class="N">If the computed value is not representable in the type <span class="J">UInt</span>, returns 0.</p>
+<p class="N">If <span class="M">d1</span> &lt; <span class="J">UInt</span>(0) or <span class="M">d2 </span>&lt; <span class="J">UInt</span>(0), returns 0. </p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachCircularPermutation(UInt,UInt)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">UInt</span>&gt;&nbsp;<span class="J">UInt</span>&nbsp;<span class="L">CountEachCircularPermutation</span>(<span class="J">UInt</span>&nbsp;<span class="M">d1</span>, <span class="J">UInt</span>&nbsp;<span class="M">d2</span>)</p>
+<p class="N"><span class="S">If </span><span class="M">d1</span> <span class="S">== 0 returns 1. Else returns (</span><span class="M">d1</span> <span class="S">+ </span><span class="M">d2</span><span class="S">)!/(</span><span class="M">d1</span><span class="S">*</span><span class="M">d2</span><span class="S">!)</span>.</p>
+<p class="N">If the computed value is not representable in the type <span class="J">UInt</span>, returns 0.</p>
+<p class="N">If <span class="M">d1</span> &lt; <span class="J">UInt</span>(0) or <span class="M">d2 </span>&lt; <span class="J">UInt</span>(0), returns 0. </p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachReversibleCircularPermutation(UInt,UInt)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">UInt</span>&gt;&nbsp;<span class="J">UInt</span>&nbsp;<span class="L">CountEachReversibleCircularPermutation</span>(<span class="J">UInt</span>&nbsp;<span class="M">d1</span>, <span class="J">UInt</span>&nbsp;<span class="M">d2</span>)</p>
+<p class="N">If <span class="M">d1 </span>== 0 returns 1. Else if <span class="M">d1</span>&lt;= 2 returns (<span class="M">d1</span><span class="S"> </span>+ <span class="M">d2</span>)!/(<span class="M">d1</span>*<span class="M">d2</span>!). Else returns (<span class="M">d1</span>+ <span class="M">d2</span>)!/(2*<span class="M">d1</span>*<span class="M">d2</span>!).</p>
+<p class="N">If the computed value is not representable in the type <span class="J">UInt</span>, returns 0.</p>
+<p class="N">If <span class="M">d1</span> &lt; <span class="J">UInt</span>(0) or <span class="M">d2 </span>&lt; <span class="J">UInt</span>(0), returns 0. </p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="Upp::CountEachCombination(UInt,UInt)" class="H"><span class="I">template</span>&nbsp;&lt;<span class="I">class</span>&nbsp;<span class="J">UInt</span>&gt;&nbsp;<span class="J">UInt</span>&nbsp;<span class="L">CountEachCombination</span>(<span class="J">UInt</span>&nbsp;<span class="M">d1</span>, <span class="J">UInt</span>&nbsp;<span class="M">d2</span>)</p>
+<p class="N">Returns: (<span class="M">d1 </span>+ <span class="M">d2</span>)!/(<span class="M">d1</span>!*<span class="M">d2</span>!). </p>
+<p class="N">If the computed value is not representable in the type <span class="J">UInt</span>, returns 0.</p>
+<p class="N">If <span class="M">d1</span> &lt; <span class="J">UInt</span>(0) or <span class="M">d2 </span>&lt; <span class="J">UInt</span>(0), returns 0. </p>
+<p class="D">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>

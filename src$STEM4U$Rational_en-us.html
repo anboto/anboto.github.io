@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>Rational: A rational number based on an arbitrary precision integer :: Ultimate++</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#800000;vertical-align:middle;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.D{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#0000ff;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.E{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.F{color:#0000ff;}
+.G{font-weight:bold;}
+.H{color:#800000;font-weight:bold;}
+.I{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.J{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.K{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.L{font-weight:normal;}
+.M{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.N{border-collapse:collapse;table-layout:auto;border: 2px solid #808080;}
+.O{padding: 3px 5px 3px 5px;border-left: 1px solid #808080;border-top: 1px solid #808080;border-right: 1px solid #808080;border-bottom: 1px solid #808080;background-color:#C0C0C0;vertical-align:middle;}
+.P{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.Q{color:#008000;font-weight:bold;}
+.R{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#0000ff;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.S{color:#000000;text-decoration:underline;}
+.T{color:#000000;}
+.U{color:#000000;font-weight:bold;}
+.V{text-decoration:underline;}
+.W{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.X{color:#000000;font-weight:normal;}
+.Y{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="B"><p class="C">Rational: A rational number based on an arbitrary precision integer</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="D">&nbsp;</p>
+<p id="Upp::Rational::class" class="E"><span class="F">class</span>&nbsp;<span class="G">Rational</span>&nbsp;:&nbsp;<span class="F">public</span>&nbsp;<span class="H">Moveable</span>&lt;<span class="G">Rational</span>&gt;&nbsp;</p>
+<p class="I">&nbsp;</p>
+<p class="J"><a href="https://en.wikipedia.org/wiki/Rational_number">A rational number based on an arbitrary precision integer</a> type based on intInf.</p>
+<p class="J">Arbitrary precision means that the type is never out of bounds.</p>
+<p class="J">A rational number means that it is a fraction of a numerator and denominator.</p>
+<p class="K"><span class="L">The goal of this focus is to allow </span>to handle almost infinite precision lossless floating numbers</p>
+<p class="J">This feature comes with a huge performance penalty.</p>
+<p class="M">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="N"><colgroup><col width="100%"></colgroup>
+<tr><td class="O"><p class="K">Constructor Detail</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::Rational()" class="P"><span class="G">Rational</span>()</p>
+<p class="I">Class default constructor.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::Rational(const Upp::Rational&)" class="P"><span class="G">Rational</span>(<span class="F">const</span>&nbsp;<span class="G">Rational</span><span class="F">&amp;</span>&nbsp;<span class="H">v</span>)</p>
+<p class="I">Copy constructor based on <span class="H">v.</span>.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::Rational(T)" class="P"><span class="F">template</span>&nbsp;&lt;<span class="F">typename</span>&nbsp;<span class="Q">T</span>&gt;&nbsp;<span class="G">Rational</span>(<span class="Q">T</span>&nbsp;<span class="H">v</span>)</p>
+<p class="I">Constructor based in <span class="H">v</span>..</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::Rational(T,T)" class="P"><span class="F">template</span>&nbsp;&lt;<span class="F">typename</span>&nbsp;<span class="Q">T</span>&gt;&nbsp;<span class="G">Rational</span>(<span class="Q">T</span>&nbsp;<span class="H">n</span>, <span class="Q">T</span>&nbsp;<span class="H">d</span>)</p>
+<p class="I">Constructor based in numerator <span class="H">n</span> and denominator <span class="H">d</span>..</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::Rational(double,double)" class="P"><span class="G">Rational</span>(<span class="F">double</span>&nbsp;<span class="H">n</span>, <span class="F">double</span>&nbsp;<span class="H">d</span>)</p>
+<p class="I">Constructor based on double numerator <span class="H">n</span> and denominator <span class="H">d</span>.</p>
+<p class="M">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="N"><colgroup><col width="100%"></colgroup>
+<tr><td class="O"><p class="K">Public Member List</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator-()const" class="R"><a href="Upp::Rational"><span class="S">Rational</span></a><span class="T">&nbsp;</span><span class="U">operator-</span><span class="T">()&nbsp;</span>const</p>
+<p class="I">MInus sign.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator<(const Upp::Rational&)const" class="R">bool<span class="T">&nbsp;</span><span class="U">operator&lt;</span><span class="T">(</span>const<span class="T">&nbsp;</span><a href="Upp::Rational"><span class="S">Rational</span></a>&amp;<span class="T">&nbsp;</span><span class="H">right</span><span class="T">)&nbsp;</span>const</p>
+<p class="I">Logical lower than Rational <span class="H">right</span> operator.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator<(const T&)const" class="R">template<span class="T">&nbsp;&lt;</span>typename<span class="T">&nbsp;</span><span class="Q">T</span><span class="T">&gt;&nbsp;</span>bool<span class="T">&nbsp;</span><span class="U">operator&lt;</span><span class="T">(</span>const<span class="T">&nbsp;</span><span class="Q">T</span>&amp;<span class="T">&nbsp;</span><span class="H">right</span><span class="T">)&nbsp;</span>const</p>
+<p class="I">Logical lower than <span class="H">right</span> operator.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator>(const Upp::Rational&)const" class="R">bool<span class="T">&nbsp;</span><span class="U">operator&gt;</span><span class="T">(</span>const<span class="T">&nbsp;</span><a href="Upp::Rational"><span class="S">Rational</span></a>&amp;<span class="T">&nbsp;</span><span class="H">right</span><span class="T">)&nbsp;</span>const</p>
+<p class="I">Logical upper than &nbsp;<span class="H">right</span> operator.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator>(const T&)const" class="R">template<span class="T">&nbsp;&lt;</span>typename<span class="T">&nbsp;</span><span class="Q">T</span><span class="T">&gt;&nbsp;</span>bool<span class="T">&nbsp;</span><span class="U">operator&gt;</span><span class="T">(</span>const<span class="T">&nbsp;</span><span class="Q">T</span>&amp;<span class="T">&nbsp;</span><span class="H">right</span><span class="T">)&nbsp;</span>const</p>
+<p class="I">Logical upper than <span class="H">right</span> operator.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator=(T)" class="P"><span class="F">template</span>&nbsp;&lt;<span class="F">typename</span>&nbsp;<span class="Q">T</span>&gt;&nbsp;<span class="F">const</span>&nbsp;<a href="Upp::Rational"><span class="V">Rational</span></a><span class="F">&amp;</span>&nbsp;<span class="G">operator=</span>(<span class="Q">T</span>&nbsp;<span class="H">v</span>)</p>
+<p class="I">Assignment operator from <span class="H">v</span>.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator=(double)" class="P"><span class="F">const</span>&nbsp;<a href="Upp::Rational"><span class="V">Rational</span></a><span class="F">&amp;</span>&nbsp;<span class="G">operator=</span>(<span class="F">double</span>&nbsp;<span class="H">d</span>)</p>
+<p class="I">Assignment operator from &nbsp;<span class="H">d</span>.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator++()" class="P"><span class="F">void</span>&nbsp;<span class="G">operator++</span>()</p>
+<p class="I">Operator increment</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator--()" class="P"><span class="F">void</span>&nbsp;<span class="G">operator--</span>()</p>
+<p class="I">Operator decrement</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator+=(const Upp::Rational&)" class="P"><span class="F">void</span>&nbsp;<span class="G">operator+=</span>(<span class="F">const</span>&nbsp;<a href="Upp::Rational"><span class="V">Rational</span></a><span class="F">&amp;</span>&nbsp;<span class="H">right</span>)</p>
+<p class="I">Operator increment with <span class="H">right</span>.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator-=(const Upp::Rational&)" class="P"><span class="F">void</span>&nbsp;<span class="G">operator-=</span>(<span class="F">const</span>&nbsp;<a href="Upp::Rational"><span class="V">Rational</span></a><span class="F">&amp;</span>&nbsp;<span class="H">right</span>)</p>
+<p class="I">Operator decrement with <span class="H">right</span>.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator*=(const Upp::Rational&)" class="P"><span class="F">void</span>&nbsp;<span class="G">operator*=</span>(<span class="F">const</span>&nbsp;<a href="Upp::Rational"><span class="V">Rational</span></a><span class="F">&amp;</span>&nbsp;<span class="H">right</span>)</p>
+<p class="I">Operator multiply by <span class="H">right</span>.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator/=(const Upp::Rational&)" class="P"><span class="F">void</span>&nbsp;<span class="G">operator/=</span>(<span class="F">const</span>&nbsp;<a href="Upp::Rational"><span class="V">Rational</span></a><span class="F">&amp;</span>&nbsp;<span class="H">right</span>)</p>
+<p class="I">Operator divide between <span class="H">right</span>.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator==(Upp::Rational&)const" class="R">bool<span class="T">&nbsp;</span><span class="U">operator==</span><span class="T">(</span><a href="Upp::Rational"><span class="S">Rational</span></a>&amp;<span class="T">&nbsp;</span><span class="H">right</span><span class="T">)&nbsp;</span>const</p>
+<p class="I">Logical operator equal to <span class="H">right</span>.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator==(T)const" class="R">template<span class="T">&nbsp;&lt;</span>typename<span class="T">&nbsp;</span><span class="Q">T</span><span class="T">&gt;&nbsp;</span>bool<span class="T">&nbsp;</span><span class="U">operator==</span><span class="T">(</span><span class="Q">T</span><span class="T">&nbsp;</span><span class="H">right</span><span class="T">)&nbsp;</span>const</p>
+<p class="I">Logical operator equal to &nbsp;<span class="H">right</span>.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator!=(Upp::Rational&)const" class="R">bool<span class="T">&nbsp;</span><span class="U">operator!=</span><span class="T">(</span><a href="Upp::Rational"><span class="S">Rational</span></a>&amp;<span class="T">&nbsp;</span><span class="H">right</span><span class="T">)&nbsp;</span>const</p>
+<p class="I">Logical operator different to &nbsp;<span class="H">right</span> .</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator!=(T)const" class="R">template<span class="T">&nbsp;&lt;</span>typename<span class="T">&nbsp;</span><span class="Q">T</span><span class="T">&gt;&nbsp;</span>bool<span class="T">&nbsp;</span><span class="U">operator!=</span><span class="T">(</span><span class="Q">T</span><span class="T">&nbsp;</span><span class="H">right</span><span class="T">)&nbsp;</span>const</p>
+<p class="I">Logical operator different to &nbsp;<span class="H">right</span> .</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator T()" class="P"><span class="F">template</span>&nbsp;&lt;<span class="F">typename</span>&nbsp;<span class="Q">T</span>&gt;&nbsp;<span class="G">operator&nbsp;T</span>()</p>
+<p class="I">Operator cast.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::operator double()" class="P"><span class="G">operator&nbsp;double</span>()</p>
+<p class="I">Operator cast to double</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::Simplify(bool)" class="P"><a href="Upp::Rational"><span class="V">Rational</span></a>&nbsp;<span class="G">Simplify</span>(<span class="F">bool</span>&nbsp;<span class="H">full</span>&nbsp;=&nbsp;<span class="F">false</span>)</p>
+<p class="I">Simplify fraction. If <span class="H">full</span> is set, it simplifies using all possible values.</p>
+<p class="I">This operation may be very slow</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::Rational::ToString()const" class="R"><a href="Upp::String"><span class="S">String</span></a><span class="T">&nbsp;</span><span class="U">ToString</span><span class="T">()&nbsp;</span>const</p>
+<p class="I">Conversion to String.</p>
+<p class="M">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="N"><colgroup><col width="100%"></colgroup>
+<tr><td class="O"><p class="K">Public Member List</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::abs(const Upp::Rational&)" class="P"><a href="Upp::Rational"><span class="V">Rational</span></a>&nbsp;<span class="G">abs</span>(<span class="F">const</span>&nbsp;<a href="Upp::Rational"><span class="V">Rational</span></a>&nbsp;&amp;<span class="H">v</span>)</p>
+<p class="W"><span class="X">Gets absolute value of </span>v</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::pow(const Upp::Rational&,int)" class="P"><a href="Upp::Rational"><span class="V">Rational</span></a>&nbsp;<span class="G">pow</span>(<span class="F">const</span>&nbsp;<a href="Upp::Rational"><span class="V">Rational</span></a>&nbsp;&amp;<span class="H">v</span>, <span class="F">int</span>&nbsp;<span class="H">e</span>)</p>
+<p class="I">Gets rational <span class="H">v</span> raised to integer <span class="H">e</span>.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::sqrt(const Upp::Rational&)" class="P"><a href="Upp::Rational"><span class="V">Rational</span></a>&nbsp;<span class="G">sqrt</span>(<span class="F">const</span>&nbsp;<a href="Upp::Rational"><span class="V">Rational</span></a>&nbsp;&amp;<span class="H">v</span>)</p>
+<p class="I">Approximate square root <span class="H">v</span>.</p>
+<p class="M">&nbsp;</p>
+<hr><p class="M">&nbsp;</p>
+<p id="Upp::FormatRational(const Upp::Rational&,int)" class="P"><a href="Upp::String"><span class="V">String</span></a>&nbsp;<span class="G">FormatRational</span>(<span class="F">const</span>&nbsp;<a href="Upp::Rational"><span class="V">Rational</span></a>&nbsp;&amp;<span class="H">d</span>, <span class="F">int</span>&nbsp;<span class="H">numDec</span>)</p>
+<p class="I">Gets an String of rational <span class="H">d. numDec</span> .indicates the floating point number of decimals. If <span class="H">numDec </span>is Null, String is shown as a fraction.</p>
+<p class="M">&nbsp;</p>
+<p class="Y">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>
