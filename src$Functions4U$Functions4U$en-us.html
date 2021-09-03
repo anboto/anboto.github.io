@@ -367,8 +367,8 @@ a.l2:active  { color:#BC0024; }
 <p class="N">This function serves to show numbers in graph axis and other elements that require to show the minimum right quantity of digits from a double.</p>
 <p class="H">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
-<p id="Upp::FormatDoubleSize(double,int)" class="I"><a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="K">FormatDoubleSize</span>(<span class="J">double</span>&nbsp;<span class="L">d</span>, <span class="J">int</span>&nbsp;<span class="L">fieldWidth</span>)</p>
-<p class="N">Returns number <span class="L">d</span> converted to a String with the best resolution, using either fixed or exponential notation, &nbsp;filling exactly <span class="L">fieldWidth</span> chars.</p>
+<p id="Upp::FormatDoubleSize(double,int,bool)" class="I"><a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="K">FormatDoubleSize</span>(<span class="J">double</span>&nbsp;<span class="L">d</span>, <span class="J">int</span>&nbsp;<span class="L">fieldWidth</span>, <span class="J">bool</span>&nbsp;<span class="L">fillSpaces</span>)</p>
+<p class="N">Returns number <span class="L">d</span> converted to a String with the best resolution, using either fixed or exponential notation, &nbsp;filling exactly <span class="L">fieldWidth</span> chars. If <span class="L">fillSpaces</span> is set, returned string is filled with spaces at the left until <span class="L">fieldWidth</span>.</p>
 <p class="H">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
 <p id="RemoveAccents(String)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">RemoveAccents</span>(<a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">str</span>)</p>
