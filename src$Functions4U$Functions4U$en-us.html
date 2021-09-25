@@ -362,7 +362,7 @@ a.l2:active  { color:#BC0024; }
 <p class="N">It returns the name of the season beginning from &quot;winter&quot; (<span class="L">i</span> = 0).</p>
 <p class="H">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
-<p id="FormatDoubleAdjust(double,double)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">FormatDoubleAdjust</span>(<span class="J">double</span>&nbsp;<span class="L">d</span>, <span class="J">double</span>&nbsp;<span class="L">range</span>)</p>
+<p id="Upp::FormatDoubleAutosize(double,double)" class="I"><a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="K">FormatDoubleAutosize</span>(<span class="J">double</span>&nbsp;<span class="L">d</span>, <span class="J">double</span>&nbsp;<span class="L">range</span>)</p>
 <p class="N">Returns number <span class="L">d</span> in <span class="L">range </span>converted to a String, so that it has the right number of digits.</p>
 <p class="N">This function serves to show numbers in graph axis and other elements that require to show the minimum right quantity of digits from a double.</p>
 <p class="H">&nbsp;</p>
@@ -441,6 +441,10 @@ a.l2:active  { color:#BC0024; }
 <hr><p class="H">&nbsp;</p>
 <p id="pow4(T)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;<span class="K">pow4</span>(<span class="P">T</span>&nbsp;<span class="L">a</span>)</p>
 <p class="N">Raises <span class="L">a</span> to 4.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::fround(T,int)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;<span class="K">fround</span>(<span class="P">T</span>&nbsp;<span class="L">x</span>, <span class="J">int</span>&nbsp;<span class="L">numdec</span>)</p>
+<p class="N">Rounds floating point <span class="L">x</span> to <span class="L">numdec</span> number of decimals..</p>
 <p class="H">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
 <p id="Between(const T&,const T&,const T&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="J">bool</span>&nbsp;<span class="K">Between</span>(<span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">val</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">min</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">max</span>)</p>
