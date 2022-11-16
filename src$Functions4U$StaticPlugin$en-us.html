@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>StaticPlugin :: Anboto</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#712A00;vertical-align:middle;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.E{margin:0px 0px 0px 0px;text-indent:0px;text-align:justify;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.F{margin:0px 0px 0px 0px;text-indent:0px;text-align:center;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.G{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.H{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#C0C0C0;vertical-align:middle;}
+.I{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.J{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.K{font-weight:bold;}
+.L{color:#800000;font-weight:bold;}
+.M{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.N{color:#000000;font-weight:normal;}
+.O{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.P{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.Q{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="B"><p class="C">Functions4U Reference. StaticPlugin</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="D">&nbsp;</p>
+<p class="E">Sometimes it is necessary to access files, devices or other services through an API that hides a lower level layer from different sources.</p>
+<p class="E">&nbsp;</p>
+<p class="E">If this lower level source is known at compile time, these API could be implemented using virtual functions.</p>
+<p class="E">&nbsp;</p>
+<p class="E">However if the plugin has to be defined at run time, StaticPlugin can help. This will be explained with an example:</p>
+<p class="E">&nbsp;</p>
+<p class="E">There is a StaticPlugin demo in Functions4U_Demo package. It is a dummy API to access spreadsheet files using OpenOffice Calc or Microsoft Excel. This is the class diagram:</p>
+<p class="E">&nbsp;</p>
+<p class="F"><a href="src$Functions4U$StaticPlugin$en-us.html_0.png"><img src="src$Functions4U$StaticPlugin$en-us.html_0.png" border="0" alt="" style="width: 335px; height: 244px"></a></p>
+<p class="E">&nbsp;</p>
+<p class="E">SpreadsheetAPI class includes just the API list of functions</p>
+<p class="E">&nbsp;</p>
+<p class="E">Spreadsheet class implements the by default API that usually it is just a stub. However this is the class really used in the programs. Once called PluginInit(), this class will call the right API low level function.</p>
+<p class="E">&nbsp;</p>
+<p class="E">OpenSpreasheet and ExcelSpreadsheet include the low level API and related private methods and variables.</p>
+<p class="E">&nbsp;</p>
+<p class="E">&nbsp;</p>
+<p class="E">In addition to this sample, StaticPlugin is used in <a href="srcdoc$OfficeAutomation$OfficeAutomation$en-us.html">OfficeAutomation</a> to choose between Open/LibreOffice and Microsoft Office to access spreadsheets and wordprocessing files.</p>
+<p class="G">&nbsp;</p>
+<p class="G">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="H"><p class="I">StaticPlugin functions</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="G">&nbsp;</p>
+<p id="PluginRegister(a, b, c)" class="J"><span class="K">PluginRegister</span>(<span class="L">User_class</span>, <span class="L">Low_level_class, name</span>)</p>
+<p class="M"><span class="N">Registers </span>Low_level_class<span class="N"> with </span>name<span class="N"> as a class that implements API in </span>User_class. </p>
+<p class="O">&nbsp;</p>
+<hr><p class="O">&nbsp;</p>
+<p id="PluginInit(a, b)" class="J"><span class="K">PluginInit</span>(<span class="L">API_var</span>, <span class="L">name</span>)</p>
+<p class="P">Initializes <span class="L">API_var</span> (that has been declared as <span class="L">User_class</span>) with <span class="L">Low_level_class</span> of name <span class="L">name</span>.</p>
+<p class="O">&nbsp;</p>
+<p class="Q">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>

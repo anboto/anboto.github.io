@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>Catenary :: Anboto</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#800000;vertical-align:middle;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.E{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.F{margin:0px 0px 0px 0px;text-indent:0px;text-align:center;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.G{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.H{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.I{color:#0000ff;font-weight:normal;}
+.J{font-weight:normal;}
+.K{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.L{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.M{font-weight:bold;}
+.N{color:#0000ff;}
+.O{color:#800000;font-weight:bold;}
+.P{text-decoration:underline;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="B"><p class="C">Catenary functions</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="D">&nbsp;</p>
+<p class="E">Catenary functions for single mooring line calculations considering sagging and sea bottom.</p>
+<p class="E">&nbsp;</p>
+<p class="F"><a href="src$STEM4U$Catenary_en-us.html_0.png"><img src="src$STEM4U$Catenary_en-us.html_0.png" border="0" alt="" style="width: 531px; height: 212px"></a></p>
+<p class="F"><a href="src$STEM4U$Catenary_en-us.html_1.png"><img src="src$STEM4U$Catenary_en-us.html_1.png" border="0" alt="" style="width: 541px; height: 216px"></a></p>
+<p class="F"><a href="src$STEM4U$Catenary_en-us.html_2.png"><img src="src$STEM4U$Catenary_en-us.html_2.png" border="0" alt="" style="width: 545px; height: 218px"></a></p>
+<p class="E">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::LOOSE_ON_FLOOR" class="H"><span class="I">enum</span><span class="J">&nbsp;MooringStatus&nbsp;</span>LOOSE_ON_FLOOR</p>
+<p class="K">Mooring is loose on the floor without horizontal tension.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::CATENARY_ON_FLOOR" class="H"><span class="I">enum</span><span class="J">&nbsp;MooringStatus&nbsp;</span>CATENARY_ON_FLOOR</p>
+<p class="K">Mooring is in catenary shape with part of the line horizontal laying on the floor (touchdown).</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::CATENARY" class="H"><span class="I">enum</span><span class="J">&nbsp;MooringStatus&nbsp;</span>CATENARY</p>
+<p class="K">Mooring is in catenary shape and no part of it touches the ground.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::BROKEN" class="H"><span class="I">enum</span><span class="J">&nbsp;MooringStatus&nbsp;</span>BROKEN</p>
+<p class="K">Mooring is broken because the distance between ends is longer than line length</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::BL_EXCEDEED" class="H"><span class="I">enum</span><span class="J">&nbsp;MooringStatus&nbsp;</span>BL_EXCEDEED</p>
+<p class="K">Mooring is broken because breaking load has been exceeded.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::Catenary(double,double,double,double,double,double,double,double,double&,double&,double&,double&,Upp::Vector<double>&,Upp::Vector<double>&,int)" class="L">MooringStatus&nbsp;<span class="M">Catenary</span>(<span class="N">double</span>&nbsp;<span class="O">rho_m</span>, <span class="N">double</span>&nbsp;<span class="O">rho_m3</span>, <span class="N">double</span>&nbsp;<span class="O">rho_water</span>, <span class="N">double</span>&nbsp;<span class="O">moorlen</span>, <span class="N">double</span>&nbsp;<span class="O">BL</span>, <span class="N">double</span>&nbsp;<span class="O">xanchorvessel</span>, <span class="N">double</span>&nbsp;<span class="O">zanchor</span>, <span class="N">double</span>&nbsp;<span class="O">zvessel</span>, <span class="N">double</span>&nbsp;&amp;<span class="O">Fhanchorvessel</span>, <span class="N">double</span>&nbsp;&amp;<span class="O">Fvanchor</span>, <span class="N">double</span>&nbsp;&amp;<span class="O">Fvvessel</span>, <span class="N">double</span>&nbsp;&amp;<span class="O">xonfloor</span>, <a href="Upp::Vector"><span class="P">Vector</span></a>&lt;<span class="N">double</span>&gt;&nbsp;&amp;<span class="O">x</span>, <a href="Upp::Vector"><span class="P">Vector</span></a>&lt;<span class="N">double</span>&gt;&nbsp;&amp;<span class="O">z</span>, <span class="N">int</span>&nbsp;<span class="O">num</span>)</p>
+<p class="K">Based on a mooring line with dry density per meter <span class="O">rho_m</span> [kg/m], dry volumetric density <span class="O">rho_m3</span> [kg/m3], water density <span class="O">rho_water</span> [kg/m3], length of mooring <span class="O">moorlen</span> [m], breaking load <span class="O">BL</span>, horizontal distance between anchor and vessel fairlead <span class="O">xanchorvessel</span>, positive vertical distance between floor and anchor <span class="O">zanchor</span> [m], positive vertical distance between floor and vessel fairlead <span class="O">zvessel</span> [m], </p>
+<p class="K">returns the horizontal force between anchor and vessel fairlead <span class="O">Fhanchorvessel</span> [N], vertical force applied to anchor, <span class="O">Fvanchor</span> [N], vertical force applied to vessel fairlead <span class="O">Fvvessel</span> [N], length of the mooring line that is lying on the floor, from anchor to touchdown, <span class="O">xonfloor</span>, horizontal <span class="O">x</span> and vertical <span class="O">z</span> vectors with <span class="O">num</span> elements showing mooring line shape. It also returns MooringStatus. Breaking load <span class="O">BL</span> [N]<span class="O"> </span>can be set to Null if it is unknown.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::Catenary(double,double,double,double,double,double,double,double,double&,double&,double&,double&)" class="L">MooringStatus&nbsp;<span class="M">Catenary</span>(<span class="N">double</span>&nbsp;<span class="O">rho_m</span>, <span class="N">double</span>&nbsp;<span class="O">rho_m3</span>, <span class="N">double</span>&nbsp;<span class="O">rho_water</span>, <span class="N">double</span>&nbsp;<span class="O">moorlen</span>, <span class="N">double</span>&nbsp;<span class="O">BL</span>, <span class="N">double</span>&nbsp;<span class="O">xanchorvessel</span>, <span class="N">double</span>&nbsp;<span class="O">zanchor</span>, <span class="N">double</span>&nbsp;<span class="O">zvessel</span>, <span class="N">double</span>&nbsp;&amp;<span class="O">Fhanchorvessel</span>, <span class="N">double</span>&nbsp;&amp;<span class="O">Fvanchor</span>, <span class="N">double</span>&nbsp;&amp;<span class="O">Fvvessel</span>, <span class="N">double</span>&nbsp;&amp;<span class="O">xonfloor</span>)</p>
+<p class="K">Based on a mooring line with dry density per meter <span class="O">rho_m</span> [kg/m], dry volumetric density <span class="O">rho_m3</span> [kg/m3], water density <span class="O">rho_water</span> [kg/m3], length of mooring <span class="O">moorlen</span> [m], breaking load <span class="O">BL</span>, horizontal distance between anchor and vessel fairlead <span class="O">xanchorvessel</span> [m], positive vertical distance between floor and anchor <span class="O">zanchor</span> [m], positive vertical distance between floor and vessel fairlead <span class="O">zvessel</span> [m], </p>
+<p class="K">returns the horizontal force between anchor and vessel fairlead <span class="O">Fhanchorvessel</span> [N], vertical force applied to anchor, <span class="O">Fvanchor</span> [N], vertical force applied to vessel fairlead <span class="O">Fvvessel</span> [N], the length of the mooring line that is lying on the floor, from anchor to touchdown, <span class="O">xonfloor</span> [m]. It also returns MooringStatus. Breaking load <span class="O">BL</span> [N]<span class="O"> </span>can be set to Null if it is unknown.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::Catenary(double,double,double,double,double&,Upp::Vector<double>&,Upp::Vector<double>&,int)" class="L">MooringStatus&nbsp;<span class="M">Catenary</span>(<span class="N">double</span>&nbsp;<span class="O">moorlen</span>, <span class="N">double</span>&nbsp;<span class="O">xanchorvessel</span>, <span class="N">double</span>&nbsp;<span class="O">zanchor</span>, <span class="N">double</span>&nbsp;<span class="O">zvessel</span>, <span class="N">double</span>&nbsp;&amp;<span class="O">xonfloor</span>, <a href="Upp::Vector"><span class="P">Vector</span></a>&lt;<span class="N">double</span>&gt;&nbsp;&amp;<span class="O">x</span>, <a href="Upp::Vector"><span class="P">Vector</span></a>&lt;<span class="N">double</span>&gt;&nbsp;&amp;<span class="O">z</span>, <span class="N">int</span>&nbsp;<span class="O">num</span>)</p>
+<p class="K">Based on a mooring line with length of mooring <span class="O">moorlen</span> [m], horizontal distance between anchor and vessel fairlead <span class="O">xanchorvessel</span> [m], positive vertical distance between floor and anchor <span class="O">zanchor</span> [m], positive vertical distance between floor and vessel fairlead <span class="O">zvessel</span> [m], </p>
+<p class="K">returns the length of the mooring line that is lying on the floor, from anchor to touchdown, <span class="O">xonfloor</span> [m], horizontal <span class="O">x</span> and vertical <span class="O">z</span> vectors with <span class="O">num</span> elements showing mooring line shape. It also returns MooringStatus.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::Catenary(double,double,double,double,double&)" class="L">MooringStatus&nbsp;<span class="M">Catenary</span>(<span class="N">double</span>&nbsp;<span class="O">moorlen</span>, <span class="N">double</span>&nbsp;<span class="O">xanchorvessel</span>, <span class="N">double</span>&nbsp;<span class="O">zanchor</span>, <span class="N">double</span>&nbsp;<span class="O">zvessel</span>, <span class="N">double</span>&nbsp;&amp;<span class="O">xonfloor</span>)</p>
+<p class="K">Based on a mooring line with length of mooring <span class="O">moorlen</span> [m], horizontal distance between anchor and vessel fairlead <span class="O">xanchorvessel</span> [m], positive vertical distance between floor and anchor <span class="O">zanchor</span> [m], positive vertical distance between floor and vessel fairlead <span class="O">zvessel</span> [m], </p>
+<p class="K">returns the length of the mooring line that is lying on the floor, from anchor to touchdown, <span class="O">xonfloor</span> [m]. It also returns MooringStatus.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::CatenaryGetLen(double,double,double,double,double&)" class="L">MooringStatus&nbsp;<span class="M">CatenaryGetLen</span>(<span class="N">double</span>&nbsp;<span class="O">xonfloor</span>, <span class="N">double</span>&nbsp;<span class="O">xanchorvessel</span>, <span class="N">double</span>&nbsp;<span class="O">zanchor</span>, <span class="N">double</span>&nbsp;<span class="O">zvessel</span>, <span class="N">double</span>&nbsp;&amp;<span class="O">moorlen</span>)</p>
+<p class="K">Based on a mooring line, with a length of the mooring line that is lying on the floor, from anchor to touchdown, <span class="O">xonfloor</span> [m], horizontal distance between anchor and vessel fairlead <span class="O">xanchorvessel</span> [m], positive vertical distance between floor and anchor <span class="O">zanchor</span> [m], positive vertical distance between floor and vessel fairlead <span class="O">zvessel</span> [m], </p>
+<p class="K">returns the horizontal force between anchor and vessel fairlead <span class="O">Fhanchorvessel</span> [N], vertical force applied to anchor, <span class="O">Fvanchor</span> [N], vertical force applied to vessel fairlead <span class="O">Fvvessel</span> [N], and the length of the mooring line <span class="O">moorlen</span> [m]. It also returns MooringStatus.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::CatenaryGetLen(double,double,double,double,double,double,double,double&)" class="L">MooringStatus&nbsp;<span class="M">CatenaryGetLen</span>(<span class="N">double</span>&nbsp;<span class="O">xonfloor</span>, <span class="N">double</span>&nbsp;<span class="O">xanchorvessel</span>, <span class="N">double</span>&nbsp;<span class="O">zanchor</span>, <span class="N">double</span>&nbsp;<span class="O">zvessel</span>, <span class="N">double</span>&nbsp;<span class="O">Fhanchorvessel</span>, <span class="N">double</span>&nbsp;<span class="O">Fvanchor</span>, <span class="N">double</span>&nbsp;<span class="O">Fvvessel</span>, <span class="N">double</span>&nbsp;&amp;<span class="O">moorlen</span>)</p>
+<p class="K">Based on a mooring line, with a length of the mooring line that is lying on the floor, from anchor to touchdown, <span class="O">xonfloor</span> [m], horizontal distance between anchor and vessel fairlead <span class="O">xanchorvessel</span> [m], positive vertical distance between floor and anchor <span class="O">zanchor</span> [m], positive vertical distance between floor and vessel fairlead <span class="O">zvessel</span> [m], </p>
+<p class="K">returns the length of the mooring line <span class="O">moorlen</span> [m]. It also returns MooringStatus.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::MooringStatusStr(MooringStatus)" class="L"><span class="N">const</span>&nbsp;<span class="N">char</span>&nbsp;*<span class="M">MooringStatusStr</span>(MooringStatus&nbsp;<span class="O">status</span>)</p>
+<p class="K">Returns the String defining the <span class="O">status</span>.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::IsOK(MooringStatus)" class="L"><span class="N">bool</span>&nbsp;<span class="M">IsOK</span>(MooringStatus&nbsp;<span class="O">status</span>)</p>
+<p class="K">Returns true if the mooring <span class="O">status</span> is not broken.</p>
+<p class="G">&nbsp;</p>
+<p class="D">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>

@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>Implementation details :: Anboto</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{margin:0px 0px 16px 0px;text-indent:0px;text-align:left;color:#000000;font-family:serif;font-size:24pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.B{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.D{display:list-item;list-style-type:disc;margin:8px 0px 8px 20px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.E{display:list-item;list-style-type:disc;margin:0px 0px 0px 20px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.F{color:#ff0000;font-weight:bold;}
+.G{font-weight:bold;}
+.H{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:monospace;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.I{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.J{font-weight:normal;}
+.K{font-family:monospace;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><p class="A">SysInfo</p>
+<p class="B">&nbsp;</p>
+<p class="C">1. Introduction</p>
+<p class="B">&nbsp;</p>
+<p class="B">A goal in the design of these functions has been to avoid accessing external software not included internally in the OS by default.</p>
+<p class="D">Windows implementation use internal DLL and wmi.</p>
+<p class="E">Posix implementation uses X11 libraries, XTest and OS related utilities like mount and xdg.</p>
+<p class="B">&nbsp;</p>
+<p class="B">Another goal is to provide the running program information about the environment including hardware and software to adapt itself after program compiling. This way for example a program compiled in Ubuntu can run properly in Fedora without recompiling.</p>
+<p class="B">&nbsp;</p>
+<p class="B">&nbsp;</p>
+<p class="C">2. Compiler support and Requirements</p>
+<p class="B">&nbsp;</p>
+<p class="B">SysInfo has been tested in 32 and 64 bits in Linux using GCC and in Windows using MinGW and MSC.</p>
+<p class="B">&nbsp;</p>
+<p class="B">&nbsp;</p>
+<p class="B"><span class="F">IMPORTANT</span><span class="G">:</span> To compile it in Linux it is necessary to include package XTest. In Ubuntu the aptitude package name is <span class="G">libxtst-dev</span> so in case of problems in Ubuntu go to terminal and run this:</p>
+<p class="B">&nbsp;</p>
+<p class="H">sudo apt-get install libxtst-dev</p>
+<p class="B">&nbsp;</p>
+<p class="B">&nbsp;</p>
+<p class="B">In any case to avoid compiling problems the flag set by default is NO_XTEST that avoids the using of fake mouse and keyboard functions. After installing package XTest, NO_XTEST can be removed to use all functions.</p>
+<p class="B">&nbsp;</p>
+<p class="B">&nbsp;</p>
+<p class="I"><span class="J">To have CPU temperature it is necessary to install </span>acpi<span class="J"> or </span>lm-sensors.</p>
+<p class="B">&nbsp;</p>
+<p class="B"><span class="K">sudo apt-get install acpi </span>or</p>
+<p class="H">sudo apt-get install lm-sensors</p>
+<p class="H">&nbsp;</p>
+<p class="H">&nbsp;</p>
+<p class="B"><span class="F">IMPORTANT</span><span class="G">:</span> To compile it in Windows using MinGW you will probably need to get files rpcsal.h, wbemcli.h, wbemprov.h and wbemuuid.lib. Maybe you will need to delete existing file libwbemuuid.a, as it possibly does not contain CLSID_WbemAdministrativeLocator.</p>
+<p class="B">&nbsp;</p>
+<p class="B">&nbsp;</p>
+<p class="C">3. OS and Desktop implementation</p>
+<p class="B">&nbsp;</p>
+<p class="B"><a href="srcimp$SysInfo$Implementation$en-us.html">See here</a>.</p>
+<p class="B">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>

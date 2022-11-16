@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>Butterworth IIR filter :: Anboto</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#800000;vertical-align:middle;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.E{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.F{display:list-item;list-style-type:disc;margin:0px 0px 0px 20px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.G{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.H{margin:0px 0px 0px 0px;text-indent:0px;text-align:center;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.I{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.J{color:#0000ff;}
+.K{color:#008000;font-weight:bold;}
+.L{font-weight:bold;}
+.M{color:#800000;font-weight:bold;}
+.N{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.O{margin:0px 0px 0px 0px;text-indent:0px;text-align:center;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="B"><p class="C">Butterworth IIR filter</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="D">&nbsp;</p>
+<p class="E">The <a href="https://en.wikipedia.org/wiki/Butterworth_filter">Butterworth IIR filter</a> is a type of signal processing filter designed to have a frequency response as flat as possible in the passband. It is also referred to as a maximally flat magnitude filter. It was first described in 1930 by the British engineer and physicist Stephen Butterworth in his paper entitled <a href="https://www.changpuak.ch/electronics/downloads/On_the_Theory_of_Filter_Amplifiers.pdf">&quot;On the Theory of Filter Amplifiers&quot;</a></p>
+<p class="E">&nbsp;</p>
+<p class="E">These filter functions are templated and can be used with different vector types like U++ Vector&lt;&gt;, Eigen VectorXd and std::vector&lt;&gt;.</p>
+<p class="E">&nbsp;</p>
+<p class="E">Its behaviour is equivalent to Matlab functions filter(), filtfilt() and butter().</p>
+<p class="E">&nbsp;</p>
+<p class="E">Other references:</p>
+<p class="F"><a href="https://en.wikipedia.org/wiki/Digital_filter#Difference_equation">Digital filter (Wikipedia)</a></p>
+<p class="F"><a href="https://en.wikipedia.org/wiki/Infinite_impulse_response">Infinite impulse response</a></p>
+<p class="F"><a href="https://www.mathworks.com/help/signal/ref/butter.html">butter function (Matlab)</a></p>
+<p class="F"><a href="https://www.mathworks.com/help/matlab/ref/filter.html">filter function (Matlab)</a></p>
+<p class="F"><a href="https://es.mathworks.com/help/signal/ref/filtfilt.html?lang=en">filtfilt function (Matlab)</a></p>
+<p class="G">&nbsp;</p>
+<p class="H"><a href="src$STEM4U$Butterworth_en-us.html_0.png"><img src="src$STEM4U$Butterworth_en-us.html_0.png" border="0" alt="" style="width: 505px; height: 252px"></a></p>
+<p class="D">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::Butter(int,typename value_type,typename value_type,Range&,Range&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="K">Range</span>&gt;&nbsp;<span class="J">void</span>&nbsp;<span class="L">Butter</span>(<span class="J">int</span>&nbsp;<span class="M">order</span>, <span class="J">typename</span>&nbsp;Range::value_type&nbsp;<span class="M">lcutoff</span>, <span class="J">typename</span>&nbsp;Range::value_type&nbsp;<span class="M">ucutoff</span>, <span class="K">Range</span>&nbsp;&amp;<span class="M">cnum</span>, <span class="K">Range</span>&nbsp;&amp;<span class="M">cden</span>)</p>
+<p class="N">Returns the transfer function coefficients (feedforward coefficients <span class="M">cnum</span> (B) and feedback coefficients <span class="M">cden</span> (A)) of a nth-<span class="M">order</span> bandpass digital Butterworth filter with normalized lower cutoff <span class="M">lcutoff</span> and higher cutoff <span class="M">ucutoff </span>frequencies.</p>
+<p class="N">For digital filters, the transfer function is expressed in terms of B and A as:</p>
+<p class="O"><a href="src$STEM4U$Butterworth_en-us.html_1.png"><img src="src$STEM4U$Butterworth_en-us.html_1.png" border="0" alt="" style="width: 414px; height: 61px"></a></p>
+<p class="N">Its results are equivalent to those of the Matlab <a href="https://es.mathworks.com/help/signal/ref/butter.html">butter</a> function with <span class="M">lcutoff</span> and <span class="M">ucutoff</span> arguments.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::ButterBandStop(int,typename value_type,typename value_type,Range&,Range&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="K">Range</span>&gt;&nbsp;<span class="J">void</span>&nbsp;<span class="L">ButterBandStop</span>(<span class="J">int</span>&nbsp;<span class="M">order</span>, <span class="J">typename</span>&nbsp;Range::value_type&nbsp;<span class="M">lowcutoff</span>, <span class="J">typename</span>&nbsp;Range::value_type&nbsp;<span class="M">upcutoff</span>, <span class="K">Range</span>&nbsp;&amp;<span class="M">cnum</span>, <span class="K">Range</span>&nbsp;&amp;<span class="M">cden</span>)</p>
+<p class="N">Returns the transfer function coefficients (feedforward coefficients <span class="M">cnum</span> (B) and feedback coefficients <span class="M">cden</span> (A)) of a nth-<span class="M">order</span> bandstop digital Butterworth filter with normalized lower cutoff <span class="M">lcutoff</span> and higher cutoff <span class="M">ucutoff </span>frequencies.</p>
+<p class="N">For digital filters, the transfer function is expressed in terms of B and A as:</p>
+<p class="O"><a href="src$STEM4U$Butterworth_en-us.html_2.png"><img src="src$STEM4U$Butterworth_en-us.html_2.png" border="0" alt="" style="width: 414px; height: 61px"></a></p>
+<p class="N">Its results are equivalent to those of the Matlab <a href="https://es.mathworks.com/help/signal/ref/butter.html">butter</a> function with 'stop' option.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::ButterLowPass(int,typename value_type,Range&,Range&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="K">Range</span>&gt;&nbsp;<span class="J">void</span>&nbsp;<span class="L">ButterLowPass</span>(<span class="J">int</span>&nbsp;<span class="M">order</span>, <span class="J">typename</span>&nbsp;Range::value_type&nbsp;<span class="M">cutoff</span>, <span class="K">Range</span>&nbsp;&amp;<span class="M">cnum</span>, <span class="K">Range</span>&nbsp;&amp;<span class="M">cden</span>)</p>
+<p class="N">Returns the transfer function coefficients (feedforward coefficients <span class="M">cnum</span> (B) and feedback coefficients <span class="M">cden</span> (A)) of a nth-<span class="M">order</span> low pass digital Butterworth filter with normalized <span class="M">cutoff</span> frequency.</p>
+<p class="N">For digital filters, the transfer function is expressed in terms of B and A as:</p>
+<p class="O"><a href="src$STEM4U$Butterworth_en-us.html_3.png"><img src="src$STEM4U$Butterworth_en-us.html_3.png" border="0" alt="" style="width: 414px; height: 61px"></a></p>
+<p class="N">Its results are equivalent to those of the Matlab <a href="https://es.mathworks.com/help/signal/ref/butter.html">butter</a> function with <span class="M">cutoff</span> argument.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::ButterHighPass(int,typename value_type,Range&,Range&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="K">Range</span>&gt;&nbsp;<span class="J">void</span>&nbsp;<span class="L">ButterHighPass</span>(<span class="J">int</span>&nbsp;<span class="M">order</span>, <span class="J">typename</span>&nbsp;Range::value_type&nbsp;<span class="M">cutoff</span>, <span class="K">Range</span>&nbsp;&amp;<span class="M">cnum</span>, <span class="K">Range</span>&nbsp;&amp;<span class="M">cden</span>)</p>
+<p class="N">Returns the transfer function coefficients (feedforward coefficients <span class="M">cnum</span> (B) and feedback coefficients <span class="M">cden</span> (A)) of a nth-<span class="M">order</span> high pass digital Butterworth filter with normalized <span class="M">cutoff</span> frequency.</p>
+<p class="N">For digital filters, the transfer function is expressed in terms of B and A as:</p>
+<p class="O"><a href="src$STEM4U$Butterworth_en-us.html_4.png"><img src="src$STEM4U$Butterworth_en-us.html_4.png" border="0" alt="" style="width: 414px; height: 61px"></a></p>
+<p class="N">Its results are equivalent to those of the Matlab <a href="https://es.mathworks.com/help/signal/ref/butter.html">butter</a> function with 'high' option.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::Filter(const Range&,const Range&,const Range&,Range&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="K">Range</span>&gt;&nbsp;<span class="J">void</span>&nbsp;<span class="L">Filter</span>(<span class="J">const</span>&nbsp;<span class="K">Range</span>&nbsp;&amp;<span class="M">x</span>, <span class="J">const</span>&nbsp;<span class="K">Range</span>&nbsp;&amp;<span class="M">cnum</span>, <span class="J">const</span>&nbsp;<span class="K">Range</span>&nbsp;&amp;<span class="M">cden</span>, <span class="K">Range</span>&nbsp;&amp;<span class="M">filtered</span>)</p>
+<p class="N">Filters the input data <span class="M">x</span> using a rational transfer function defined by the numerator feedforward coefficients <span class="M">cnum</span> and denominator feedback coefficients <span class="M">cden</span>.</p>
+<p class="N">Its results are equivalent to those of the Matlab <a href="https://es.mathworks.com/help/matlab/ref/filter.html?lang=en">filter </a>function.</p>
+<p class="G">&nbsp;</p>
+<hr><p class="G">&nbsp;</p>
+<p id="Upp::Filtfilt(const Range&,const Range&,const Range&,Range&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="K">Range</span>&gt;&nbsp;<span class="J">void</span>&nbsp;<span class="L">Filtfilt</span>(<span class="J">const</span>&nbsp;<span class="K">Range</span>&nbsp;&amp;<span class="M">x</span>, <span class="J">const</span>&nbsp;<span class="K">Range</span>&nbsp;&amp;<span class="M">cnum</span>, <span class="J">const</span>&nbsp;<span class="K">Range</span>&nbsp;&amp;<span class="M">cden</span>, <span class="K">Range</span>&nbsp;&amp;<span class="M">filtered</span>)</p>
+<p class="N">Filters without adding time lag the input data <span class="M">x</span> using a rational transfer function defined by the numerator feedforward coefficients <span class="M">cnum</span> and denominator feedback coefficients <span class="M">cden</span>.</p>
+<p class="N">It develops a zero-phase filtering by processing the data in the forward and reverse directions. In addition it minimizes start-up and ending transients by matching initial conditions.</p>
+<p class="N">Its results are equivalent to those of the Matlab <a href="https://es.mathworks.com/help/signal/ref/filtfilt.html?lang=en">filtfilt</a><a href="https://es.mathworks.com/help/matlab/ref/filter.html?lang=en"> </a>function.</p>
+<p class="G">&nbsp;</p>
+<p class="D">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>

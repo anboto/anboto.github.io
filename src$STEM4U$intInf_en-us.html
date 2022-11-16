@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>intInf: A signed integer type with arbitrary-precision :: Anboto</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#800000;vertical-align:middle;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.D{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#0000ff;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.E{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.F{color:#0000ff;font-weight:normal;}
+.G{font-weight:normal;}
+.H{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.I{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.J{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.K{border-collapse:collapse;table-layout:auto;border: 2px solid #808080;}
+.L{padding: 3px 5px 3px 5px;border-left: 1px solid #808080;border-top: 1px solid #808080;border-right: 1px solid #808080;border-bottom: 1px solid #808080;background-color:#C0C0C0;vertical-align:middle;}
+.M{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.N{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.O{font-weight:bold;}
+.P{color:#0000ff;}
+.Q{color:#800000;font-weight:bold;}
+.R{text-decoration:underline;}
+.S{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="B"><p class="C">intInf: A signed integer type with arbitrary-precision</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="D">&nbsp;</p>
+<p id="Upp::intInf::class" class="E"><span class="F">class</span><span class="G">&nbsp;</span>intInf</p>
+<p class="H">&nbsp;</p>
+<p class="I">A signed integer type with <a href="https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic">arbitrary-precision</a> including the usual arithmetic.</p>
+<p class="I">Arbitrary precision means that the type is never out of bounds.</p>
+<p class="I">This feature comes with a huge performance penalty.</p>
+<p class="I">&nbsp;</p>
+<p class="J">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="K"><colgroup><col width="100%"></colgroup>
+<tr><td class="L"><p class="M">Constructor Detail</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::intInf::intInf()" class="N"><span class="O">intInf</span>()</p>
+<p class="H">Class default constructor.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::intInf::intInf(const char*)" class="N"><span class="O">intInf</span>(<span class="P">const</span>&nbsp;<span class="P">char*</span>&nbsp;<span class="Q">c</span>)</p>
+<p class="H">Constructor from an integer included in string <span class="Q">c</span>..</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::intInf::intInf(const Upp::String&)" class="N"><span class="O">intInf</span>(<span class="P">const</span>&nbsp;<a href="Upp::String"><span class="R">String</span></a><span class="P">&amp;</span>&nbsp;<span class="Q">s</span>)</p>
+<p class="H">Constructor from an integer included in string <span class="Q">s</span>.</p>
+<p class="J">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="K"><colgroup><col width="100%"></colgroup>
+<tr><td class="L"><p class="M">Public Member List</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::intInf::operator=(const char*)" class="N"><span class="P">const</span>&nbsp;<a href="Upp::intInf"><span class="R">intInf</span></a><span class="P">&amp;</span>&nbsp;<span class="O">operator=</span>(<span class="P">const</span>&nbsp;<span class="P">char*</span>&nbsp;<span class="Q">c</span>)</p>
+<p class="H">Logical operator equal to string <span class="Q">c</span>.</p>
+<p class="J">&nbsp;</p>
+<p class="S">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>

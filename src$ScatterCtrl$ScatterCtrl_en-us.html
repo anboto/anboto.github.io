@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>1 ScatterCtrl :: Anboto</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#800000;vertical-align:middle;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e5e5e5;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.E{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.F{color:#0000ff;}
+.G{font-weight:bold;}
+.H{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.I{border-collapse:collapse;table-layout:auto;border: 0px solid #000000;}
+.J{padding: 3px 5px 3px 5px;border-left: 0px solid #000000;border-top: 0px solid #000000;border-right: 0px solid #000000;border-bottom: 0px solid #000000;background-color:#FFFFFF;vertical-align:top;}
+.K{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.L{padding: 3px 5px 3px 5px;border-left: 0px solid #000000;border-top: 0px solid #000000;border-right: 0px solid #000000;border-bottom: 0px solid #000000;background-color:#FFFFFF;vertical-align:middle;}
+.M{margin:0px 0px 0px 0px;text-indent:0px;text-align:right;color:#000000;font-family:serif;font-size:8pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.N{border-collapse:collapse;table-layout:auto;border: 2px solid #808080;}
+.O{padding: 3px 5px 3px 5px;border-left: 1px solid #808080;border-top: 1px solid #808080;border-right: 1px solid #808080;border-bottom: 1px solid #808080;background-color:#C0C0C0;vertical-align:middle;}
+.P{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.Q{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.R{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.S{color:#800000;font-weight:bold;}
+.T{text-decoration:underline;}
+.U{display:list-item;list-style-type:disc;margin:0px 0px 0px 77px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.V{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#1c00c8;font-family:sans-serif;font-size:8pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.W{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#0000ff;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.X{color:#000000;}
+.Y{color:#000000;text-decoration:underline;}
+.Z{color:#000000;font-weight:bold;}
+.AA{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.AB{color:#0000ff;font-weight:normal;}
+.AC{font-weight:normal;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="B"><p class="C">ScatterCtrl</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="D">&nbsp;</p>
+<p id="ScatterCtrl::class" class="E"><span class="F">class</span>&nbsp;<span class="G">ScatterCtrl</span>&nbsp;:&nbsp;<span class="F">public</span>&nbsp;<span class="G">StaticRect, </span><span class="F">public</span>&nbsp;<span class="G">ScatterDraw</span>&nbsp;</p>
+<p class="H">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="I"><colgroup><col width="49%"><col width="50%"></colgroup>
+<tr><td class="J"><p class="K"><a href="src$ScatterCtrl$ScatterCtrl_en-us.html_0.png"><img src="src$ScatterCtrl$ScatterCtrl_en-us.html_0.png" border="0" alt="" style="width: 369px; height: 219px"></a></p>
+</td>
+<td class="L"><p class="M"><a href="src$ScatterCtrl$ScatterCtrl_en-us.html_1.png"><img src="src$ScatterCtrl$ScatterCtrl_en-us.html_1.png" border="0" alt="" style="width: 381px; height: 215px"></a></p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="H">&nbsp;</p>
+<p class="K">Versatile 2D scatter graph control based on <a href="src$ScatterDraw$ScatterDraw$en-us.html#ScatterDraw::class">ScatterDraw</a>.</p>
+<p class="K">&nbsp;</p>
+<p class="K">It uses U++ Draw or Painter on demand to get better refresh speed or printing quality.</p>
+<p class="K">&nbsp;</p>
+<p class="K">In <a href="topic://ScatterDraw/srcdoc/Overview$en-us">ScatterCtrl_demo</a> there is an overview of control possibilities.</p>
+<p class="D">&nbsp;</p>
+<p class="H">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="N"><colgroup><col width="100%"></colgroup>
+<tr><td class="O"><p class="P">Constructor Detail</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::ScatterCtrl()" class="Q"><span class="G">ScatterCtrl</span>()</p>
+<p class="R">Initializes the class.</p>
+<p class="D">&nbsp;</p>
+<p class="H">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="N"><colgroup><col width="100%"></colgroup>
+<tr><td class="O"><p class="P">Public Member List</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::AddMouseBehavior(bool,bool,bool,bool,bool,int,bool,ScatterAction)" class="Q"><span class="F">void</span>&nbsp;<span class="G">AddMouseBehavior</span>(<span class="F">bool</span>&nbsp;<span class="S">ctrl</span>, <span class="F">bool</span>&nbsp;<span class="S">alt</span>, <span class="F">bool</span>&nbsp;<span class="S">shift</span>, <span class="F">bool</span>&nbsp;<span class="S">left</span>, <span class="F">bool</span>&nbsp;<span class="S">middle</span>, <span class="F">int</span>&nbsp;<span class="S">middlewheel</span>, <span class="F">bool</span>&nbsp;<span class="S">right</span>, ScatterAction&nbsp;<span class="S">action</span>)</p>
+<p class="R">Add a new <span class="S">action</span> to be launched when the combination of keys and mouse actions set by <span class="S">ctrl,</span> <span class="S">alt,</span> <span class="S">shift,</span> <span class="S">left,</span> <span class="S">middle,</span> <span class="S">middlewheel</span> and <span class="S">right</span> is complied.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::RemoveMouseBehavior(ScatterAction)" class="Q"><span class="F">void</span>&nbsp;<span class="G">RemoveMouseBehavior</span>(ScatterAction&nbsp;<span class="S">action</span>)</p>
+<p class="R">Remove all mouse and key combinations for <span class="S">action</span> .</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::ClearMouseBehavior()" class="Q"><span class="F">void</span>&nbsp;<span class="G">ClearMouseBehavior</span>()</p>
+<p class="R">Remove all mouse and key combinations to handle control.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::AddKeyBehavior(bool,bool,bool,int,bool,ScatterAction)" class="Q"><span class="F">void</span>&nbsp;<span class="G">AddKeyBehavior</span>(<span class="F">bool</span>&nbsp;<span class="S">ctrl</span>, <span class="F">bool</span>&nbsp;<span class="S">alt</span>, <span class="F">bool</span>&nbsp;<span class="S">shift</span>, <span class="F">int</span>&nbsp;<span class="S">key</span>, <span class="F">bool</span>&nbsp;<span class="S">isVirtualKey</span>, ScatterAction&nbsp;<span class="S">action</span>)</p>
+<p class="R">Add a new <span class="S">action</span> to be launched when the combination of keys set by <span class="S">ctrl, alt</span>, <span class="S">shift</span> and <span class="S">key</span> is complied. <span class="S">isVirtualKey </span>indicates if the key is a K_... virtual key or if it is a real char like 'e' or '+'.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::RemoveKeyBehavior(ScatterAction)" class="Q"><span class="F">void</span>&nbsp;<span class="G">RemoveKeyBehavior</span>(ScatterAction&nbsp;<span class="S">action</span>)</p>
+<p class="R">Remove all key combinations for <span class="S">action</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::ClearKeyBehavior()" class="Q"><span class="F">void</span>&nbsp;<span class="G">ClearKeyBehavior</span>()</p>
+<p class="R">Remove all key combinations to handle control.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetMouseBehavior(ScatterCtrl::MouseBehaviour*)" class="Q"><span class="F">bool</span>&nbsp;<span class="G">SetMouseBehavior</span>(<a href="ScatterCtrl::MouseBehaviour"><span class="T">MouseBehaviour</span></a>&nbsp;*<span class="S">mouseBehavior</span>)</p>
+<p class="R">Sets <span class="S">mouseBehavior</span> as the behavior of the mouse when used in ScatterCtrl.</p>
+<p class="R">See <a href="topic://ScatterCtrl/src/MouseBehavior$en-us">ScatterCtrl::MouseBehavior</a>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetMouseHandling(bool,bool)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetMouseHandling</span>(<span class="F">bool</span>&nbsp;<span class="S">valx</span>&nbsp;=&nbsp;<span class="F">true</span>, <span class="F">bool</span>&nbsp;<span class="S">valy</span>&nbsp;=&nbsp;<span class="F">false</span>)</p>
+<p class="R">If <span class="S">valx</span> mouse can scroll or zoom in X axis.</p>
+<p class="R">If <span class="S">valy</span> mouse can scroll or zoom in Y axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetSaveSize(Upp::Size&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a>&nbsp;&amp;<span class="G">SetSaveSize</span>(<a href="Upp::Size"><span class="T">Size</span></a>&nbsp;&amp;<span class="S">size</span>)</p>
+<p class="R">Sets the Size <span class="S">size</span> to save the control as a bitmap either to file or to clipboard.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetSaveSize()" class="Q"><a href="Upp::Size"><span class="T">Size</span></a>&nbsp;&amp;<span class="G">GetSaveSize</span>()</p>
+<p class="R">Returns control size to save as a bitmap either to file or to clipboard..</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetSaveSizeX(int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a>&nbsp;&amp;<span class="G">SetSaveSizeX</span>(<span class="F">int</span>&nbsp;<span class="S">cx</span>)</p>
+<p class="R">Sets the width <span class="S">cx</span> &nbsp;to save the control as a bitmap either to file or to clipboard.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetSaveSizeY(int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a>&nbsp;&amp;<span class="G">SetSaveSizeY</span>(<span class="F">int</span>&nbsp;<span class="S">cy</span>)</p>
+<p class="R">Sets the width <span class="S">cy</span> &nbsp;to save the control as a bitmap either to file or to clipboard.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetJPGQuality(int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a>&nbsp;&amp;<span class="G">SetJPGQuality</span>(<span class="F">int</span>&nbsp;<span class="S">quality</span>)</p>
+<p class="R">Sets the <span class="S">quality</span> between 0 and 100 of the control when saved as a JPEG bitmap..</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetJPGQuality()" class="Q"><span class="F">int</span>&nbsp;<span class="G">GetJPGQuality</span>()</p>
+<p class="R">Returns the JPEG bitmap quality.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::Angle_270" class="Q"><span class="F">enum</span>&nbsp;Angle&nbsp;</p>
+<p class="R">It is the type for the rotaion angle. Values are</p>
+<p class="U">Angle_0</p>
+<p class="U">Angle_90:&nbsp;&nbsp;&nbsp;&nbsp;It is rotated 90º clockwise.</p>
+<p class="U">Angle_180</p>
+<p class="U">Angle_270:&nbsp;&nbsp;&nbsp;&nbsp;It is rotated 90º counterclockwise.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::Rotate(Angle)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a>&nbsp;&amp;<span class="G">Rotate</span>(Angle&nbsp;<span class="S">angle</span>)</p>
+<p class="R">Sets <span class="S">angle</span> as the rotation angle.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetRotate()" class="Q">Angle&nbsp;<span class="G">GetRotate</span>()</p>
+<p class="R">Returns the rotation angle.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::Xmlize(Upp::XmlIO&)" class="Q"><span class="F">void</span>&nbsp;<span class="G">Xmlize</span>(<a href="Upp::XmlIO"><span class="T">XmlIO</span></a><span class="F">&amp;</span>&nbsp;<span class="S">xml</span>)</p>
+<p class="R">Serialize the control as an XML.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::Jsonize(Upp::JsonIO&)" class="Q"><span class="F">void</span>&nbsp;<span class="G">Jsonize</span>(<a href="Upp::JsonIO"><span class="T">JsonIO</span></a><span class="F">&amp;</span>&nbsp;<span class="S">json</span>)</p>
+<p class="R">Serialize the control as JSON.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::Serialize(Upp::Stream&)" class="Q"><span class="F">void</span>&nbsp;<span class="G">Serialize</span>(<a href="Upp::Stream"><span class="T">Stream</span></a><span class="F">&amp;</span>&nbsp;<span class="S">s</span>)</p>
+<p class="R">Serialize the control as a binary Stream.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetMouseHandlingX()" class="Q"><span class="F">bool</span>&nbsp;<span class="G">GetMouseHandlingX</span>()</p>
+<p class="R">Returns true if mouse can scroll or zoom in X axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetMouseHandlingY()" class="Q"><span class="F">bool</span>&nbsp;<span class="G">GetMouseHandlingY</span>()</p>
+<p class="R">Returns true if mouse can scroll or zoom in Y axis.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::ShowContextMenu(bool)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">ShowContextMenu</span>(<span class="F">bool</span>&nbsp;<span class="S">show</span>&nbsp;=&nbsp;<span class="F">true</span>)</p>
+<p class="R">If <span class="S">show</span> is true the context menu can be opened (right clicking by default).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::ShowPropertiesDlg(bool)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">ShowPropertiesDlg</span>(<span class="F">bool</span>&nbsp;<span class="S">show</span>&nbsp;=&nbsp;<span class="F">true</span>)</p>
+<p class="R">If <span class="S">show</span> is true, the context menu will have a &quot;Properties&quot; and &quot;Data&quot; dialogs.</p>
+<p class="R">In DEBUG mode both dialogs will always appear.</p>
+<p class="R"><a href="srcdoc$ScatterCtrl$Properties$en-us.html">Here</a> the &quot;Properties&quot; and <a href="srcdoc$ScatterCtrl$Data$en-us.html">here</a> the &quot;Data&quot; dialog details are described.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::ShowProcessDlg(bool)" class="Q"><a href="Upp::ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">ShowProcessDlg</span>(<span class="F">bool</span>&nbsp;<span class="S">show</span>&nbsp;=&nbsp;<span class="F">true</span>)</p>
+<p class="R">If <span class="S">show</span> is true, the context menu will have a &quot;Process&quot; dialog.</p>
+<p class="R">In DEBUG mode the &quot;Process&quot; menu will always appear.</p>
+<p class="R"><a href="srcdoc$ScatterCtrl$Process$en-us.html">Here</a> the &quot;Process&quot; dialog details are described.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::ShowButtons(bool)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">ShowButtons</span>(<span class="F">bool</span>&nbsp;<span class="S">show</span>&nbsp;=&nbsp;<span class="F">true</span>)</p>
+<p class="R">If <span class="S">show</span> is true, Properties, Data and Process buttons will appear at the right top end of the control.</p>
+<p class="R">In DEBUG mode these buttons will always appear.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::ShowInfo(bool)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a>&nbsp;&amp;<span class="G">ShowInfo</span>(<span class="F">bool</span>&nbsp;<span class="S">show</span>&nbsp;=&nbsp;<span class="F">true</span>)</p>
+<p class="R">If <span class="S">show</span> is true it shows a legend with mouse location when mouse is clicked.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SaveAsMetafile(const char*)" class="Q"><span class="F">void</span>&nbsp;<span class="G">SaveAsMetafile</span>(<span class="F">const</span>&nbsp;<span class="F">char*</span>&nbsp;<span class="S">file</span>)</p>
+<p class="V">Windows</p>
+<p class="R">Saves the control as a windows metafile in <span class="S">file</span>.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SaveToClipboard(bool)" class="Q"><span class="F">void</span>&nbsp;<span class="G">SaveToClipboard</span>(<span class="F">bool</span>&nbsp;<span class="S">saveAsMetafile</span>&nbsp;=&nbsp;<span class="F">false</span>)</p>
+<p class="R">Saves the control to the clipboard as a bitmap.</p>
+<p class="V">Windows</p>
+<p class="R">If <span class="S">saveAsMetafile</span> is true it saves a windows metafile.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SaveToFile(Upp::String)" class="Q"><span class="F">void</span>&nbsp;<span class="G">SaveToFile</span>(<a href="String"><span class="T">String</span></a>&nbsp;<span class="S">fileName</span>&nbsp;=&nbsp;Null)</p>
+<p class="R">Saves the control to <span class="S">fileName</span> as a bitmap depending of file extension.</p>
+<p class="R">JPEG and PNG are supported</p>
+<p class="R">If <span class="S">fileName</span> is Null a FileSel is opened to ask the user for the name of the file.</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::Refresh()" class="Q"><span class="F">virtual</span> <span class="F">void</span>&nbsp;<span class="G">Refresh</span>()</p>
+<p class="R">Calls to Ctrl::Refresh().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetSize()const" class="W">virtual<span class="X"> </span><a href="Size"><span class="Y">Size</span></a><span class="X">&nbsp;</span><span class="Z">GetSize</span><span class="X">()&nbsp;</span>const</p>
+<p class="R">Returns the visual control Size. ScatterDraw::GetImage() will return the Size of Image to be get by functions like GetImage().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetColor(const Upp::Color&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetColor</span>(<span class="F">const</span>&nbsp;<a href="Color"><span class="T">Upp::Color</span></a><span class="F">&amp;</span>&nbsp;<span class="S">color</span>)</p>
+<p class="R">Calls to ScatterDraw::SetColor(color).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetGridColor(const Upp::Color&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetGridColor</span>(<span class="F">const</span>&nbsp;<a href="Color"><span class="T">Upp::Color</span></a><span class="F">&amp;</span>&nbsp;<span class="S">grid_color</span>)</p>
+<p class="R">Calls to ScatterDraw::SetGridColor(grid_color).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetGridWidth(double)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetGridWidth</span>(<span class="F">double</span>&nbsp;<span class="S">grid_width</span>)</p>
+<p class="R">Calls to ScatterDraw::SetGridWidth(grid_width).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetPlotAreaColor(const Upp::Color&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetPlotAreaColor</span>(<span class="F">const</span>&nbsp;<a href="Color"><span class="T">Upp::Color</span></a><span class="F">&amp;</span>&nbsp;<span class="S">p_a_color</span>)</p>
+<p class="R">Calls to ScatterDraw::SetPlotAreaColor(p_a_color).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetAxisColor(const Upp::Color&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetAxisColor</span>(<span class="F">const</span>&nbsp;<a href="Color"><span class="T">Upp::Color</span></a><span class="F">&amp;</span>&nbsp;<span class="S">axis_color</span>)</p>
+<p class="R">Calls to ScatterDraw::SetAxisColor(axis_color).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetAxisWidth(int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetAxisWidth</span>(<span class="F">int</span>&nbsp;<span class="S">axis_width</span>)</p>
+<p class="R">ScatterDraw::SetAxisWidth(axis_width)</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetTitle(const Upp::String&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetTitle</span>(<span class="F">const</span>&nbsp;<a href="String"><span class="T">String</span></a><span class="F">&amp;</span>&nbsp;<span class="S">title</span>)</p>
+<p class="R">Calls to ScatterDraw::SetTitle(title); </p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetTitleFont(const Upp::Font&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetTitleFont</span>(<span class="F">const</span>&nbsp;<a href="Font"><span class="T">Font</span></a><span class="F">&amp;</span>&nbsp;<span class="S">fontTitle</span>)</p>
+<p class="R">Calls to ScatterDraw::SetTitleFont(fontTitle).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetTitleColor(const Upp::Color&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetTitleColor</span>(<span class="F">const</span>&nbsp;<a href="Color"><span class="T">Upp::Color</span></a><span class="F">&amp;</span>&nbsp;<span class="S">colorTitle</span>)</p>
+<p class="R">Calls to ScatterDraw::SetTitleColor(colorTitle).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetLabelsFont(const Upp::Font&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetLabelsFont</span>(<span class="F">const</span>&nbsp;<a href="Font"><span class="T">Font</span></a><span class="F">&amp;</span>&nbsp;<span class="S">fontLabels</span>)</p>
+<p class="R">Calls to ScatterDraw::SetLabelsFont(fontLabels).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetLabelsColor(const Upp::Color&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetLabelsColor</span>(<span class="F">const</span>&nbsp;<a href="Color"><span class="T">Upp::Color</span></a><span class="F">&amp;</span>&nbsp;<span class="S">colorLabels</span>)</p>
+<p class="R">Calls to ScatterDraw::SetLabelsColor(colorLabels).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetLabelX(const Upp::String&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetLabelX</span>(<span class="F">const</span>&nbsp;<a href="String"><span class="T">String</span></a><span class="F">&amp;</span>&nbsp;<span class="S">xLabel</span>)</p>
+<p class="R">Calls to ScatterDraw::SetLabelX(xLabel).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetLabelY(const Upp::String&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetLabelY</span>(<span class="F">const</span>&nbsp;<a href="String"><span class="T">String</span></a><span class="F">&amp;</span>&nbsp;<span class="S">yLabel</span>)</p>
+<p class="R">Calls to ScatterDraw::SetLabelY(yLabel).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetLabelY2(const Upp::String&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetLabelY2</span>(<span class="F">const</span>&nbsp;<a href="String"><span class="T">String</span></a><span class="F">&amp;</span>&nbsp;<span class="S">yLabel</span>)</p>
+<p class="R">Calls to ScatterDraw::SetLabelY(yLabel).</p>
+<p class="D">&nbsp;</p>
+<hr><p id="ScatterCtrl::SetPlotAreaMargin(int,int,int,int)" class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetPlotAreaMargin(const int,const int,const int,const int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetPlotAreaMargin</span>(<span class="F">int</span>&nbsp;<span class="S">hLeft</span>, <span class="F">int</span>&nbsp;<span class="S">hRight</span>, <span class="F">int</span>&nbsp;<span class="S">vTop</span>, <span class="F">int</span>&nbsp;<span class="S">vBottom</span>)</p>
+<p class="R">Calls to ScatterDraw::SetPlotAreaMargin(hLeft, hRight, vTop, vBottom).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetPlotAreaLeftMargin(int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetPlotAreaLeftMargin</span>(<span class="F">int</span>&nbsp;<span class="S">margin</span>)</p>
+<p class="R">Calls ScatterDraw::SetPlotAreaLeftMargin(margin).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetPlotAreaLeftMargin()" class="Q"><span class="F">int</span>&nbsp;<span class="G">GetPlotAreaLeftMargin</span>()</p>
+<p class="R">Returns ScatterDraw::GetPlotAreaLeftMargin().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetPlotAreaTopMargin(int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetPlotAreaTopMargin</span>(<span class="F">int</span>&nbsp;<span class="S">margin</span>)</p>
+<p class="R">Calls to ScatterDraw::SetPlotAreaTopMargin(margin).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetPlotAreaTopMargin()" class="Q"><span class="F">int</span>&nbsp;<span class="G">GetPlotAreaTopMargin</span>()</p>
+<p class="R">Returns ScatterDraw::GetPlotAreaTopMargin().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetPlotAreaRightMargin()" class="Q"><span class="F">int</span>&nbsp;<span class="G">GetPlotAreaRightMargin</span>()</p>
+<p class="R">Returns ScatterDraw::GetPlotAreaRightMargin().</p>
+<p class="D">&nbsp;</p>
+<hr><p id="ScatterCtrl::SetPlotAreaRightMargin(int)" class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetPlotAreaRightMargin(const int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetPlotAreaRightMargin</span>(<span class="F">int</span>&nbsp;<span class="S">margin</span>)</p>
+<p class="R">Calls to ScatterDraw::SetPlotAreaRightMargin(margin).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetPlotAreaBottomMargin(int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetPlotAreaBottomMargin</span>(<span class="F">int</span>&nbsp;<span class="S">margin</span>)</p>
+<p class="R">Calls to ScatterDraw::SetPlotAreaBottomMargin(margin).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetPlotAreaBottomMargin()" class="Q"><span class="F">int</span>&nbsp;<span class="G">GetPlotAreaBottomMargin</span>()</p>
+<p class="R">Returns ScatterDraw::GetPlotAreaBottomMargin().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::ShowLegend(bool)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">ShowLegend</span>(<span class="F">bool</span>&nbsp;<span class="S">show</span>&nbsp;=&nbsp;<span class="F">true</span>)</p>
+<p class="R">Calls to ScatterDraw::ShowLegend(show).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetShowLegend()" class="Q"><span class="F">bool</span>&nbsp;<span class="G">GetShowLegend</span>()</p>
+<p class="R">Returns ScatterDraw::GetShowLegend().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetLegendPos(const Upp::Point&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetLegendPos</span>(<span class="F">const</span>&nbsp;<a href="Point"><span class="T">Point</span></a>&nbsp;&amp;<span class="S">pos</span>)</p>
+<p class="R">Calls to ScatterDraw::SetLegendPos(pos).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetLegendPosX(int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetLegendPosX</span>(<span class="F">int</span>&nbsp;<span class="S">x</span>)</p>
+<p class="R">Calls to ScatterDraw::SetLegendPosX(x).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetLegendPosY(int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetLegendPosY</span>(<span class="F">int</span>&nbsp;<span class="S">y</span>)</p>
+<p class="R">Calls to ScatterDraw::SetLegendPosY(y).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetLegendPos()" class="Q"><a href="Point"><span class="T">Point</span></a><span class="F">&amp;</span>&nbsp;<span class="G">GetLegendPos</span>()</p>
+<p class="R">Returns ScatterDraw::GetLegendPos().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetLegendNumCols(int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetLegendNumCols</span>(<span class="F">int</span>&nbsp;<span class="S">num</span>)</p>
+<p class="R">Calls to ScatterDraw::SetLegendNumCols(num)</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetLegendNumCols()" class="Q"><span class="F">int</span>&nbsp;<span class="G">GetLegendNumCols</span>()</p>
+<p class="R">Returns ScatterDraw::GetLegendNumCols().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetLegendRowSpacing(int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetLegendRowSpacing</span>(<span class="F">int</span>&nbsp;<span class="S">num</span>)</p>
+<p class="R">Calls to ScatterDraw::SetLegendRowSpacing(num)</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetLegendRowSpacing()" class="Q"><span class="F">int</span>&nbsp;<span class="G">GetLegendRowSpacing</span>()</p>
+<p class="R">Returns ScatterDraw::GetLegendRowSpacing().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetLegendAnchor(int)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetLegendAnchor</span>(<span class="F">int</span>&nbsp;<span class="S">anchor</span>)</p>
+<p class="R">Calls to ScatterDraw::SetLegendAnchor(anchor)</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetLegendAnchor()" class="Q"><span class="F">int</span>&nbsp;<span class="G">GetLegendAnchor</span>()</p>
+<p class="R">Returns ScatterDraw::GetLegendAnchor().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetLegendFillColor(const Upp::Color&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetLegendFillColor</span>(<span class="F">const</span>&nbsp;<a href="Color"><span class="T">Upp::Color</span></a>&nbsp;&amp;<span class="S">fill</span>)</p>
+<p class="R">Calls to ScatterDraw::SetLegendFillColor(fill).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::SetLegendBorderColor(const Upp::Color&)" class="Q"><a href="ScatterCtrl"><span class="T">ScatterCtrl</span></a><span class="F">&amp;</span>&nbsp;<span class="G">SetLegendBorderColor</span>(<span class="F">const</span>&nbsp;<a href="Color"><span class="T">Upp::Color</span></a>&nbsp;&amp;<span class="S">border</span>)</p>
+<p class="R">Calls to ScatterDraw::SetLegendBorderColor(border).</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetLegendFillColor()" class="Q"><a href="Color"><span class="T">Upp::Color</span></a><span class="F">&amp;</span>&nbsp;<span class="G">GetLegendFillColor</span>()</p>
+<p class="R">Returns ScatterDraw::GetLegendFillColor().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::GetLegendBorderColor()" class="Q"><a href="Color"><span class="T">Upp::Color</span></a><span class="F">&amp;</span>&nbsp;<span class="G">GetLegendBorderColor</span>()</p>
+<p class="R">Returns ScatterDraw::GetLegendBorderColor().</p>
+<p class="D">&nbsp;</p>
+<hr><p class="D">&nbsp;</p>
+<p id="ScatterCtrl::ScatterAction" class="AA"><span class="AB">enum</span><span class="AC">&nbsp;ScatterAction&nbsp;</span>action</p>
+<p class="R">Is the action to be launched if the previous conditions are complied. It can be:</p>
+<p class="U">NO_ACTION&nbsp;&nbsp;&nbsp;&nbsp;No action.</p>
+<p class="U">SCROLL&nbsp;&nbsp;&nbsp;&nbsp;Scrolls the graphs.</p>
+<p class="U">ZOOM_H_ENL&nbsp;&nbsp;&nbsp;&nbsp;Zooms horizontally enlarging the graphs. </p>
+<p class="U">ZOOM_H_RED&nbsp;&nbsp;&nbsp;&nbsp;Zooms horizontally reducing the graphs.</p>
+<p class="U">ZOOM_V_ENL&nbsp;&nbsp;&nbsp;&nbsp;Zooms vertically enlarging the graphs.</p>
+<p class="U">ZOOM_V_RED&nbsp;&nbsp;&nbsp;&nbsp;Zooms horizontally reducing the graphs.</p>
+<p class="U">SHOW_INFO&nbsp;&nbsp;&nbsp;&nbsp;Shows an info label including mouse real X and Y coordinates.</p>
+<p class="U">ZOOM_WINDOW&nbsp;&nbsp;&nbsp;&nbsp;Zoom in the window selected by the mouse.</p>
+<p class="U">SCROLL_LEFT&nbsp;&nbsp;&nbsp;&nbsp;Scrolls left the graph.</p>
+<p class="U">SCROLL_RIGHT&nbsp;&nbsp;&nbsp;&nbsp;Scrolls right the graph.</p>
+<p class="U">SCROLL_UP&nbsp;&nbsp;&nbsp;&nbsp;Scrolls up the graph.</p>
+<p class="U">SCROLL_DOWN&nbsp;&nbsp;&nbsp;&nbsp;Scrolls down the graph.</p>
+<p class="D">&nbsp;</p>
+<p class="H">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>

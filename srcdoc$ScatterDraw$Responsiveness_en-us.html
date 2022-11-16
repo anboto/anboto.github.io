@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>4 Responsiveness :: Anboto</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:serif;font-size:22pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.B{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.C{display:list-item;list-style-type:disc;margin:0px 0px 0px 20px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.D{border-collapse:collapse;table-layout:auto;border: 0px solid #000000;}
+.E{padding: 3px 5px 3px 5px;border-left: 0px solid #000000;border-top: 0px solid #000000;border-right: 0px solid #000000;border-bottom: 0px solid #000000;background-color:#FFFFFF;vertical-align:top;}
+.F{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.G{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><p class="A">Responsiveness</p>
+<p class="B">&nbsp;</p>
+<p class="B">From <a href="https://en.wikipedia.org/wiki/Responsive_web_design">Wikipedia's Responsive Web Design</a>, it is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.</p>
+<p class="B">&nbsp;</p>
+<p class="B">Following this concept, Responsive() method has been added to allow scatter plots to show similarly at different resolutions. </p>
+<p class="B">&nbsp;</p>
+<p class="B">Two scenarios has been taken into account:</p>
+<p class="B">&nbsp;</p>
+<p class="C">The same plot may be shown at different screen sizes: An application can be deployed to be used in different devices and screen resolutions.</p>
+<p class="C">The same plot may be shown in a screen and in a high resolution bitmap file: A plot that is properly viewed on screen, may be submitted to be published in a book or a journal. Publishers demand either vectorial or high resolution bitmaps (for example, 3000x3000 pixels) </p>
+<p class="B">&nbsp;</p>
+<p class="B">However, letter font sizes, plot margins &nbsp;and line widths are defined in pixels. </p>
+<p class="B">&nbsp;</p>
+<p class="B">To solve this drawback, Responsive() considers that all plot dimensions in pixels are applied to a 600x400 pixels reference size, and scales up or down all dimensions if control size is bigger or smaller.</p>
+<p class="B">&nbsp;</p>
+<p class="B">For example, let's consider the same plot with different configurations:</p>
+<p class="B">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="D"><colgroup><col width="49%"><col width="50%"></colgroup>
+<tr><td class="E"><p class="F">Size(600, 400), Responsive(false)</p>
+<p class="B">Plot looks right</p>
+</td>
+<td class="E"><p class="F">Size(6000, 4000), Responsive(false)</p>
+<p class="B">Size is so big that texts have vanished</p>
+</td>
+</tr>
+<tr><td class="E"><p class="B"><a href="srcdoc$ScatterDraw$Responsiveness_en-us.html_0.png"><img src="srcdoc$ScatterDraw$Responsiveness_en-us.html_0.png" border="0" alt="" style="width: 384px; height: 256px"></a></p>
+</td>
+<td class="E"><p class="B"><a href="srcdoc$ScatterDraw$Responsiveness_en-us.html_1.png"><img src="srcdoc$ScatterDraw$Responsiveness_en-us.html_1.png" border="0" alt="" style="width: 388px; height: 266px"></a></p>
+</td>
+</tr>
+<tr><td class="E"><p class="F">&nbsp;</p>
+</td>
+<td class="E"><p class="F">&nbsp;</p>
+</td>
+</tr>
+<tr><td class="E"><p class="F">Size(600, 400), Responsive(true)</p>
+<p class="B">Plot looks right </p>
+</td>
+<td class="E"><p class="F">Size(6000, 4000), Responsive(true)</p>
+<p class="B">Although resolution is huge, texts and lines looks right and have not vanished.</p>
+</td>
+</tr>
+<tr><td class="E"><p class="B"><a href="srcdoc$ScatterDraw$Responsiveness_en-us.html_2.png"><img src="srcdoc$ScatterDraw$Responsiveness_en-us.html_2.png" border="0" alt="" style="width: 377px; height: 251px"></a></p>
+</td>
+<td class="E"><p class="B"><a href="srcdoc$ScatterDraw$Responsiveness_en-us.html_3.png"><img src="srcdoc$ScatterDraw$Responsiveness_en-us.html_3.png" border="0" alt="" style="width: 397px; height: 264px"></a></p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="G">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>

@@ -1,0 +1,709 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>Functions4U. Reference :: Anboto</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#712A00;vertical-align:middle;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.E{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.F{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#C0C0C0;vertical-align:middle;}
+.G{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.H{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.I{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.J{color:#0000ff;}
+.K{font-weight:bold;}
+.L{color:#800000;font-weight:bold;}
+.M{color:#800000;}
+.N{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.O{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:italic;text-decoration:none;}
+.P{color:#008000;font-weight:bold;}
+.Q{text-decoration:underline;}
+.R{color:#000000;}
+.S{display:list-item;list-style-type:disc;margin:0px 0px 0px 77px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.T{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.U{color:#000000;font-weight:bold;}
+.V{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.W{color:#000000;font-weight:normal;}
+.X{margin:0px 0px 0px 0px;text-indent:0px;text-align:center;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.Y{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:italic;text-decoration:none;}
+.Z{font-style:normal;}
+.AA{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000080;font-family:sans-serif;font-size:8pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.AB{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.AC{display:list-item;list-style-type:disc;margin:0px 0px 0px 77px;text-indent:0px;text-align:justify;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.AD{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.AE{color:#0000ff;font-weight:normal;}
+.AF{font-weight:normal;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="B"><p class="C">Functions4U. Reference</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="D">&nbsp;</p>
+<p class="E">List of functions in package.</p>
+<p class="E">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="F"><p class="G">Running files and commands</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::LaunchFile(const char*,const char*)" class="I"><span class="J">bool</span>&nbsp;<span class="K">LaunchFile</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">file</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">params</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="N">Opens the file <span class="L">file</span> with <span class="L">params </span>with the adecuated program defined in the OS by default.</p>
+<p class="E">&nbsp;</p>
+<p class="O">Example:</p>
+<p class="O">LaunchFile(&quot;c:\\My spreadsheet.txt&quot;). It will open default program (like gedit or notepad) with document &quot;My spreadsheet.txt&quot;.</p>
+<p class="H">&nbsp;</p>
+<p class="E">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="F"><p class="G">File Handling</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="H">&nbsp;</p>
+<p id="FileCat(const char*,const char*)" class="I"><span class="J">bool</span>&nbsp;<span class="K">FileCat</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">file</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">appendFile</span>)</p>
+<p class="N">Appends at the end of <span class="L">file</span> the contents of file <span class="L">appendFile</span>. <span class="L">file</span> will be modified and <span class="L">appendFile </span>will remain unchanged.</p>
+<p class="N">Returns true in case of success.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="FileStrAppend(const char*,const char*)" class="I"><span class="J">bool</span>&nbsp;<span class="K">FileStrAppend</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">file</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">str</span>)</p>
+<p class="N">Appends at the end of <span class="L">file</span> the text <span class="L">str</span>.</p>
+<p class="N">Returns true in case of success.</p>
+<hr><p class="H">&nbsp;</p>
+<p id="AppendFile(const char*,const char*)" class="I"><span class="J">bool</span>&nbsp;<span class="K">AppendFile</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">filename</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">str</span>)</p>
+<p class="N">Appends at the end of file <span class="L">filename</span> the text <span class="L">str</span>.</p>
+<p class="N">Returns true in case of success.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::AppendFileNameX(T,Args...args)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">typename</span>&nbsp;<span class="P">T</span>, <span class="J">typename...</span>&nbsp;<span class="P">Args</span>&gt;&nbsp;<a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="K">AppendFileNameX</span>(<span class="P">T</span>&nbsp;<span class="L">t</span>, <span class="P">Args</span><span class="J">...</span>&nbsp;args)</p>
+<p class="N"><span class="R">Like AppendFileName() but joining any number of paths</span> .</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="GetUpperFolder(const char*)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">GetUpperFolder</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">folderName</span>)</p>
+<p class="N">Returns the name of the folder over <span class="L">folderName</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="IsRootFolder(const char*)" class="I"><span class="J">bool</span>&nbsp;<span class="K">IsRootFolder</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">folderName</span>)</p>
+<p class="N">Returns false if there is a folder over <span class="L">folderName</span>. It does not check if <span class="L">folderName</span> exists.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="GetUpperFolder(const String&)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">GetUpperFolder</span>(<span class="J">const</span>&nbsp;<a href="String"><span class="Q">String</span></a>&nbsp;&amp;<span class="L">folderName</span>)</p>
+<p class="N">Returns the folder over <span class="L">folderName</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="FileRealName(const char*)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">FileRealName</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path</span>)</p>
+<p class="N">Returns the real name of <span class="L">path</span>.(directory or file) with the right letter cases or &quot;&quot; if <span class="L">path</span>.does not exist.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="GetNextFolder(const char*,const char*)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">GetNextFolder</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">folder</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">lastFolder</span>)</p>
+<p class="N">Considering <span class="L">folder </span>as a parent folder of <span class="L">lastFolder</span>, it returns the folder under <span class="L">folder </span>that is also parent of <span class="L">lastFolder</span>.</p>
+<p class="N">For example: GetNextFolder(&quot;/home&quot;, &quot;/home/user/documents&quot;) returns &quot;/home/user&quot;.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="FileCompare(const char*,const char*)" class="I"><span class="J">int</span>&nbsp;<span class="K">FileCompare</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path1</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path2</span>)</p>
+<p class="N">Compares files <span class="L">path1</span> and <span class="L">path2</span>. </p>
+<p class="N">It returns:</p>
+<p class="S">-2 if there are problems opening or reading from the files.</p>
+<p class="S">-1 if files are different.</p>
+<p class="S">1 if files are equal.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="FindStringInFile(const char*,const String,int64)" class="I"><a href="int64"><span class="Q">int64</span></a>&nbsp;<span class="K">FindStringInFile</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">file</span>, <span class="J">const</span>&nbsp;<a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">text</span>, <a href="int64"><span class="Q">int64</span></a>&nbsp;<span class="L">pos0</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="N">Search in <span class="L">file</span> for string <span class="L">text</span> from byte position <span class="L">pos0</span>. </p>
+<p class="N">It returns </p>
+<p class="S">-2 if there are problems opening or reading from the <span class="L">file</span>.</p>
+<p class="S">-1 if <span class="L">text</span> is not found in <span class="L">file</span>.</p>
+<p class="S">An int64 value indicating the byte where <span class="L">text</span> is found.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="GetDirectoryLength(const char*)" class="I"><a href="int64"><span class="Q">Upp::int64</span></a>&nbsp;<span class="K">GetDirectoryLength</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">directoryName</span>)</p>
+<p class="N">Returns the size in bytes of the sum of all file sizes under <span class="L">directoryName</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="GetLength(const char*)" class="I"><a href="int64"><span class="Q">Upp::int64</span></a>&nbsp;<span class="K">GetLength</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">fileDirName</span>)</p>
+<p class="N">Returns the size of <span class="L">fileDirName</span>.</p>
+<p class="S">If it is a file, it returns its size.</p>
+<p class="S">If it is a folder, it returns the size in bytes of the sum of all file sizes under <span class="L">fileDirName</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="DirectoryCopy(const char*,const char*)" class="I"><span class="J">bool</span>&nbsp;<span class="K">DirectoryCopy</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">dir</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">newPlace</span>)</p>
+<p class="N">Copy folder <span class="L">dir</span> including all files and folders to <span class="L">newPlace</span>.</p>
+<p class="N">Returns true in case of success.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="SetReadOnly(const char*,bool)" class="I"><span class="J">bool</span>&nbsp;<span class="K">SetReadOnly</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path</span>, <span class="J">bool</span>&nbsp;<span class="L">readOnly</span>)</p>
+<p class="N">Sets <span class="L">path </span>(file or folder) as read only or write permitted depending on the value of<span class="L"> readOnly</span>.</p>
+<p class="N">In Linux the permissions are set for user, group and others.</p>
+<p class="N">&nbsp;&nbsp;&nbsp;&nbsp;Returns true in case of success.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="SetReadOnly(const char*,bool,bool,bool)" class="I"><span class="J">bool</span>&nbsp;<span class="K">SetReadOnly</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path</span>, <span class="J">bool</span>&nbsp;<span class="L">user</span>, <span class="J">bool</span>&nbsp;<span class="L">group</span>, <span class="J">bool</span>&nbsp;<span class="L">others</span>)</p>
+<p class="N">Sets <span class="L">path</span> (file or folder) as read only or write permitted for<span class="L"> user</span>, <span class="L">group </span>and <span class="L">others</span>.</p>
+<p class="N">&nbsp;&nbsp;&nbsp;&nbsp;Returns true in case of success.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="IsReadOnly(const char*,bool&,bool&,bool&)" class="I"><span class="J">bool</span>&nbsp;<span class="K">IsReadOnly</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path</span>, <span class="J">bool</span>&nbsp;&amp;<span class="L">user</span>, <span class="J">bool</span>&nbsp;&amp;<span class="L">group</span>, <span class="J">bool</span>&nbsp;&amp;<span class="L">others</span>)</p>
+<p class="N">Returns true in <span class="L">user</span>, <span class="L">group</span> or <span class="L">others</span> if <span class="L">path </span>(file or folder) is read only for some of those user groups.</p>
+<p class="E">&nbsp;&nbsp;&nbsp;&nbsp;Returns true in case of success.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="LoadFile_Safe(const String)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">LoadFile_Safe</span>(<span class="J">const</span>&nbsp;<a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">fileName</span>)</p>
+<p class="N">Same as LoadFile(<span class="L">fileName</span>) but it works in POSIX for files automatically generated by the OS.</p>
+<p class="N">&nbsp;</p>
+<p class="N">U++ LoadFile() functions prior to loading the file into a String, get the length of the file to dimension the String that will get the file. This is not valid for OS generated virtual files where the file length returned by the OS is 0 (for example files under folder /proc in Linux)</p>
+<p class="N">LoadFile_Safe() just get the file bytes returned by the OS until the file end.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="IsFile(const char*)" class="I"><span class="J">bool</span>&nbsp;<span class="K">IsFile</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">fileName</span>)</p>
+<p class="N">Returns true if <span class="L">fileName</span> is a file.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="IsFolder(const char*)" class="I"><span class="J">bool</span>&nbsp;<span class="K">IsFolder</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">fileName</span>)</p>
+<p class="N">Returns true id <span class="L">fileName</span> is a folder.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::SearchFile(Upp::String,Upp::String,Upp::String,Upp::Vector<Upp::String>&)" class="I"><a href="Upp::Vector"><span class="Q">Vector</span></a>&lt;<a href="Upp::String"><span class="Q">String</span></a>&gt;&nbsp;<span class="K">SearchFile</span>(<a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="L">dir</span>, <a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="L">condFile</span>, <a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="L">text</span>, <a href="Upp::Vector"><span class="Q">Vector</span></a>&lt;<a href="Upp::String"><span class="Q">String</span></a>&gt;&nbsp;&amp;<span class="L">errorList</span>)</p>
+<p class="N">Returns an Array of Strings containing the file names with full path of the files under folder <span class="L">dir</span> that comply with condition (with wildcards) <span class="L">condFile</span> and that contain inside the text <span class="L">text</span>.</p>
+<p class="N"><span class="L">errorList</span> contains the errors.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="SearchFile(String,String,String)" class="I"><a href="Array"><span class="Q">Vector</span></a>&lt;<a href="String"><span class="Q">String</span></a>&gt;&nbsp;<span class="K">SearchFile</span>(<a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">dir</span>, <a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">condFile</span>, <a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">text</span>&nbsp;=&nbsp;&quot;&quot;)</p>
+<p class="N">Returns an Array of Strings containing the file names with full path of the files under folder <span class="L">dir</span> that comply with condition (with wildcards) <span class="L">condFile </span>and that contain inside the text <span class="L">text</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="FileToTrashBin(const char*)" class="I"><span class="J">void</span>&nbsp;<span class="K">FileToTrashBin</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path</span>)</p>
+<p class="N">Deletes file <span class="L">path</span>.by sending it to the Trash Bin.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="TrashBinGetCount()" class="I"><a href="int64"><span class="Q">int64</span></a>&nbsp;<span class="K">TrashBinGetCount</span>()</p>
+<p class="N">Returns the number of items (files and directories) located in the Trash Bin.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="TrashBinClear()" class="I"><span class="J">void</span>&nbsp;<span class="K">TrashBinClear</span>()</p>
+<p class="E">Removes all the items (files and directories) located in the Trash Bin.ç</p>
+<p class="H">&nbsp;</p>
+<p class="E">&nbsp;</p>
+<p class="E">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="F"><p class="G">File/Folder Handling &quot;X&quot; functions</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="E">&nbsp;</p>
+<p class="E">File and folder handling functions with eXtras defined in EXT_FILE_FLAGS</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="USE_TRASH_BIN" class="T"><span class="J">enum</span><span class="R">&nbsp;EXT_FILE_FLAGS&nbsp;</span><span class="U">USE_TRASH_BIN</span><span class="R">&nbsp;=&nbsp;</span>1</p>
+<p class="N">If true, removed fildes and fodlers will be moved to the Trash (recycle) Bin.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="BROWSE_LINKS" class="T"><span class="J">enum</span><span class="R">&nbsp;EXT_FILE_FLAGS&nbsp;</span><span class="U">BROWSE_LINKS</span><span class="R">&nbsp;=&nbsp;</span>2</p>
+<p class="N">If true, folder functions will follow symbolic links.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="DELETE_READ_ONLY" class="T"><span class="J">enum</span><span class="R">&nbsp;EXT_FILE_FLAGS&nbsp;</span><span class="U">DELETE_READ_ONLY</span><span class="R">&nbsp;=&nbsp;</span>4</p>
+<p class="N">If true, file/folder deletion functions will not consider read only flag.</p>
+<p class="E">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="DeleteFolderDeepWildcardsX(const char*,EXT_FILE_FLAGS)" class="I"><span class="J">bool</span>&nbsp;<span class="K">DeleteFolderDeepWildcardsX</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path</span>, EXT_FILE_FLAGS&nbsp;<span class="L">flags</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="V"><span class="W">Delete all folders under </span>path <span class="W">using </span>flags<span class="W"> that comply the condition in wildcards included in </span>path.</p>
+<p class="N">Returns true in case of success.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="DeleteFileDeepWildcardsX(const char*,EXT_FILE_FLAGS)" class="I"><span class="J">bool</span>&nbsp;<span class="K">DeleteFileDeepWildcardsX</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path</span>, EXT_FILE_FLAGS&nbsp;<span class="L">flags</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="V"><span class="W">Delete all files under </span>path <span class="W">using </span>flags<span class="W"> that comply the condition in wildcards included in </span>path.</p>
+<p class="N">Returns true in case of success.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="DeleteFolderDeepX(const char*,EXT_FILE_FLAGS)" class="I"><span class="J">bool</span>&nbsp;<span class="K">DeleteFolderDeepX</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path</span>, EXT_FILE_FLAGS&nbsp;<span class="L">flags</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="N">Delete <span class="L">path</span> folder and all files and folders under it using <span class="L">flags</span>.</p>
+<p class="N">Returns true in case of success.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="RenameDeepWildcardsX(const char*,const char*,const char*,bool,bool,EXT_FILE_FLAGS)" class="I"><span class="J">bool</span>&nbsp;<span class="K">RenameDeepWildcardsX</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">namewc</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">newname</span>, <span class="J">bool</span>&nbsp;<span class="L">forfile</span>, <span class="J">bool</span>&nbsp;<span class="L">forfolder</span>, EXT_FILE_FLAGS&nbsp;<span class="L">flags</span>&nbsp;=&nbsp;NO_FLAG)</p>
+<p class="N">Rename to <span class="L">newname</span> the files (if <span class="L">forfile</span> is set to true) and/or folders (if <span class="L">forfolder</span> is set to true) under <span class="L">path</span> that comply the condition in wildcards included in <span class="L">namewc</span> using <span class="L">flags</span> .</p>
+<p class="N">Returns true in case of success.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::DirectoryCreateX(const char*)" class="I"><span class="J">bool</span>&nbsp;<span class="K">DirectoryCreateX</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path</span>)</p>
+<p class="N">Creates <span class="L">path</span> directory. Returns true if <span class="L">path</span> exists.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="FileMoveX(const char*,const char*,EXT_FILE_FLAGS)" class="I"><span class="J">bool</span>&nbsp;<span class="K">FileMoveX</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">oldpath</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">newpath</span>, EXT_FILE_FLAGS&nbsp;<span class="L">flags</span>&nbsp;=&nbsp;NO_FLAG)</p>
+<p class="N">Moves or renames <span class="L">oldpath</span> file to <span class="L">newpath</span> using <span class="L">flags</span>.</p>
+<p class="N">Returns true in case of success.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="FileDeleteX(const char*,EXT_FILE_FLAGS)" class="I"><span class="J">bool</span>&nbsp;<span class="K">FileDeleteX</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path</span>, EXT_FILE_FLAGS&nbsp;<span class="L">flags</span>&nbsp;=&nbsp;NO_FLAG)</p>
+<p class="N">Deletes <span class="L">path</span> file using <span class="L">flags</span>.</p>
+<p class="N">Returns true in case of success.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::DirectoryExistsX(const char*,EXT_FILE_FLAGS)" class="I"><span class="J">bool</span>&nbsp;<span class="K">DirectoryExistsX</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">path</span>, EXT_FILE_FLAGS&nbsp;<span class="L">flags</span>&nbsp;=&nbsp;NO_FLAG)</p>
+<p class="N">Determines if directory <span class="L">path</span> exists using EXT_FILE_FLAGS <span class="L">flags</span>.</p>
+<p class="N">In Windows it mounts persistent but unmounted network drives.</p>
+<p class="H">&nbsp;</p>
+<p class="E">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="F"><p class="G">String functions</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="H">&nbsp;</p>
+<p id="Trim(const String&)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">Trim</span>(<span class="J">const</span>&nbsp;<a href="String"><span class="Q">String</span></a><span class="J">&amp;</span>&nbsp;<span class="L">s</span>)</p>
+<p class="N">Like TrimBoth(), it removes left and right spaces in <span class="L">s</span>. Spaces are chars like, ' ', '\t', '\n', ...</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Tokenize(const Upp::String&,const Upp::String&,int)" class="I"><a href="Upp::Vector">Vector</a>&lt;String&gt;&nbsp;<span class="K">Tokenize</span>(<span class="J">const</span>&nbsp;<a href="Upp::String">String</a>&nbsp;&amp;<span class="L">str</span>, <span class="J">const</span>&nbsp;<a href="Upp::String">String</a>&nbsp;&amp;<span class="L">token, </span><span class="J">int </span><span class="L">pos</span> = 0)</p>
+<p class="N">Returns all substrings in <span class="L">str</span> beginning from <span class="L">pos</span> that are between <span class="L">token</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Tokenize(const Upp::String&,const Upp::String&,Upp::Vector<Upp::String>&,int)" class="I"><span class="J">void</span>&nbsp;<span class="K">Tokenize</span>(<span class="J">const</span>&nbsp;<a href="Upp::String"><span class="Q">String</span></a>&nbsp;&amp;<span class="L">str</span>, <span class="J">const</span>&nbsp;<a href="Upp::String"><span class="Q">String</span></a>&nbsp;&amp;<span class="L">token</span>, <a href="Upp::Vector"><span class="Q">Vector</span></a>&lt;<a href="Upp::String"><span class="Q">String</span></a>&gt;&nbsp;&amp;<span class="L">ret, </span><span class="J">int </span><span class="L">pos</span> = 0)</p>
+<p class="N">Sets in <span class="L">ret</span> all substrings in <span class="L">str</span> beginning from <span class="L">pos</span> that are between <span class="L">token</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Tokenize2(const Upp::String&,const Upp::String&,int&)" class="I"><a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="K">Tokenize2</span>(<span class="J">const</span>&nbsp;<a href="Upp::String"><span class="Q">String</span></a>&nbsp;&amp;<span class="L">str</span>, <span class="J">const</span>&nbsp;<a href="Upp::String"><span class="Q">String</span></a>&nbsp;&amp;<span class="L">token</span>, <span class="J">int</span>&nbsp;&amp;<span class="L">pos</span>)</p>
+<p class="N">Finds the next token in <span class="L">str</span> beginning from <span class="L">pos</span>. <span class="L">token</span> is a String that contains token identifier chars.</p>
+<p class="N">Returns the String from original <span class="L">pos</span> to the char after found token or until the end of the String if no token is found. <span class="L">pos</span> is updated to the next char after returned String, or Null if there are not more chars available.</p>
+<p class="N">It replaces old Tokenize function().</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Tokenize2(const Upp::String&,const Upp::String&)" class="I"><a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="K">Tokenize2</span>(<span class="J">const</span>&nbsp;<a href="Upp::String"><span class="Q">String</span></a>&nbsp;&amp;<span class="L">str</span>, <span class="J">const</span>&nbsp;<a href="Upp::String"><span class="Q">String</span></a>&nbsp;&amp;<span class="L">token</span>)</p>
+<p class="N">Finds a token in <span class="L">str</span>. <span class="L">token</span> is a String that contains token identifier chars.</p>
+<p class="N">Returns the String to the char after found token or until the end of the String if no token is found.</p>
+<p class="N">It replaces old Tokenize function().</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="ReadCSV(const String,char,bool,bool)" class="I"><a href="Vector"><span class="Q">Vector</span></a>&lt;<a href="Vector"><span class="Q">Vector</span></a>&nbsp;&lt;<a href="Value"><span class="Q">Value</span></a>&gt;&nbsp;&gt;&nbsp;<span class="K">ReadCSV</span>(<span class="J">const</span>&nbsp;<a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">strFile</span>, <span class="J">char</span>&nbsp;<span class="L">separator</span>, <span class="J">bool</span>&nbsp;<span class="L">bycols</span>, <span class="J">bool</span>&nbsp;<span class="L">removeRepeated</span>)</p>
+<p class="N">Read a .csv file in String <span class="L">strFile</span> where <span class="L">separator</span> can be defined.</p>
+<p class="N">If <span class="L">bycols</span> is set, the data is saved in [column][rows] order.</p>
+<p class="N">If <span class="L">removeRepeated </span>then repeated rows will be deleted.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="WriteCSV(Vector<Vector<Value>>&,char,bool)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">WriteCSV</span>(<a href="Vector"><span class="Q">Vector</span></a>&lt;<a href="Vector"><span class="Q">Vector</span></a>&nbsp;&lt;<a href="Value"><span class="Q">Value</span></a>&gt;&nbsp;&gt;&nbsp;&amp;<span class="L">data</span>, <span class="J">char</span>&nbsp;<span class="L">separator</span>, <span class="J">bool</span>&nbsp;<span class="L">bycols</span>)</p>
+<p class="N">Save a .csv file to a String where <span class="L">separator</span> can be defined.</p>
+<p class="N">If <span class="L">bycols</span> is set, the data is supposed to be stored in [column][rows] order.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="ReverseFind(const String&,const String&,int)" class="I"><span class="J">int</span>&nbsp;<span class="K">ReverseFind</span>(<span class="J">const</span>&nbsp;<a href="String"><span class="Q">String</span></a><span class="J">&amp;</span>&nbsp;<span class="L">s</span>, <span class="J">const</span>&nbsp;<a href="String"><span class="Q">String</span></a><span class="J">&amp;</span>&nbsp;<span class="L">toFind</span>, <span class="J">int</span>&nbsp;<span class="L">from</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="N">Find in <span class="L">s</span> the String <span class="L">toFind</span> beginning in <span class="L">from </span>in reverse order.</p>
+<p class="N">Similar to Find() but searching from the end of the String.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="FormatLong(long)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">FormatLong</span>(<span class="J">long</span>&nbsp;<span class="L">a</span>)</p>
+<p class="N">Returns the long number <span class="L">a </span>converted into a String.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::SecondsToString(double,bool,bool)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">SecondsToString</span>(<span class="J">double</span>&nbsp;<span class="L">seconds</span>, <span class="J">bool</span>&nbsp;<span class="L">units</span>&nbsp;=&nbsp;<span class="J">false</span>, <span class="J">bool </span><span class="L">dec</span>&nbsp;=&nbsp;<span class="J">true</span>)</p>
+<p class="N">Converts an amount of <span class="L">seconds</span> to a String formatted as HH:MM:SS.</p>
+<p class="E">&nbsp;&nbsp;&nbsp;&nbsp;If <span class="L">units </span>is true the units (hours, mins, seconds) will be part of the text.</p>
+<p class="E">&nbsp;&nbsp;&nbsp;&nbsp;If <span class="L">dec </span>is true it will show seconds decimals.</p>
+<p class="E">&nbsp;&nbsp;&nbsp;&nbsp;It is opposite to StringToSeconds()</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="StringToSeconds(String)" class="I"><span class="J">double</span>&nbsp;<span class="K">StringToSeconds</span>(<a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">str</span>)</p>
+<p class="N">Converts a String <span class="L">str </span>formatted as HH:MM:SS to a returned amount of seconds.</p>
+<p class="E">&nbsp;&nbsp;&nbsp;&nbsp;It is opposite to SecondsToString()</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="HMSToString(int,int,double,bool)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">HMSToString</span>(<span class="J">int</span>&nbsp;<span class="L">hour</span>, <span class="J">int</span>&nbsp;<span class="L">min</span>, <span class="J">double</span>&nbsp;<span class="L">seconds</span>, <span class="J">bool</span>&nbsp;<span class="L">units </span>=&nbsp;<span class="J">false</span>)</p>
+<p class="N">Returns a String containing <span class="L">hour</span>, <span class="L">min </span>and <span class="L">seconds </span>formatted as HH:MM:SS.</p>
+<p class="N">If <span class="L">units </span>is true the units (hours, mins, seconds) will be part of the text.</p>
+<p class="E">&nbsp;&nbsp;&nbsp;&nbsp;It is opposite to StringToHMS().</p>
+<p class="E">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="StringToHMS(String,int&,int&,double&)" class="I"><span class="J">void</span>&nbsp;<span class="K">StringToHMS</span>(<a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">durat</span>, <span class="J">int</span>&nbsp;&amp;<span class="L">hour</span>, <span class="J">int</span>&nbsp;&amp;<span class="L">min</span>, <span class="J">double</span>&nbsp;&amp;<span class="L">seconds</span>)</p>
+<p class="N">It converts a String <span class="L">durat </span>formatted as HH:MM:SS to get <span class="L">hour</span>, <span class="L">min </span>and <span class="L">seconds</span>.</p>
+<p class="E">&nbsp;&nbsp;&nbsp;&nbsp;It is opposite to HMSToString()</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="BytesToString(uint64,bool)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">BytesToString</span>(<a href="uint64"><span class="Q">uint64</span></a>&nbsp;<span class="L">bytes, </span><a href="uint64"><span class="Q">bool</span></a>&nbsp;<span class="L">units</span>)</p>
+<p class="N">Converts an amount of <span class="L">bytes </span>to a short String. If <span class="L">units</span> is true, they will appear like in 123.4 Kb</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="StrToTime(const char*)" class="I"><a href="Time"><span class="Q">::Time</span></a>&nbsp;<span class="K">StrToTime</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>)</p>
+<p class="N">Like <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="K">StrToTime</span>(<span class="J">struct</span>&nbsp;<a href="Time"><span class="Q">Upp::Time</span></a><span class="J">&amp;</span>&nbsp;<span class="L">d</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>), but returning directly a Time.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="StrToDate(const char*)" class="I"><a href="Date"><span class="Q">::Date</span></a>&nbsp;<span class="K">StrToDate</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>)</p>
+<p class="N">Like <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="K">StrToDate</span>(<span class="J">struct</span>&nbsp;<a href="Time"><span class="Q">Upp::Date</span></a><span class="J">&amp;</span>&nbsp;<span class="L">d</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>), but returning directly a Date.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="SeasonName(int)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">SeasonName</span>(<span class="J">int</span>&nbsp;<span class="L">i</span>)</p>
+<p class="N">It returns the name of the season beginning from &quot;winter&quot; (<span class="L">i</span> = 0).</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::FormatDoubleAutosize(double,double)" class="I"><a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="K">FormatDoubleAutosize</span>(<span class="J">double</span>&nbsp;<span class="L">d</span>, <span class="J">double</span>&nbsp;<span class="L">range</span>)</p>
+<p class="N">Returns number <span class="L">d</span> in <span class="L">range </span>converted to a String, so that it has the right number of digits.</p>
+<p class="N">This function serves to show numbers in graph axis and other elements that require to show the minimum right quantity of digits from a double.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::FormatDoubleSize(double,int,bool)" class="I"><a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="K">FormatDoubleSize</span>(<span class="J">double</span>&nbsp;<span class="L">d</span>, <span class="J">int</span>&nbsp;<span class="L">fieldWidth</span>, <span class="J">bool</span>&nbsp;<span class="L">fillSpaces</span>)</p>
+<p class="N">Returns number <span class="L">d</span> converted to a String with the best resolution, using either fixed or exponential notation, &nbsp;filling exactly <span class="L">fieldWidth</span> chars. If <span class="L">fillSpaces</span> is set, returned string is filled with spaces at the left until <span class="L">fieldWidth</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="RemoveAccents(String)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">RemoveAccents</span>(<a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">str</span>)</p>
+<p class="N">Returns <span class="L">str </span>with the accented characters substituted with the most approximated ascii characters.</p>
+<p class="N">If the original letter is uppercase, begins a word and the second letter is lowercase, the substituted first letter will be uppercase and the second will be lowercase.</p>
+<p class="N">An accented letter can be substituted with one or some characters.</p>
+<p class="N">For example &quot;Århus Ørsted Ñandú crème brûlée&quot; is converted in &quot;Aarhus Oersted Nandu creme brulee&quot;</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="FitFileName(String,int)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">FitFileName</span>(<span class="J">const</span>&nbsp;<a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">fileName</span>, <span class="J">int</span>&nbsp;<span class="L">len</span>)</p>
+<p class="N">Fits String <span class="L">fileName</span> length until <span class="L">len</span> removing just intermediate folder names replacing them with &quot;...&quot;.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="IsPunctuation(wchar)" class="I"><span class="J">bool</span>&nbsp;<span class="K">IsPunctuation</span>(<a href="wchar"><span class="Q">wchar</span></a>&nbsp;<span class="L">c</span>)</p>
+<p class="N">Returns true if <span class="L">c </span>is a punctuation character.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Replace(String,String,String)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">Replace</span>(<a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">str</span>, <a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">find</span>, <a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">replace</span>)</p>
+<p class="N">Replaces in <span class="L">str</span> substring <span class="L">find</span> with <span class="L">replace</span> string for all times <span class="L">find</span> string appears.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Replace(String,char,char)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">Replace</span>(<a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">str</span>, <span class="J">char</span>&nbsp;<span class="L">find</span>, <span class="J">char</span>&nbsp;<span class="L">replace</span>)</p>
+<p class="N">Replaces in <span class="L">str</span> char <span class="L">find</span> with <span class="L">replace</span> char for all times <span class="L">find</span> char appears.</p>
+<p class="H">&nbsp;</p>
+<p class="E">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="F"><p class="G">Special folders</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="H">&nbsp;</p>
+<p id="GetTempFolder()" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">GetTempFolder</span>()</p>
+<p class="N">Gets the default temp files folder path.</p>
+<p class="H">&nbsp;</p>
+<p class="E">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="F"><p class="G">Math functions</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="H">&nbsp;</p>
+<p id="Sign(T)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="J">int</span>&nbsp;<span class="K">Sign</span>(<span class="P">T</span>&nbsp;<span class="L">a</span>)</p>
+<p class="V"><span class="W">Returns the sign of </span>a:</p>
+<p class="S">+1 if <span class="L">a</span>. is positive</p>
+<p class="S">0 if <span class="L">a</span> is 0</p>
+<p class="S">-1 if <span class="L">a</span> is negative.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Average(T,T)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;<span class="K">Average</span>(<span class="P">T</span>&nbsp;<span class="L">a</span>, <span class="P">T</span>&nbsp;<span class="L">b</span>)</p>
+<p class="N">Returns the average of <span class="L">a</span> and <span class="L">b</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Average(T,T,T)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;<span class="K">Average</span>(<span class="P">T</span>&nbsp;<span class="L">a</span>, <span class="P">T</span>&nbsp;<span class="L">b</span>, <span class="P">T</span>&nbsp;<span class="L">c</span>)</p>
+<p class="N">Returns the average of <span class="L">a</span>, <span class="L">b</span> and <span class="L">c</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Average(T,T,T,T)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;<span class="K">Average</span>(<span class="P">T</span>&nbsp;<span class="L">a</span>, <span class="P">T</span>&nbsp;<span class="L">b</span>, <span class="P">T</span>&nbsp;<span class="L">c</span>, <span class="P">T</span>&nbsp;<span class="L">d</span>)</p>
+<p class="N">Returns the average of <span class="L">a</span>, <span class="L">b</span>, <span class="L">c</span> and <span class="L">d</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="pow2(T)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;<span class="K">pow2</span>(<span class="P">T</span>&nbsp;<span class="L">a</span>)</p>
+<p class="N">Raises <span class="L">a</span> to 2. Similar to sqr().</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="pow3(T)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;<span class="K">pow3</span>(<span class="P">T</span>&nbsp;<span class="L">a</span>)</p>
+<p class="N">Raises <span class="L">a</span> to 3.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="pow4(T)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;<span class="K">pow4</span>(<span class="P">T</span>&nbsp;<span class="L">a</span>)</p>
+<p class="N">Raises <span class="L">a</span> to 4.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::fround(T,int)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;<span class="K">fround</span>(<span class="P">T</span>&nbsp;<span class="L">x</span>, <span class="J">int</span>&nbsp;<span class="L">numdec</span>)</p>
+<p class="N">Rounds floating point <span class="L">x</span> to <span class="L">numdec</span> number of decimals..</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Between(const T&,const T&,const T&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="J">bool</span>&nbsp;<span class="K">Between</span>(<span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">val</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">min</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">max</span>)</p>
+<p class="N">Returns true if <span class="L">val</span> is between <span class="L">min</span> and <span class="L">max</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="AngleAdd360(T,T)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;<span class="K">AngleAdd360</span>(<span class="P">T</span>&nbsp;<span class="L">ang</span>, <span class="P">T</span>&nbsp;<span class="L">val</span>)</p>
+<p class="N">Adds <span class="L">val</span> to <span class="L">ang</span> taking care that result is between 0 and 360º.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Distance(const T&,const T&,const T&,const T&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="J">const</span>&nbsp;<span class="P">T</span>&nbsp;<span class="K">Distance</span>(<span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">x1</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">y1</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">x2</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">y2</span>)</p>
+<p class="N">Returns the distance (<a href="http://en.wikipedia.org/wiki/Euclidean_distance">euclidean</a>) between (<span class="L">x1</span>, <span class="L">y1</span>) and (<span class="L">x2</span>, <span class="L">y2</span>).</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Distance(const Point_<T>&,const Point_<T>&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="J">const</span>&nbsp;<span class="P">T</span>&nbsp;<span class="K">Distance</span>(<span class="J">const</span>&nbsp;<a href="Point_"><span class="Q">Point_</span></a>&lt;<span class="P">T</span>&gt;&amp;&nbsp;<span class="L">p1</span>, <span class="J">const</span>&nbsp;<a href="Point_"><span class="Q">Point_</span></a>&lt;<span class="P">T</span>&gt;&amp;&nbsp;<span class="L">p2</span>)</p>
+<p class="N">Returns the distance (<a href="http://en.wikipedia.org/wiki/Euclidean_distance">euclidean</a>) between <span class="L">p1</span> and <span class="L">p2</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Distance(const T&,const T&,const T&,const T&,const T&,const T&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="J">const</span>&nbsp;<span class="P">T</span>&nbsp;<span class="K">Distance</span>(<span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">x1</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">y1</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">z1</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">x2</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">y2</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">z2</span>)</p>
+<p class="N">Returns the distance (<a href="http://en.wikipedia.org/wiki/Euclidean_distance">euclidean</a>) between (<span class="L">x1</span>, <span class="L">y1</span> <span class="L">z1</span>), and (<span class="L">x2</span>, <span class="L">y2</span>, <span class="L">z2</span>).</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Angle(const T&,const T&,const T&,const T&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="J">const</span>&nbsp;<span class="J">double</span>&nbsp;<span class="K">Angle</span>(<span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">x1</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">y1</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">x2</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">y2</span>)</p>
+<p class="N">Returns the slope of the line that crosses (<span class="L">x1</span>, <span class="L">y1</span>) and (<span class="L">x2</span>, <span class="L">y2</span>).</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Angle(const Point_<T>&,const Point_<T>&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="J">const</span>&nbsp;<span class="J">double</span>&nbsp;<span class="K">Angle</span>(<span class="J">const</span>&nbsp;<a href="Point_"><span class="Q">Point_</span></a>&lt;<span class="P">T</span>&gt;&amp;&nbsp;<span class="L">p1</span>, <span class="J">const</span>&nbsp;<a href="Point_"><span class="Q">Point_</span></a>&lt;<span class="P">T</span>&gt;&amp;&nbsp;<span class="L">p2</span>)</p>
+<p class="N">Returns the slope of the line that crosses <span class="L">p1</span> and <span class="L">p2</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Odd(int)" class="I"><span class="J">bool</span>&nbsp;<span class="K">Odd</span>(<span class="J">int</span>&nbsp;<span class="L">val</span>)</p>
+<p class="N">Returns true if <span class="L">val </span>is odd.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Even(int)" class="I"><span class="J">bool</span>&nbsp;<span class="K">Even</span>(<span class="J">int</span>&nbsp;<span class="L">val</span>)</p>
+<p class="N">Returns true if <span class="L">val </span>is even.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="RoundEven(int)" class="I"><span class="J">int</span>&nbsp;<span class="K">RoundEven</span>(<span class="J">int</span>&nbsp;<span class="L">val</span>)</p>
+<p class="N">Returns <span class="L">val </span>rounded to the upper even number or itself if it is even.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::ToRad(T)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;<span class="K">ToRad</span>(<span class="P">T</span>&nbsp;<span class="L">angle</span>)</p>
+<p class="N">Returns <span class="L">angle </span>in degrees converted to radians.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::ToDeg(T)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;<span class="K">ToDeg</span>(<span class="P">T</span>&nbsp;<span class="L">angle</span>)</p>
+<p class="N">Returns <span class="L">angle </span>in radians converted to degrees.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::atan2_360(T,T)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;<span class="K">atan2_360</span>(<span class="P">T</span>&nbsp;<span class="L">y</span>, <span class="P">T</span>&nbsp;<span class="L">x</span>)</p>
+<p class="N">Like <a href="https://en.wikipedia.org/wiki/Atan2">atan2</a>() in degrees where 0º is vertical and angle rotates clockwise to 360º..</p>
+<p class="X"><a href="src$Functions4U$Functions4U$en-us.html_0.png"><img src="src$Functions4U$Functions4U$en-us.html_0.png" border="0" alt="" style="width: 258px; height: 238px"></a></p>
+<p class="H">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="F"><p class="G">Graphical functions</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="H">&nbsp;</p>
+<p id="FitInFrame(const Size_<T>&,const Size_<T>&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<a href="Rect_"><span class="Q">Rect_</span></a>&lt;<span class="P">T</span>&gt;&nbsp;<span class="K">FitInFrame</span>(<span class="J">const</span>&nbsp;<a href="Size_"><span class="Q">Size_</span></a>&lt;<span class="P">T</span>&gt;&nbsp;&amp;<span class="L">frame</span>, <span class="J">const</span>&nbsp;<a href="Size_"><span class="Q">Size_</span></a>&lt;<span class="P">T</span>&gt;&nbsp;&amp;<span class="L">object</span>)</p>
+<p class="N">Returns the rectangle in a Rect to fit inside <span class="L">frame</span> the <span class="L">object </span>maintaining the aspect ratio.</p>
+<p class="E">&nbsp;</p>
+<p class="X"><a href="src$Functions4U$Functions4U$en-us.html_1.png"><img src="src$Functions4U$Functions4U$en-us.html_1.png" border="0" alt="" style="width: 523px; height: 326px"></a></p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="SaveImage(const Image&,int,const String&,String)" class="I"><span class="J">bool</span>&nbsp;<span class="K">SaveImage</span>(<span class="J">const</span>&nbsp;<a href="Image"><span class="Q">Image</span></a>&nbsp;&amp;<span class="L">img</span>, <span class="J">int</span>&nbsp;<span class="L">qualityBpp</span>, <span class="J">const</span>&nbsp;<a href="String"><span class="Q">String</span></a>&nbsp;&amp;<span class="L">fileName</span>, <a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">ext</span>&nbsp;=&nbsp;&quot;&quot;)</p>
+<p class="N">Saves Image <span class="L">img</span> in file <span class="L">fileName</span> with format <span class="L">ext</span>. If ext is &quot;&quot;, the format is taken from <span class="L">fileName</span> extension.</p>
+<p class="N"><span class="L">qualityBpp</span> is the quality (for jpg) or the bits per pixel (for other formats):</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="PrintImage(const Image&,int,int,int,int)" class="I"><span class="J">bool</span>&nbsp;<span class="K">PrintImage</span>(<span class="J">const</span>&nbsp;<a href="Image"><span class="Q">Image</span></a>&nbsp;&amp;<span class="L">img</span>, <span class="J">int</span>&nbsp;<span class="L">x</span>&nbsp;=&nbsp;<span class="M">0</span>, <span class="J">int</span>&nbsp;<span class="L">y</span>&nbsp;=&nbsp;<span class="M">0</span>, <span class="J">int</span>&nbsp;<span class="L">width</span>&nbsp;=&nbsp;Null, <span class="J">int</span>&nbsp;<span class="L">height</span>&nbsp;=&nbsp;Null)</p>
+<p class="N">Prints image <span class="L">img</span> in coords. <span class="L">x,</span> <span class="L">y,</span> <span class="L">width,</span> <span class="L">height</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="DrawRectLine(Draw&,int,int,int,int,int,const Color&)" class="I"><span class="J">void</span>&nbsp;<span class="K">DrawRectLine</span>(<a href="Draw"><span class="Q">Draw</span></a><span class="J">&amp;</span>&nbsp;<span class="L">w</span>, <span class="J">int</span>&nbsp;<span class="L">x</span>, <span class="J">int</span>&nbsp;<span class="L">y</span>, <span class="J">int</span>&nbsp;<span class="L">width</span>, <span class="J">int</span>&nbsp;<span class="L">height</span>, <span class="J">int</span>&nbsp;<span class="L">lineWidth</span>, <span class="J">const</span>&nbsp;<a href="Color"><span class="Q">Color</span></a>&nbsp;&amp;<span class="L">color</span>)</p>
+<p id="DrawRectLine(Draw&,Point&,const Size&,int,const Color&)" class="I"><span class="J">void</span>&nbsp;<span class="K">DrawRectLine</span>(<a href="Draw"><span class="Q">Draw</span></a><span class="J">&amp;</span>&nbsp;<span class="L">w</span>, <a href="Point"><span class="Q">Point</span></a>&nbsp;&amp;<span class="L">pos</span>, <span class="J">const</span>&nbsp;<a href="Size"><span class="Q">Size</span></a>&nbsp;&amp;<span class="L">s</span>, <span class="J">int</span>&nbsp;<span class="L">lineWidth</span>, <span class="J">const</span>&nbsp;<a href="Color"><span class="Q">Color</span></a>&nbsp;&amp;<span class="L">color</span>)</p>
+<p id="DrawRectLine(Draw&,Rect&,int,const Color&)" class="I"><span class="J">void</span>&nbsp;<span class="K">DrawRectLine</span>(<a href="Draw"><span class="Q">Draw</span></a><span class="J">&amp;</span>&nbsp;<span class="L">w</span>, <a href="Rect"><span class="Q">Rect</span></a>&nbsp;&amp;<span class="L">r</span>, <span class="J">int</span>&nbsp;<span class="L">lineWidth</span>, <span class="J">const</span>&nbsp;<a href="Color"><span class="Q">Color</span></a>&nbsp;&amp;<span class="L">color</span>)</p>
+<p class="N">Draws a rectangle in Draw <span class="L">w</span> defined by either <span class="L">x,</span> <span class="L">y,</span> <span class="L">width,</span> <span class="L">height</span>, or Point <span class="L">pos</span> and Size <span class="L">s</span> or Rect <span class="L">r</span>, with line width <span class="L">lineWidth</span> and Color <span class="L">color</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::GetDefinedParent(Upp::Ctrl*)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="P">T</span>&nbsp;&amp;<span class="K">GetDefinedParent</span>(<a href="Upp::Ctrl"><span class="Q">Ctrl</span></a>&nbsp;*<span class="L">ths</span>)</p>
+<p class="N">Search for the parent Ctrl of <span class="L">ths</span> whose type is <span class="P">T</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="RandomColor()" class="E"><a href="Color"><span class="Q">Color</span></a>&nbsp;<span class="K">RandomColor</span>()</p>
+<p class="N">Returns a random color.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="GetRainbowColor(int)" class="I"><a href="Color"><span class="Q">Color</span></a>&nbsp;<span class="K">GetRainbowColor</span>(<span class="J">int</span>&nbsp;<span class="L">val16</span>)</p>
+<p class="N">Returns a rainbow color from an input value <span class="L">val16</span> from 0 (Red) to 0xFFFF.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="GetRect(const Image&,const Rect&)" class="I"><a href="Image"><span class="Q">Image</span></a>&nbsp;<span class="K">GetRect</span>(<span class="J">const</span>&nbsp;<a href="Image"><span class="Q">Image</span></a><span class="J">&amp;</span>&nbsp;<span class="L">orig</span>, <span class="J">const</span>&nbsp;<a href="Rect"><span class="Q">Rect</span></a>&nbsp;&amp;<span class="L">r</span>)</p>
+<p class="N">Returns a subimage delimited by Rect <span class="L">r</span> taken from <span class="L">orig</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="GetPixel(const Image&,int,int)" class="I"><span class="J">const</span>&nbsp;<a href="RGBA"><span class="Q">RGBA</span></a>&nbsp;*<span class="K">GetPixel</span>(const Image&nbsp;&amp;<span class="L">img</span>, <span class="J">int</span>&nbsp;<span class="L">x</span>, <span class="J">int</span>&nbsp;<span class="L">y</span>)</p>
+<p class="N">Gets the color of a pixel in image <span class="L">img</span> in coordinates <span class="L">x</span>, <span class="L">y</span>.</p>
+<p class="N">This pixel is read-only.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="GetPixel(ImageBuffer&,int,int)" class="I"><a href="RGBA"><span class="Q">RGBA</span></a>&nbsp;*<span class="K">GetPixel</span>(ImageBuffer&nbsp;&amp;<span class="L">img</span>, <span class="J">int</span>&nbsp;<span class="L">x</span>, <span class="J">int</span>&nbsp;<span class="L">y</span>)</p>
+<p class="N">Gets the color of a pixel in image <span class="L">img</span> in coordinates <span class="L">x</span>, <span class="L">y</span>. </p>
+<p class="N">This pixel is modifiable.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="IsValid(const Image&,int,int)" class="I"><span class="J">bool</span>&nbsp;<span class="K">IsValid</span>(<span class="J">const</span>&nbsp;<a href="Image"><span class="Q">Image</span></a>&nbsp;&amp;<span class="L">img</span>, <span class="J">int</span>&nbsp;<span class="L">x</span>, <span class="J">int</span>&nbsp;<span class="L">y</span>)</p>
+<p class="N">Returns true if coordinates <span class="L">x</span> and <span class="L">y</span> are inside Image <span class="L">img</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="IsValid(ImageBuffer&,int,int)" class="I"><span class="J">bool</span>&nbsp;<span class="K">IsValid</span>(<a href="ImageBuffer"><span class="Q">ImageBuffer</span></a>&nbsp;&amp;<span class="L">img</span>, <span class="J">int</span>&nbsp;<span class="L">x</span>, <span class="J">int</span>&nbsp;<span class="L">y</span>)</p>
+<p class="N">Returns true if coordinates <span class="L">x</span> and <span class="L">y</span> are inside ImageBuffer <span class="L">img</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="IsValid(const Image&,T&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="J">bool</span>&nbsp;<span class="K">IsValid</span>(<span class="J">const</span>&nbsp;<a href="Image"><span class="Q">Image</span></a>&nbsp;&amp;<span class="L">img</span>, <span class="P">T</span>&nbsp;&amp;<span class="L">t</span>)</p>
+<p class="N">Returns true if point <span class="L">t</span> is inside Image <span class="L">img</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="IsValid(ImageBuffer&,T&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="J">bool</span>&nbsp;<span class="K">IsValid</span>(<a href="ImageBuffer"><span class="Q">ImageBuffer</span></a>&nbsp;&amp;<span class="L">img</span>, <span class="P">T</span>&nbsp;&amp;<span class="L">t</span>)</p>
+<p class="N">Returns true if point <span class="L">t</span> is inside ImageBuffer <span class="L">img</span>.</p>
+<p class="H">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="F"><p class="G">Other functions</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="H">&nbsp;</p>
+<p id="GetExtExecutable(const String)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">GetExtExecutable</span>(<span class="J">const</span>&nbsp;<a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">ext</span>)</p>
+<p class="N">Gets the program that will open by default the files with extension <span class="L">ext</span>.</p>
+<p class="E">&nbsp;</p>
+<p class="Y"><span class="Z">&nbsp;&nbsp;&nbsp;&nbsp;</span>Example:</p>
+<p class="Y">&nbsp;&nbsp;&nbsp;&nbsp;GetExtExecutable(&quot;html&quot;) -&gt; &quot;Firefox.exe&quot;</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="GetDriveList()" class="I"><a href="Array"><span class="Q">Vector</span></a>&lt;<a href="String"><span class="Q">String</span></a>&gt;&nbsp;<span class="K">GetDriveList</span>()</p>
+<p class="N">Returns an array with the paths to all drives, internal or external, identified in the system.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Getcwd()" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">Getcwd</span>()</p>
+<p class="N">Returns an absolute file name representing the current process working directory.</p>
+<p class="AA">Replaced by GetCurrentDurectory(.)</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Chdir(const String&)" class="I"><span class="J">bool</span>&nbsp;<span class="K">Chdir</span>&nbsp;(<span class="J">const</span>&nbsp;<a href="String"><span class="Q">String</span></a>&nbsp;&amp;<span class="L">folder</span>)</p>
+<p class="N">Sets the process's working directory to <span class="L">folder</span>.</p>
+<p class="N">Returns true if successful.</p>
+<p class="AA">Replaced by SetCurrentDurectory().</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="GetDesktopManagerNew()" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">GetDesktopManagerNew</span>()</p>
+<p class="N">A more complete version of GetDesktopManager() based on GetOsInfo().</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="NON_REENTRANT_V" class="AB">NON_REENTRANT_V</p>
+<p id="NON_REENTRANT(v)" class="I"><span class="K">NON_REENTRANT</span>(<span class="L">v</span>)</p>
+<p class="N">It returns <span class="L">v</span> if the function has been called in the same thread and it has not returned yet.</p>
+<p class="N">It is useful to avoid a function to be called twice in different situations, for example:</p>
+<p class="AC">The function calls Ctrl::ProcessEvents(); If the function has been called when a button has been pressed, this button can be pressed again so the function can be called twice.</p>
+<p class="AC">The function is called by ChildLostFocus() and it opens a new window using, lets say, PromptOK(). This way ChildLostFocus will be called twice: the second one because PromptOK() makes the field to loose the focus.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="noref" class="AD"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;</p>
+<p id="Upp::TempAssign::struct" class="AB"><span class="AE">struct</span><span class="AF">&nbsp;</span>TempAssign</p>
+<p class="N">A class to temporary assign a value to a variable. Original value is set again to the variable after the class destructor.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::TempAssign::TempAssign(T&,T)" class="I"><span class="K">TempAssign</span>(<span class="P">T</span>&nbsp;&amp;<span class="L">val</span>, <span class="P">T</span>&nbsp;<span class="L">set</span>)</p>
+<p class="N">Value of variable <span class="L">val</span> is replaced temporarily with value <span class="L">set</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::tmGetTimeX()" class="I"><span class="J">double</span>&nbsp;<span class="K">tmGetTimeX</span>()</p>
+<p class="N">High resolution clock. Returns time in seconds or Null in case of error.</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Shuffle(C&,int)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">C</span>&gt;&nbsp;<span class="J">void</span>&nbsp;<span class="K">Shuffle</span>(<span class="P">C</span>&nbsp;&amp;<span class="L">data</span>, <span class="J">int</span>&nbsp;<span class="L">randomSeed</span>&nbsp;=&nbsp;Null)</p>
+<p class="N">Shuffles Vector <span class="L">data</span>. <span class="L">randomSeed</span> is the seed for the random number generator.</p>
+<p class="N">If <span class="L">randomSeed</span> is Null or not included, a new random seed is used every function call..</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::EqualRatio(const T&,const T&,const T&,const T&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">T</span>&gt;&nbsp;<span class="J">bool</span>&nbsp;<span class="K">EqualRatio</span>(<span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">a</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">b</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">ratio</span>, <span class="J">const</span>&nbsp;<span class="P">T</span><span class="J">&amp;</span>&nbsp;<span class="L">zero</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="N">Returns true if the difference ratio between <span class="L">a</span> and <span class="L">b</span> is lower than <span class="L">ratio</span>. A value lower than <span class="L">zero</span> is considered zero.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Find(const Range&,const typename value_type&,int)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">Range</span>&gt;&nbsp;<span class="J">int</span>&nbsp;<span class="K">Find</span>(<span class="J">const</span>&nbsp;<span class="P">Range</span><span class="J">&amp;</span>&nbsp;<span class="L">r</span>, <span class="J">const</span>&nbsp;<span class="J">typename</span>&nbsp;Range::value_type<span class="J">&amp;</span>&nbsp;<span class="L">value</span>, <span class="J">int</span>&nbsp;<span class="L">from</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="N">Returns the id of the element of Range (Vector&lt;&gt;, Array&lt;&gt;, ...) <span class="L">r</span> that is equal to <span class="L">value</span> from id <span class="L">from</span>. If nothing is found it returns -1.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::FindAdd(Range&,const typename value_type&,int)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">Range</span>&gt;&nbsp;<span class="J">int</span>&nbsp;<span class="K">FindAdd</span>(<span class="P">Range</span><span class="J">&amp;</span>&nbsp;<span class="L">r</span>, <span class="J">const</span>&nbsp;<span class="J">typename</span>&nbsp;Range::value_type<span class="J">&amp;</span>&nbsp;<span class="L">value</span>, <span class="J">int</span>&nbsp;<span class="L">from</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="N">Returns the id of the element of Range (Vector&lt;&gt;, Array&lt;&gt;, ...) <span class="L">r</span> that is equal to <span class="L">value</span> from id <span class="L">from</span>, adding it if is new.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::FindRatio(const Range&,const typename value_type&,const typename value_type&,int)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">Range</span>&gt;&nbsp;<span class="J">int</span>&nbsp;<span class="K">FindRatio</span>(<span class="J">const</span>&nbsp;<span class="P">Range</span><span class="J">&amp;</span>&nbsp;<span class="L">r</span>, <span class="J">const</span>&nbsp;<span class="J">typename</span>&nbsp;Range::value_type<span class="J">&amp;</span>&nbsp;<span class="L">value</span>, <span class="J">const</span>&nbsp;<span class="J">typename</span>&nbsp;Range::value_type<span class="J">&amp;</span>&nbsp;<span class="L">ratio</span>, <span class="J">int</span>&nbsp;<span class="L">from</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="N">Returns the element of Range (Vector&lt;&gt;, Array&lt;&gt;, ...) <span class="L">r</span> whose difference ratio with <span class="L">value</span> is lower than <span class="L">ratio</span> searching from id <span class="L">from</span>. If nothing is found it returns -1.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::FindAddRatio(Range&,const typename value_type&,const typename value_type&,int)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">Range</span>&gt;&nbsp;<span class="J">int</span>&nbsp;<span class="K">FindAddRatio</span>(<span class="P">Range</span><span class="J">&amp;</span>&nbsp;<span class="L">r</span>, <span class="J">const</span>&nbsp;<span class="J">typename</span>&nbsp;Range::value_type<span class="J">&amp;</span>&nbsp;<span class="L">value</span>, <span class="J">const</span>&nbsp;<span class="J">typename</span>&nbsp;Range::value_type<span class="J">&amp;</span>&nbsp;<span class="L">ratio</span>, <span class="J">int</span>&nbsp;<span class="L">from</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="N">Returns the id of the element of Range (Vector&lt;&gt;, Array&lt;&gt;, ...) <span class="L">r</span> whose difference ratio with <span class="L">value</span> is lower than <span class="L">ratio</span> searching from id <span class="L">from</span>, adding it if is new.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::FindDelta(const Range&,const typename value_type&,const typename value_type&,int)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">Range</span>&gt;&nbsp;<span class="J">int</span>&nbsp;<span class="K">FindDelta</span>(<span class="J">const</span>&nbsp;<span class="P">Range</span><span class="J">&amp;</span>&nbsp;<span class="L">r</span>, <span class="J">const</span>&nbsp;<span class="J">typename</span>&nbsp;Range::value_type<span class="J">&amp;</span>&nbsp;<span class="L">value</span>, <span class="J">const</span>&nbsp;<span class="J">typename</span>&nbsp;Range::value_type<span class="J">&amp;</span>&nbsp;<span class="L">delta</span>, <span class="J">int</span>&nbsp;<span class="L">from</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="N">Returns the element of Range (Vector&lt;&gt;, Array&lt;&gt;, ...) <span class="L">r</span> whose difference with <span class="L">value</span> is lower than <span class="L">delta</span> searching from id <span class="L">from</span>. If nothing is found it returns -1.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::FindAddDelta(Range&,const typename value_type&,const typename value_type&,int)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">Range</span>&gt;&nbsp;<span class="J">int</span>&nbsp;<span class="K">FindAddDelta</span>(<span class="P">Range</span><span class="J">&amp;</span>&nbsp;<span class="L">r</span>, <span class="J">const</span>&nbsp;<span class="J">typename</span>&nbsp;Range::value_type<span class="J">&amp;</span>&nbsp;<span class="L">value</span>, <span class="J">const</span>&nbsp;<span class="J">typename</span>&nbsp;Range::value_type<span class="J">&amp;</span>&nbsp;<span class="L">delta</span>, <span class="J">int</span>&nbsp;<span class="L">from</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="N">Returns the id of the element of Range (Vector&lt;&gt;, Array&lt;&gt;, ...) <span class="L">r</span> whose difference with <span class="L">value</span> is lower than <span class="L">delta</span> searching from id <span class="L">from</span>, adding it if is new.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::FindRoundDecimals(const Range&,const typename value_type&,int,int)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">Range</span>&gt;&nbsp;<span class="J">int</span>&nbsp;<span class="K">FindRoundDecimals</span>(<span class="J">const</span>&nbsp;<span class="P">Range</span><span class="J">&amp;</span>&nbsp;<span class="L">r</span>, <span class="J">const</span>&nbsp;<span class="J">typename</span>&nbsp;Range::value_type<span class="J">&amp;</span>&nbsp;<span class="L">value</span>, <span class="J">int</span>&nbsp;<span class="L">numDecimals</span>, <span class="J">int</span>&nbsp;<span class="L">from</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="N">Returns the id of the element of Range (Vector&lt;&gt;, Array&lt;&gt;, ...) <span class="L">r</span> that is equal to <span class="L">value</span> from id <span class="L">from</span>, rounding <span class="L">numDecimals</span> decimals. If nothing is found it returns -1.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::FindClosest(const Range&,const typename value_type&,int)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">Range</span>&gt;&nbsp;<span class="J">int</span>&nbsp;<span class="K">FindClosest</span>(<span class="J">const</span>&nbsp;<span class="P">Range</span><span class="J">&amp;</span>&nbsp;<span class="L">r</span>, <span class="J">const</span>&nbsp;<span class="J">typename</span>&nbsp;Range::value_type<span class="J">&amp;</span>&nbsp;<span class="L">value</span>, <span class="J">int</span>&nbsp;<span class="L">from</span>&nbsp;=&nbsp;<span class="M">0</span>)</p>
+<p class="N">Returns the id of the closest element of Range (Vector&lt;&gt;, Array&lt;&gt;, ...) <span class="L">r</span> to <span class="L">value</span> counting from id <span class="L">from</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Compare(const Range&,const Range&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">Range</span>&gt;&nbsp;<span class="J">bool</span>&nbsp;<span class="K">Compare</span>(<span class="J">const</span>&nbsp;<span class="P">Range</span><span class="J">&amp;</span>&nbsp;<span class="L">a</span>, <span class="J">const</span>&nbsp;<span class="P">Range</span><span class="J">&amp;</span>&nbsp;<span class="L">b</span>)</p>
+<p class="N">Returns true if Ranges (Vector&lt;&gt;, Array&lt;&gt;, ...) <span class="L">a</span> and <span class="L">b</span> are equal.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::CompareRatio(const Range&,const Range&,const V&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">Range</span>, <span class="J">class</span>&nbsp;<span class="P">V</span>&gt;&nbsp;<span class="J">bool</span>&nbsp;<span class="K">CompareRatio</span>(<span class="J">const</span>&nbsp;<span class="P">Range</span><span class="J">&amp;</span>&nbsp;<span class="L">a</span>, <span class="J">const</span>&nbsp;<span class="P">Range</span><span class="J">&amp;</span>&nbsp;<span class="L">b</span>, <span class="J">const</span>&nbsp;<span class="P">V</span><span class="J">&amp;</span>&nbsp;<span class="L">ratio</span>)</p>
+<p class="V"><span class="W">Returns true if the elements of Ranges (Vector&lt;&gt;, Array&lt;&gt;, ...) </span>a<span class="W"> and </span>b<span class="W"> are closer than </span>ratio.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::ToString(const Range&)" class="I"><span class="J">template</span>&nbsp;&lt;<span class="J">class</span>&nbsp;<span class="P">Range</span>&gt;&nbsp;<a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="K">ToString</span>(<span class="J">const</span>&nbsp;<span class="P">Range</span><span class="J">&amp;</span>&nbsp;<span class="L">a</span>)</p>
+<p class="N">Returns a String from a Range (Vector&lt;&gt;, Array&lt;&gt;, ...) <span class="L">a</span> with elements separated with ';'.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="DamerauLevenshteinDistance(const char*,const char*,int)" class="I"><span class="J">int</span>&nbsp;<span class="K">DamerauLevenshteinDistance</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">t</span>, <span class="J">int</span>&nbsp;<span class="L">alphabetLength</span>&nbsp;=&nbsp;<span class="M">256</span>)</p>
+<p class="N">Calculates the Damerau Levenshtein distance between words <span class="L">s</span> and <span class="L">t</span> considering an alphabet of length <span class="L">alphabetLength</span>.</p>
+<p class="N">The algorithm is documented <a href="https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance">here</a> and <a href="https://stackoverflow.com/questions/6033631/levenshtein-to-damerau-levenshtein/6035519#6035519">here</a>.</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::GetPythonDeclaration(const Upp::String&)" class="I"><a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="K">GetPythonDeclaration</span>(<span class="J">const</span>&nbsp;<a href="Upp::String"><span class="Q">String</span></a>&nbsp;&amp;<span class="L">include</span>)</p>
+<p class="N">Returns the Python ctypes declarations based on C declarations in <span class="L">include</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="LevenshteinDistance(const char*,const char*)" class="I"><span class="J">int</span>&nbsp;<span class="K">LevenshteinDistance</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">t</span>)</p>
+<p class="N">Calculates the Levenshtein distance between words <span class="L">s</span> and <span class="L">t</span>.</p>
+<p class="N">The algorithm is documented <a href="From https://en.wikipedia.org/wiki/Levenshtein_distance">here</a>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="GetRelativePath(Upp::String,Upp::String,Upp::String&,bool)" class="I"><span class="J">bool</span>&nbsp;<span class="K">GetRelativePath</span>(<a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="L">from</span>, <a href="Upp::String"><span class="Q">String</span></a>&nbsp;<span class="L">path</span>, <a href="Upp::String"><span class="Q">String</span></a><span class="J">&amp;</span>&nbsp;<span class="L">ret</span>, <span class="J">bool</span>&nbsp;<span class="L">normalize</span>)</p>
+<p class="N">Returns the relative path to go from <span class="L">from</span> to <span class="L">path </span>in<span class="L"> ret</span> and returns true if there is a match.</p>
+<p class="N">For example, if:</p>
+<p class="S"><span class="L">from</span> = &quot;/books/technology/computers&quot;</p>
+<p class="S"><span class="L">path </span>= &quot;/books/biology/mammals&quot;</p>
+<p class="N">GetRelativePath() would return &quot;../../biology/mammals&quot;.</p>
+<p class="N">If there is no match between both paths it returns false.</p>
+<p class="N">If <span class="L">normalize</span> is set, path separators and upper/lower letters are normalized following OS standards.</p>
+<p class="H">&nbsp;</p>
+<p class="H">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>
