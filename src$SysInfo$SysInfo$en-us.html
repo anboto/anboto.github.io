@@ -95,7 +95,7 @@ a.l2:active  { color:#BC0024; }
 <p class="P">Only available in Windows</p>
 <p class="G">&nbsp;</p>
 <hr><p class="G">&nbsp;</p>
-<p id="GetPackagesInfo(Array<Value>&,Array<Value>&,Array<Value>&,Array<Value>&,Array<Value>&,Array<Value>&,Array<Value>&)" class="H"><span class="I">bool</span>&nbsp;<span class="J">GetPackagesInfo</span>(<a href="Array"><span class="K">Array</span></a>&nbsp;&lt;<a href="Value"><span class="K">Value</span></a>&gt;&nbsp;&amp;<span class="L">name</span>, Array&nbsp;&lt;Value&gt;&nbsp;&amp;<span class="L">version</span>, Array&nbsp;&lt;Value&gt;&nbsp;&amp;<span class="L">vendor</span>, Array&nbsp;&lt;Value&gt;&nbsp;&amp;<span class="L">installDate</span>, Array&nbsp;&lt;Value&gt;&nbsp;&amp;<span class="L">caption</span>, Array&nbsp;&lt;Value&gt;&nbsp;&amp;<span class="L">description</span>, Array&nbsp;&lt;Value&gt;&nbsp;&amp;<span class="L">state</span>)</p>
+<p id="Upp::GetPackagesInfo(Upp::Array&,Upp::Array&,Upp::Array&,Upp::Array&,Upp::Array&,Upp::Array&,Upp::Array&,Upp::Array&)" class="H"><span class="I">bool</span> <span class="J">GetPackagesInfo</span>(Upp<span class="I">::</span>Array&lt;Value&gt;<span class="I">&amp;</span> <span class="L">name</span>, Upp<span class="I">::</span>Array&lt;Value&gt;<span class="I">&amp;</span> <span class="L">version</span>, Upp<span class="I">::</span>Array&lt;Value&gt;<span class="I">&amp;</span> <span class="L">vendor</span>, Upp<span class="I">::</span>Array&lt;Value&gt;<span class="I">&amp;</span> <span class="L">installDate</span>, Upp<span class="I">::</span>Array&lt;Value&gt;<span class="I">&amp;</span> <span class="L">caption</span>, Upp<span class="I">::</span>Array&lt;Value&gt;<span class="I">&amp;</span> <span class="L">description</span>, Upp<span class="I">::</span>Array&lt;Value&gt;<span class="I">&amp;</span> <span class="L">state</span>, Upp<span class="I">::</span>Array&lt;Value&gt;<span class="I">&amp;</span> <span class="L">path</span>)</p>
 <p class="M">If true gets information about installed software:</p>
 <p class="N">name</p>
 <p class="N">version</p>
@@ -110,7 +110,8 @@ a.l2:active  { color:#BC0024; }
 <p class="Q">- &quot;Advertised&quot;</p>
 <p class="Q">- &quot;Absent&quot;</p>
 <p class="Q">- &quot;Ok&quot;</p>
-<p class="P">Only available in Windows. Now deprecated</p>
+<p class="N">path</p>
+<p class="M">Only available in Windows. Now deprecated, because it is very slow.</p>
 <p class="G">&nbsp;</p>
 <hr><p class="G">&nbsp;</p>
 <p id="GetCpuTemperature()" class="H"><span class="I">double</span>&nbsp;<span class="J">GetCpuTemperature</span>()</p>
