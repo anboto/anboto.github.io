@@ -371,6 +371,15 @@ a.l2:active  { color:#BC0024; }
 <p class="N">Returns number <span class="L">d</span> converted to a String with the best resolution, using either fixed or exponential notation, &nbsp;filling exactly <span class="L">fieldWidth</span> chars. If <span class="L">fillSpaces</span> is set, returned string is filled with spaces at the left until <span class="L">fieldWidth</span>.</p>
 <p class="H">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
+<p id="Upp::GetExponent10(double)" class="I"><span class="J">int</span> <span class="K">GetExponent10</span>(<span class="J">double</span> <span class="L">d</span>)</p>
+<p class="N">Gets the exponent in base 10 for the number <span class="L">d</span>.</p>
+<p class="N">This value would be the exponent in scientific notation.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::NumberWithLeastSignificantDigits(double,double)" class="I"><span class="J">double</span> <span class="K">NumberWithLeastSignificantDigits</span>(<span class="J">double</span> <span class="L">minVal</span>, <span class="J">double</span> <span class="L">maxVal</span>)</p>
+<p class="N">Returns the number between <span class="L">minVal</span> and <span class="L">maxVal</span> with the minimum number of significant digits.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
 <p id="RemoveAccents(String)" class="I"><a href="String"><span class="Q">String</span></a>&nbsp;<span class="K">RemoveAccents</span>(<a href="String"><span class="Q">String</span></a>&nbsp;<span class="L">str</span>)</p>
 <p class="N">Returns <span class="L">str </span>with the accented characters substituted with the most approximated ascii characters.</p>
 <p class="N">If the original letter is uppercase, begins a word and the second letter is lowercase, the substituted first letter will be uppercase and the second will be lowercase.</p>
