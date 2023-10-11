@@ -7,21 +7,20 @@
 <STYLE TYPE="text/css"><!--
 .A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
 .B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#712A00;vertical-align:middle;}
-.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
-.D{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.E{display:list-item;list-style-type:disc;margin:0px 0px 5px 20px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.F{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;}
+.D{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.E{display:list-item;list-style-type:disc;margin:0px 0px 5px 20px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.F{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;}
 .G{border-collapse:collapse;table-layout:auto;border: 2px solid #808080;}
 .H{padding: 3px 5px 3px 5px;border-left: 1px solid #808080;border-top: 1px solid #808080;border-right: 1px solid #808080;border-bottom: 1px solid #808080;background-color:#C0C0C0;vertical-align:middle;}
-.I{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.I{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;}
 .J{color:#0000ff;}
 .K{font-weight:bold;}
-.L{text-decoration:underline;}
-.M{color:#800000;font-weight:bold;}
-.N{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.O{display:list-item;list-style-type:disc;margin:0px 0px 0px 77px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.P{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.Q{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:monospace;font-size:9pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.L{color:#800000;font-weight:bold;}
+.M{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.N{display:list-item;list-style-type:disc;margin:0px 0px 0px 77px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.O{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.P{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:monospace;font-size:9pt;font-weight:normal;font-style:normal;}
 a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
 a.l1:link    { color:#000000; }
 a.l1:visited { color:#000080; }
@@ -61,44 +60,44 @@ a.l2:active  { color:#BC0024; }
 </table></td>
 </tr></table>
 <hr><p class="F">&nbsp;</p>
-<p id="Dl::Load(const String&)" class="D"><span class="J">bool</span>&nbsp;<span class="K">Load</span>(<span class="J">const</span>&nbsp;<a href="String"><span class="L">String</span></a>&nbsp;&amp;<span class="M">fileDl</span>)</p>
-<p class="N">Loads library file <span class="M">fileDl</span> before loading its functions. It returns false if error or <span class="M">fileDl</span> does not exist.</p>
-<p class="N"><span class="M">fileDl</span> has to contain the full path or has to be included in environment variables:</p>
-<p class="O">Windows: PATH</p>
-<p class="O">Linux: LD_LIBRARY_PATH</p>
+<p id="Dl::Load(const String&)" class="D"><span class="J">bool</span>&nbsp;<span class="K">Load</span>(<span class="J">const</span>&nbsp;<a href="String"><u>String</u></a>&nbsp;&amp;<span class="L">fileDl</span>)</p>
+<p class="M">Loads library file <span class="L">fileDl</span> before loading its functions. It returns false if error or <span class="L">fileDl</span> does not exist.</p>
+<p class="M"><span class="L">fileDl</span> has to contain the full path or has to be included in environment variables:</p>
+<p class="N">Windows: PATH</p>
+<p class="N">Linux: LD_LIBRARY_PATH</p>
 <p class="F">&nbsp;</p>
 <hr><p class="F">&nbsp;</p>
-<p id="Dl::GetFunction(const String&)" class="D"><span class="J">void</span>&nbsp;*<span class="K">GetFunction</span>(<span class="J">const</span>&nbsp;<a href="String"><span class="L">String</span></a>&nbsp;&amp;<span class="M">functionName</span>)</p>
-<p class="N">It returns a pointer to <span class="M">functionName</span> in the dynamic library or NULL if error or <span class="M">functionName</span> is not in the dynamic library.</p>
+<p id="Dl::GetFunction(const String&)" class="D"><span class="J">void</span>&nbsp;*<span class="K">GetFunction</span>(<span class="J">const</span>&nbsp;<a href="String"><u>String</u></a>&nbsp;&amp;<span class="L">functionName</span>)</p>
+<p class="M">It returns a pointer to <span class="L">functionName</span> in the dynamic library or NULL if error or <span class="L">functionName</span> is not in the dynamic library.</p>
 <p class="F">&nbsp;</p>
+<p class="O">&nbsp;</p>
+<p class="O">For example, in Windows:</p>
+<p class="O">&nbsp;</p>
+<p class="P">Dl adsapi32;</p>
+<p class="P">long (*GetDevice)(int);</p>
 <p class="P">&nbsp;</p>
-<p class="P">For example, in Windows:</p>
+<p class="P">if (!adsapi32.Load(AppendFileName(myDllFolder, &quot;adsapi32.dll&quot;)))</p>
+<p class="P">&nbsp;&nbsp;&nbsp;&nbsp;throw Exc(Format(t_(&quot;% dll not found&quot;), &quot;Adsapi32&quot;));</p>
 <p class="P">&nbsp;</p>
-<p class="Q">Dl adsapi32;</p>
-<p class="Q">long (*GetDevice)(int);</p>
-<p class="Q">&nbsp;</p>
-<p class="Q">if (!adsapi32.Load(AppendFileName(myDllFolder, &quot;adsapi32.dll&quot;)))</p>
-<p class="Q">&nbsp;&nbsp;&nbsp;&nbsp;throw Exc(Format(t_(&quot;% dll not found&quot;), &quot;Adsapi32&quot;));</p>
-<p class="Q">&nbsp;</p>
-<p class="Q">GetDevice = (long (*)(int))adsapi32.GetFunction(&quot;GetDevice&quot;);</p>
-<p class="Q">if (!GetDevice)</p>
-<p class="Q">&nbsp;&nbsp;&nbsp;&nbsp;throw Exc(Format(t_(&quot;Function %s does not found in dll&quot;), &quot;GetDevice&quot;));</p>
-<p class="Q">long device = GetDevice(3);</p>
-<p class="Q">&nbsp;</p>
-<p class="Q">&nbsp;</p>
-<p class="P">And in Linux:</p>
+<p class="P">GetDevice = (long (*)(int))adsapi32.GetFunction(&quot;GetDevice&quot;);</p>
+<p class="P">if (!GetDevice)</p>
+<p class="P">&nbsp;&nbsp;&nbsp;&nbsp;throw Exc(Format(t_(&quot;Function %s does not found in dll&quot;), &quot;GetDevice&quot;));</p>
+<p class="P">long device = GetDevice(3);</p>
 <p class="P">&nbsp;</p>
-<p class="Q">Dl libm;</p>
-<p class="Q">double (*cosine)(double);</p>
-<p class="Q">&nbsp;</p>
-<p class="Q">if (!libm.Load(&quot;/lib/libm.so.6&quot;))</p>
-<p class="Q">&nbsp;&nbsp;&nbsp;&nbsp;throw Exc(Format(t_(&quot;% dl not found&quot;), &quot;Libm&quot;));</p>
-<p class="Q">&nbsp;</p>
-<p class="Q">cosine = (double (*)(double))libm.GetFunction(&quot;cosine&quot;);</p>
-<p class="Q">if (!cosine)</p>
-<p class="Q">&nbsp;&nbsp;&nbsp;&nbsp;throw Exc(Format(t_(&quot;Function %s does not found in dl&quot;), &quot;cosine&quot;));</p>
-<p class="Q">double val = cosine(3.1416);</p>
 <p class="P">&nbsp;</p>
+<p class="O">And in Linux:</p>
+<p class="O">&nbsp;</p>
+<p class="P">Dl libm;</p>
+<p class="P">double (*cosine)(double);</p>
+<p class="P">&nbsp;</p>
+<p class="P">if (!libm.Load(&quot;/lib/libm.so.6&quot;))</p>
+<p class="P">&nbsp;&nbsp;&nbsp;&nbsp;throw Exc(Format(t_(&quot;% dl not found&quot;), &quot;Libm&quot;));</p>
+<p class="P">&nbsp;</p>
+<p class="P">cosine = (double (*)(double))libm.GetFunction(&quot;cosine&quot;);</p>
+<p class="P">if (!cosine)</p>
+<p class="P">&nbsp;&nbsp;&nbsp;&nbsp;throw Exc(Format(t_(&quot;Function %s does not found in dl&quot;), &quot;cosine&quot;));</p>
+<p class="P">double val = cosine(3.1416);</p>
+<p class="O">&nbsp;</p>
 </TD>
 </TR>
 </TABLE>

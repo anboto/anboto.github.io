@@ -7,18 +7,17 @@
 <STYLE TYPE="text/css"><!--
 .A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
 .B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#800000;vertical-align:middle;}
-.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
-.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.E{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.F{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.G{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;}
+.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;}
+.E{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;}
+.F{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.G{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
 .H{color:#0000ff;}
 .I{color:#008000;font-weight:bold;}
 .J{font-weight:bold;}
-.K{text-decoration:underline;}
-.L{color:#800000;font-weight:bold;}
-.M{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.N{display:list-item;list-style-type:disc;margin:0px 0px 0px 77px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.K{color:#800000;font-weight:bold;}
+.L{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.M{display:list-item;list-style-type:disc;margin:0px 0px 0px 77px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
 a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
 a.l1:link    { color:#000000; }
 a.l1:visited { color:#000080; }
@@ -56,20 +55,20 @@ a.l2:active  { color:#BC0024; }
 <p class="F">&nbsp;</p>
 <p class="F">&nbsp;</p>
 <hr><p class="D">&nbsp;</p>
-<p id="Upp::TSP(const Upp::Vector<Upp::Point_<T>>&,Upp::Vector<int>&,TSP_Init)" class="G"><span class="H">template</span>&nbsp;&lt;<span class="H">typename</span>&nbsp;<span class="I">T</span>&gt;&nbsp;<span class="I">T</span>&nbsp;<span class="J">TSP</span>(<span class="H">const</span>&nbsp;<a href="Upp::Vector"><span class="K">Vector</span></a>&lt;<a href="Upp::Point_"><span class="K">Point_</span></a>&lt;<span class="I">T</span>&gt;&gt;&amp;&nbsp;<span class="L">points</span>, <a href="Upp::Vector"><span class="K">Vector</span></a>&lt;<span class="H">int</span>&gt;&nbsp;&amp;<span class="L">order</span>, TSP_Init&nbsp;<span class="L">init</span>)</p>
-<p class="M">Returns the total distance of a traveling salesman problem defined by a list of euclidean coordinates of the <span class="L">points</span>. It also returns the most optimal <span class="L">order</span> between the nodes.</p>
-<p class="M"><span class="L">init </span>defines the initial conditions, as:</p>
-<p class="N">TSP_CONSECUTIVE: The actual order of supplied points. <span class="L">order</span> is neglected.</p>
-<p class="N">TSP_RANDOM: A random order of &nbsp;supplied points. <span class="L">order</span> is neglected.</p>
-<p class="N">TSP_USER: <span class="L">order</span> has to include an initial guess of the right ordering.</p>
+<p id="Upp::TSP(const Upp::Vector<Upp::Point_<T>>&,Upp::Vector<int>&,TSP_Init)" class="G"><span class="H">template</span>&nbsp;&lt;<span class="H">typename</span>&nbsp;<span class="I">T</span>&gt;&nbsp;<span class="I">T</span>&nbsp;<span class="J">TSP</span>(<span class="H">const</span>&nbsp;<a href="Upp::Vector"><u>Vector</u></a>&lt;<a href="Upp::Point_"><u>Point_</u></a>&lt;<span class="I">T</span>&gt;&gt;&amp;&nbsp;<span class="K">points</span>, <a href="Upp::Vector"><u>Vector</u></a>&lt;<span class="H">int</span>&gt;&nbsp;&amp;<span class="K">order</span>, TSP_Init&nbsp;<span class="K">init</span>)</p>
+<p class="L">Returns the total distance of a traveling salesman problem defined by a list of euclidean coordinates of the <span class="K">points</span>. It also returns the most optimal <span class="K">order</span> between the nodes.</p>
+<p class="L"><span class="K">init </span>defines the initial conditions, as:</p>
+<p class="M">TSP_CONSECUTIVE: The actual order of supplied points. <span class="K">order</span> is neglected.</p>
+<p class="M">TSP_RANDOM: A random order of &nbsp;supplied points. <span class="K">order</span> is neglected.</p>
+<p class="M">TSP_USER: <span class="K">order</span> has to include an initial guess of the right ordering.</p>
 <p class="D">&nbsp;</p>
 <hr><p class="D">&nbsp;</p>
-<p id="Upp::TSP(const Upp::Vector<Upp::Vector<T>>&,Upp::Vector<int>&,TSP_Init)" class="G"><span class="H">template</span>&nbsp;&lt;<span class="H">typename</span>&nbsp;<span class="I">T</span>&gt;&nbsp;<span class="I">T</span>&nbsp;<span class="J">TSP</span>(<span class="H">const</span>&nbsp;<a href="Upp::Vector"><span class="K">Vector</span></a>&lt;<a href="Upp::Vector"><span class="K">Vector</span></a>&lt;<span class="I">T</span>&gt;&gt;&amp;&nbsp;<span class="L">matrix</span>, <a href="Upp::Vector"><span class="K">Vector</span></a>&lt;<span class="H">int</span>&gt;&nbsp;&amp;<span class="L">order</span>, TSP_Init&nbsp;<span class="L">init</span>)</p>
-<p class="M">Returns the total distance of a traveling salesman problem defined by a <span class="L">matrix</span> of distances between nodes. All the elements of the diagonal of this matrix have to be zero and, as the problem is symmetric, only the elements above the diagonal are considered. It also returns the most optimal <span class="L">order</span> between the nodes. </p>
-<p class="M"><span class="L">init </span>defines the initial conditions, as:</p>
-<p class="N">TSP_CONSECUTIVE: The actual order of supplied points. <span class="L">order</span> is neglected.</p>
-<p class="N">TSP_RANDOM: A random order of &nbsp;supplied points. <span class="L">order</span> is neglected.</p>
-<p class="N">TSP_USER: <span class="L">order</span> has to include an initial guess of the right ordering.</p>
+<p id="Upp::TSP(const Upp::Vector<Upp::Vector<T>>&,Upp::Vector<int>&,TSP_Init)" class="G"><span class="H">template</span>&nbsp;&lt;<span class="H">typename</span>&nbsp;<span class="I">T</span>&gt;&nbsp;<span class="I">T</span>&nbsp;<span class="J">TSP</span>(<span class="H">const</span>&nbsp;<a href="Upp::Vector"><u>Vector</u></a>&lt;<a href="Upp::Vector"><u>Vector</u></a>&lt;<span class="I">T</span>&gt;&gt;&amp;&nbsp;<span class="K">matrix</span>, <a href="Upp::Vector"><u>Vector</u></a>&lt;<span class="H">int</span>&gt;&nbsp;&amp;<span class="K">order</span>, TSP_Init&nbsp;<span class="K">init</span>)</p>
+<p class="L">Returns the total distance of a traveling salesman problem defined by a <span class="K">matrix</span> of distances between nodes. All the elements of the diagonal of this matrix have to be zero and, as the problem is symmetric, only the elements above the diagonal are considered. It also returns the most optimal <span class="K">order</span> between the nodes. </p>
+<p class="L"><span class="K">init </span>defines the initial conditions, as:</p>
+<p class="M">TSP_CONSECUTIVE: The actual order of supplied points. <span class="K">order</span> is neglected.</p>
+<p class="M">TSP_RANDOM: A random order of &nbsp;supplied points. <span class="K">order</span> is neglected.</p>
+<p class="M">TSP_USER: <span class="K">order</span> has to include an initial guess of the right ordering.</p>
 <p class="D">&nbsp;</p>
 <p class="E">&nbsp;</p>
 </TD>

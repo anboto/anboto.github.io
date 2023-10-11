@@ -7,25 +7,24 @@
 <STYLE TYPE="text/css"><!--
 .A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
 .B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#712A00;vertical-align:middle;}
-.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
-.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.E{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:12pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;}
+.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.E{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:12pt;font-weight:bold;font-style:normal;}
 .F{color:#0000ff;font-weight:normal;}
 .G{color:#000000;font-weight:normal;}
 .H{color:#000000;}
-.I{display:list-item;list-style-type:disc;margin:0px 0px 0px 20px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.J{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.I{display:list-item;list-style-type:disc;margin:0px 0px 0px 20px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.J{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;}
 .K{border-collapse:collapse;table-layout:auto;border: 2px solid #808080;}
 .L{padding: 3px 5px 3px 5px;border-left: 1px solid #808080;border-top: 1px solid #808080;border-right: 1px solid #808080;border-bottom: 1px solid #808080;background-color:#C0C0C0;vertical-align:middle;}
-.M{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:bold;font-style:normal;text-decoration:none;}
-.N{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.M{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:bold;font-style:normal;}
+.N{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
 .O{color:#0000ff;}
 .P{font-weight:bold;}
 .Q{color:#800000;font-weight:bold;}
 .R{color:#800000;}
-.S{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.T{text-decoration:underline;}
-.U{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#0000ff;font-family:sans-serif;font-size:8pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.S{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.T{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#0000ff;font-family:sans-serif;font-size:8pt;font-weight:bold;font-style:normal;}
 a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
 a.l1:link    { color:#000000; }
 a.l1:visited { color:#000080; }
@@ -82,12 +81,12 @@ a.l2:active  { color:#BC0024; }
 <p class="S">All text output from process to <a href="https://en.wikipedia.org/wiki/Standard_streams">standard streams</a> stdout and stderr is separated and can be got using Read2() method.</p>
 <p class="J">&nbsp;</p>
 <hr><p class="J">&nbsp;</p>
-<p id="Upp::LocalProcess2::Start(const char*,const Upp::Vector<Upp::String>&,const char*,const char*)" class="N"><span class="O">bool</span>&nbsp;<span class="P">Start</span>(<span class="O">const</span>&nbsp;<span class="O">char</span>&nbsp;*<span class="Q">cmd</span>, <span class="O">const</span>&nbsp;<a href="Upp::Vector"><span class="T">Vector</span></a>&lt;<a href="Upp::String"><span class="T">String</span></a>&gt;&amp;&nbsp;<span class="Q">arg</span>, <span class="O">const</span>&nbsp;<span class="O">char</span>&nbsp;*<span class="Q">envptr</span>&nbsp;=&nbsp;((<span class="O">void</span>&nbsp;*)<span class="R">0</span>), <span class="O">const</span>&nbsp;<span class="O">char</span>&nbsp;*<span class="Q">dir</span>&nbsp;=&nbsp;((<span class="O">void</span>&nbsp;*)<span class="R">0</span>))</p>
+<p id="Upp::LocalProcess2::Start(const char*,const Upp::Vector<Upp::String>&,const char*,const char*)" class="N"><span class="O">bool</span>&nbsp;<span class="P">Start</span>(<span class="O">const</span>&nbsp;<span class="O">char</span>&nbsp;*<span class="Q">cmd</span>, <span class="O">const</span>&nbsp;<a href="Upp::Vector"><u>Vector</u></a>&lt;<a href="Upp::String"><u>String</u></a>&gt;&amp;&nbsp;<span class="Q">arg</span>, <span class="O">const</span>&nbsp;<span class="O">char</span>&nbsp;*<span class="Q">envptr</span>&nbsp;=&nbsp;((<span class="O">void</span>&nbsp;*)<span class="R">0</span>), <span class="O">const</span>&nbsp;<span class="O">char</span>&nbsp;*<span class="Q">dir</span>&nbsp;=&nbsp;((<span class="O">void</span>&nbsp;*)<span class="R">0</span>))</p>
 <p class="S">Starts a new process defined by the command <span class="Q">cmd</span> with arguments list <span class="Q">arg</span>, using <span class="Q">envptr</span> environment variables and running the process in <span class="Q">dir</span> directory.</p>
 <p class="S">All text output from process to <a href="https://en.wikipedia.org/wiki/Standard_streams">standard streams</a> stdout and stderr is mixed and can be got using Read() method.</p>
 <p class="J">&nbsp;</p>
 <hr><p class="J">&nbsp;</p>
-<p id="Upp::LocalProcess2::Start2(const char*,const Upp::Vector<Upp::String>&,const char*,const char*)" class="N"><span class="O">bool</span>&nbsp;<span class="P">Start2</span>(<span class="O">const</span>&nbsp;<span class="O">char</span>&nbsp;*<span class="Q">cmd</span>, <span class="O">const</span>&nbsp;<a href="Upp::Vector"><span class="T">Vector</span></a>&lt;<a href="Upp::String"><span class="T">String</span></a>&gt;&amp;&nbsp;<span class="Q">arg</span>, <span class="O">const</span>&nbsp;<span class="O">char</span>&nbsp;*<span class="Q">envptr</span>&nbsp;=&nbsp;((<span class="O">void</span>&nbsp;*)<span class="R">0</span>), <span class="O">const</span>&nbsp;<span class="O">char</span>&nbsp;*<span class="Q">dir</span>&nbsp;=&nbsp;((<span class="O">void</span>&nbsp;*)<span class="R">0</span>))</p>
+<p id="Upp::LocalProcess2::Start2(const char*,const Upp::Vector<Upp::String>&,const char*,const char*)" class="N"><span class="O">bool</span>&nbsp;<span class="P">Start2</span>(<span class="O">const</span>&nbsp;<span class="O">char</span>&nbsp;*<span class="Q">cmd</span>, <span class="O">const</span>&nbsp;<a href="Upp::Vector"><u>Vector</u></a>&lt;<a href="Upp::String"><u>String</u></a>&gt;&amp;&nbsp;<span class="Q">arg</span>, <span class="O">const</span>&nbsp;<span class="O">char</span>&nbsp;*<span class="Q">envptr</span>&nbsp;=&nbsp;((<span class="O">void</span>&nbsp;*)<span class="R">0</span>), <span class="O">const</span>&nbsp;<span class="O">char</span>&nbsp;*<span class="Q">dir</span>&nbsp;=&nbsp;((<span class="O">void</span>&nbsp;*)<span class="R">0</span>))</p>
 <p class="S">Starts a new process defined by the command <span class="Q">cmd</span> with arguments list <span class="Q">arg</span>, using <span class="Q">envptr</span> environment variables and running the process in <span class="Q">dir</span> directory.</p>
 <p class="S">All text output from process to <a href="https://en.wikipedia.org/wiki/Standard_streams">standard streams</a> stdout and stderr is separated and can be got using Read2() method.</p>
 <p class="J">&nbsp;</p>
@@ -100,22 +99,22 @@ a.l2:active  { color:#BC0024; }
 <p class="S">Returns true if process is still running.</p>
 <p class="J">&nbsp;</p>
 <hr><p class="J">&nbsp;</p>
-<p id="Upp::LocalProcess2::Write(Upp::String)" class="N"><span class="O">void</span>&nbsp;<span class="P">Write</span>(<a href="Upp::String"><span class="T">String</span></a>&nbsp;<span class="Q">s</span>)</p>
+<p id="Upp::LocalProcess2::Write(Upp::String)" class="N"><span class="O">void</span>&nbsp;<span class="P">Write</span>(<a href="Upp::String"><u>String</u></a>&nbsp;<span class="Q">s</span>)</p>
 <p class="S">Sends a text string <span class="Q">s</span> to process.</p>
 <p class="S">In a command window, this text would be entered using the keyboard.</p>
 <p class="J">&nbsp;</p>
 <hr><p class="J">&nbsp;</p>
-<p id="Upp::LocalProcess2::Read(Upp::String&)" class="N"><span class="O">bool</span>&nbsp;<span class="P">Read</span>(<a href="Upp::String"><span class="T">String</span></a><span class="O">&amp;</span>&nbsp;<span class="Q">res</span>)</p>
+<p id="Upp::LocalProcess2::Read(Upp::String&)" class="N"><span class="O">bool</span>&nbsp;<span class="P">Read</span>(<a href="Upp::String"><u>String</u></a><span class="O">&amp;</span>&nbsp;<span class="Q">res</span>)</p>
 <p class="S">Reads text <span class="Q">res</span> from process. This process should have to be started using Start() function.</p>
 <p class="S">In a command window, this text would be output to the screen.</p>
 <p class="J">&nbsp;</p>
 <hr><p class="J">&nbsp;</p>
-<p id="Upp::LocalProcess2::Read2(Upp::String&,Upp::String&)" class="N"><span class="O">bool</span>&nbsp;<span class="P">Read2</span>(<a href="Upp::String"><span class="T">String</span></a><span class="O">&amp;</span>&nbsp;<span class="Q">reso</span>, <a href="Upp::String"><span class="T">String</span></a><span class="O">&amp;</span>&nbsp;<span class="Q">rese</span>)</p>
+<p id="Upp::LocalProcess2::Read2(Upp::String&,Upp::String&)" class="N"><span class="O">bool</span>&nbsp;<span class="P">Read2</span>(<a href="Upp::String"><u>String</u></a><span class="O">&amp;</span>&nbsp;<span class="Q">reso</span>, <a href="Upp::String"><u>String</u></a><span class="O">&amp;</span>&nbsp;<span class="Q">rese</span>)</p>
 <p class="S">Reads text <span class="Q">reso</span> from stdout and <span class="Q">rese</span> from stderr. This process should have to be started using Start2() function.</p>
 <p class="S">In a command window, this text would be output to the screen.</p>
 <p class="J">&nbsp;</p>
 <hr><p class="J">&nbsp;</p>
-<p id="Upp::LocalProcess2::GetExitMessage()" class="N"><a href="Upp::String"><span class="T">String</span></a>&nbsp;<span class="P">GetExitMessage</span>()</p>
+<p id="Upp::LocalProcess2::GetExitMessage()" class="N"><a href="Upp::String"><u>String</u></a>&nbsp;<span class="P">GetExitMessage</span>()</p>
 <p class="S">Returns the string defined by the operating system to describe the error code.</p>
 <p class="J">&nbsp;</p>
 <hr><p class="J">&nbsp;</p>
@@ -126,12 +125,12 @@ a.l2:active  { color:#BC0024; }
 <p id="Upp::LocalProcess2::Pause()" class="N"><span class="O">void</span>&nbsp;<span class="P">Pause</span>()</p>
 <p class="S">Pauses/freezes/suspends process and all children processes and threads.</p>
 <p class="S">If process is already paused, it resumes it.</p>
-<p class="U">Only defined in Windows.</p>
+<p class="T">Only defined in Windows.</p>
 <p class="J">&nbsp;</p>
 <hr><p class="J">&nbsp;</p>
 <p id="Upp::LocalProcess2::IsPaused()" class="N"><span class="O">bool</span>&nbsp;<span class="P">IsPaused</span>()</p>
 <p class="S">Returns true if process is paused.</p>
-<p class="U">Only defined in Windows.</p>
+<p class="T">Only defined in Windows.</p>
 <p class="J">&nbsp;</p>
 </TD>
 </TR>

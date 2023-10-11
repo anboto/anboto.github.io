@@ -7,22 +7,21 @@
 <STYLE TYPE="text/css"><!--
 .A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
 .B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#712A00;vertical-align:middle;}
-.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
-.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;text-decoration:none;}
-.E{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.F{display:list-item;list-style-type:disc;margin:0px 0px 0px 20px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;}
+.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;}
+.E{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.F{display:list-item;list-style-type:disc;margin:0px 0px 0px 20px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;}
 .G{color:#000000;font-weight:normal;}
 .H{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#C0C0C0;vertical-align:middle;}
-.I{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
-.J{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.I{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;}
+.J{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
 .K{color:#0000ff;}
 .L{font-weight:bold;}
-.M{text-decoration:underline;}
-.N{color:#800000;font-weight:bold;}
-.O{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.P{margin:0px 0px 0px 89px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;}
-.Q{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;text-decoration:none;}
-.R{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;}
+.M{color:#800000;font-weight:bold;}
+.N{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.O{margin:0px 0px 0px 89px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;}
+.P{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;}
+.Q{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;}
 a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
 a.l1:link    { color:#000000; }
 a.l1:visited { color:#000080; }
@@ -73,23 +72,23 @@ a.l2:active  { color:#BC0024; }
 </table></td>
 </tr></table>
 <hr><p class="E">&nbsp;</p>
-<p id="BSDiff(String,String,String)" class="J"><span class="K">bool</span>&nbsp;<span class="L">BSDiff</span>(<a href="String"><span class="M">String</span></a>&nbsp;<span class="N">oldfile</span>, <a href="String"><span class="M">String</span></a>&nbsp;<span class="N">newfile</span>, <a href="String"><span class="M">String</span></a>&nbsp;<span class="N">patchfile</span>)</p>
-<p class="O">Takes <span class="N">oldfile</span> and <span class="N">newfile</span>, compares them and put the differences in <span class="N">patchfile</span>.so that it is possible to rebuild <span class="N">newfile</span>.</p>
-<p class="O">In arithmetical notation it would be: </p>
-<p class="P">patchfile = newfile - oldfile</p>
-<p class="O">Returns true if correct. Error String can be got with BSGetLastError()</p>
+<p id="BSDiff(String,String,String)" class="J"><span class="K">bool</span>&nbsp;<span class="L">BSDiff</span>(<a href="String"><u>String</u></a>&nbsp;<span class="M">oldfile</span>, <a href="String"><u>String</u></a>&nbsp;<span class="M">newfile</span>, <a href="String"><u>String</u></a>&nbsp;<span class="M">patchfile</span>)</p>
+<p class="N">Takes <span class="M">oldfile</span> and <span class="M">newfile</span>, compares them and put the differences in <span class="M">patchfile</span>.so that it is possible to rebuild <span class="M">newfile</span>.</p>
+<p class="N">In arithmetical notation it would be: </p>
+<p class="O">patchfile = newfile - oldfile</p>
+<p class="N">Returns true if correct. Error String can be got with BSGetLastError()</p>
+<p class="P">&nbsp;</p>
+<hr><p class="P">&nbsp;</p>
+<p id="BSPatch(String,String,String)" class="J"><span class="K">bool</span>&nbsp;<span class="L">BSPatch</span>(<a href="String"><u>String</u></a>&nbsp;<span class="M">oldfile</span>, <a href="String"><u>String</u></a>&nbsp;<span class="M">newfile</span>, <a href="String"><u>String</u></a>&nbsp;<span class="M">patchfile</span>)</p>
+<p class="N">Takes <span class="M">oldfile</span> and <span class="M">patchfile</span>, to rebuild <span class="M">newfile</span>.</p>
+<p class="N">In arithmetical notation it would be: </p>
+<p class="O">newfile = oldfile + patchfile</p>
+<p class="N">Returns true if correct. Error String can be got with BSGetLastError()</p>
+<p class="P">&nbsp;</p>
+<hr><p class="P">&nbsp;</p>
+<p id="BsGetLastError()" class="J"><a href="String"><u>String</u></a>&nbsp;<span class="L">BsGetLastError</span>()</p>
+<p class="N">Returns the last BSDiff/BSPatch error message.</p>
 <p class="Q">&nbsp;</p>
-<hr><p class="Q">&nbsp;</p>
-<p id="BSPatch(String,String,String)" class="J"><span class="K">bool</span>&nbsp;<span class="L">BSPatch</span>(<a href="String"><span class="M">String</span></a>&nbsp;<span class="N">oldfile</span>, <a href="String"><span class="M">String</span></a>&nbsp;<span class="N">newfile</span>, <a href="String"><span class="M">String</span></a>&nbsp;<span class="N">patchfile</span>)</p>
-<p class="O">Takes <span class="N">oldfile</span> and <span class="N">patchfile</span>, to rebuild <span class="N">newfile</span>.</p>
-<p class="O">In arithmetical notation it would be: </p>
-<p class="P">newfile = oldfile + patchfile</p>
-<p class="O">Returns true if correct. Error String can be got with BSGetLastError()</p>
-<p class="Q">&nbsp;</p>
-<hr><p class="Q">&nbsp;</p>
-<p id="BsGetLastError()" class="J"><a href="String"><span class="M">String</span></a>&nbsp;<span class="L">BsGetLastError</span>()</p>
-<p class="O">Returns the last BSDiff/BSPatch error message.</p>
-<p class="R">&nbsp;</p>
 </TD>
 </TR>
 </TABLE>
