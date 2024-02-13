@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>Anboto</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e0e0e0;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;}
+.B{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.C{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#712A00;vertical-align:middle;}
+.D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.E{border-collapse:collapse;table-layout:auto;border: 2px solid #808080;}
+.F{padding: 3px 5px 3px 5px;border-left: 1px solid #808080;border-top: 1px solid #808080;border-right: 1px solid #808080;border-bottom: 1px solid #808080;background-color:#C0C0C0;vertical-align:middle;}
+.G{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;}
+.H{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;}
+.I{color:#0000ff;}
+.J{font-weight:bold;}
+.K{color:#800000;font-weight:bold;}
+.L{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.M{display:list-item;list-style-type:disc;margin:0px 0px 0px 77px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.N{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><p class="A">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="B"><colgroup><col width="100%"></colgroup>
+<tr><td class="C"><p class="A">Polygon3D</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="D">&nbsp;</p>
+<p class="D">Functions for 3D Point3D concave and convex flat polygons. No specific order is required.</p>
+<p class="D">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="E"><colgroup><col width="100%"></colgroup>
+<tr><td class="F"><p class="G">Function List</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="H">&nbsp;</p>
+<p class="D"><span class="I">enum</span> ContainsPointRes <span class="J">ContainsPoint</span>(<span class="I">const</span> Vector&lt;Point3D&gt;<span class="I">&amp;</span> <span class="K">polygon</span>, <span class="I">const</span> Point3D<span class="I">&amp;</span> <span class="K">point</span>, <span class="I">double</span> <span class="K">distanceTol</span>, <span class="I">double</span> <span class="K">angleNormalTol</span>)</p>
+<p class="L">Checks if point <span class="K">point</span> is inside or in the boundaries of polygon <span class="K">polygon</span>.</p>
+<p class="L"><span class="K">distanceTol</span> indicates the tolerance in m to check if a point is in the plane of the <span class="K">polygon</span>.</p>
+<p class="L"><span class="K">angleNormalTol</span> indicates the tolerance in rad of the normals of the triangles of the <span class="K">polygon</span>, to test if <span class="K">polygon </span>is flat.</p>
+<p class="L">Returned ContainsPointRes is:</p>
+<p class="M">&gt;0 (POLY_IN) if <span class="K">pt</span> is inside</p>
+<p class="M">== 0 (POLY_SECT) if <span class="K">pt</span> is in the boundary. </p>
+<p class="L">Negatives values indicate that <span class="K">point </span>is outside:</p>
+<p class="M">POLY_NOPLAN = -4. The polygon is not flat.</p>
+<p class="M">POLY_FAR = -3. The point is not in the same plane.</p>
+<p class="M">POLY_3 = -2. The polygon has less than three points.</p>
+<p class="M">POLY_OUT = -1. The point is in the same plane, but outside.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Area(const UVector&)" class="N"><span class="I">double</span> <span class="J">Area</span>(<span class="I">const</span> UVector&lt;Point3D&gt;<span class="I">&amp;</span> <span class="K">p</span>)</p>
+<p class="L">Returns the area of polygon <span class="K">p</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Centroid(const UVector&)" class="N">Point3D <span class="J">Centroid</span>(<span class="I">const</span> UVector&lt;Point3D&gt;<span class="I">&amp;</span> <span class="K">p</span>)</p>
+<p class="L">Returns the centroid of polygon <span class="K">p</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Point3Dto2D_XY(const Vector&)" class="N">Vector&lt;Pointf&gt; <span class="J">Point3Dto2D_XY</span>(<span class="I">const</span> Vector&lt;Point3D&gt;<span class="I">&amp;</span> <span class="K">bound</span>)</p>
+<p class="L">Converts the 3D polygon <span class="K">bound</span> to a 2D polygon based on X and Y.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Point3Dto2D_XZ(const Vector&)" class="N">Vector&lt;Pointf&gt; <span class="J">Point3Dto2D_XZ</span>(<span class="I">const</span> Vector&lt;Point3D&gt;<span class="I">&amp;</span> <span class="K">bound</span>)</p>
+<p class="L">Converts the 3D polygon <span class="K">bound</span> to a 2D polygon based on X and Z.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Point3Dto2D_YZ(const Vector&)" class="N">Vector&lt;Pointf&gt; <span class="J">Point3Dto2D_YZ</span>(<span class="I">const</span> Vector&lt;Point3D&gt;<span class="I">&amp;</span> <span class="K">bound</span>)</p>
+<p class="L">Converts the 3D polygon <span class="K">bound</span> to a 2D polygon based on Y and Z.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Point2Dto3D_XY(const Vector&)" class="N">Vector&lt;Point3D&gt; <span class="J">Point2Dto3D_XY</span>(<span class="I">const</span> Vector&lt;Pointf&gt;<span class="I">&amp;</span> <span class="K">bound</span>)</p>
+<p class="L">Converts the 2D polygon <span class="K">bound</span> to a 3D polygon based on X and Y.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Point2Dto3D_XZ(const Vector&)" class="N">Vector&lt;Point3D&gt; <span class="J">Point2Dto3D_XZ</span>(<span class="I">const</span> Vector&lt;Pointf&gt;<span class="I">&amp;</span> <span class="K">bound</span>)</p>
+<p class="L">Converts the 2D polygon <span class="K">bound</span> to a 3D polygon based on X and Z.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::Point2Dto3D_YZ(const Vector&)" class="N">Vector&lt;Point3D&gt; <span class="J">Point2Dto3D_YZ</span>(<span class="I">const</span> Vector&lt;Pointf&gt;<span class="I">&amp;</span> <span class="K">bound</span>)</p>
+<p class="L">Converts the 2D polygon <span class="K">bound</span> to a 3D polygon based on Y and Z.</p>
+<p class="H">&nbsp;</p>
+<p class="D">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>
