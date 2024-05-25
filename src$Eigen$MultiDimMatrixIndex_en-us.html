@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>3.3 MultiDimMatrixIndex :: Anboto</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#800000;vertical-align:middle;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e5e5e5;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;}
+.D{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.E{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:bold;font-style:normal;}
+.F{color:#0000ff;font-weight:normal;}
+.G{font-weight:normal;}
+.H{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.I{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;}
+.J{border-collapse:collapse;table-layout:auto;border: 2px solid #808080;}
+.K{padding: 3px 5px 3px 5px;border-left: 1px solid #808080;border-top: 1px solid #808080;border-right: 1px solid #808080;border-bottom: 1px solid #808080;background-color:#C0C0C0;vertical-align:middle;}
+.L{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;}
+.M{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.N{color:#0000ff;}
+.O{font-weight:bold;}
+.P{color:#800000;font-weight:bold;}
+.Q{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#0000ff;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.R{color:#000000;}
+.S{color:#000000;font-weight:bold;}
+.T{color:#008000;font-weight:bold;}
+.U{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#800000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;}
+.V{color:#000000;font-weight:normal;}
+.W{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:12pt;font-weight:normal;font-style:normal;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="B"><p class="C">MultiDimMatrixIndex</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="D">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::class" class="E"><span class="F">class</span><span class="G">&nbsp;</span>MultiDimMatrixIndex</p>
+<p class="D">&nbsp;</p>
+<p class="H">A class to access multidimensional matrices stored in simple vector containers.</p>
+<p class="H">By default the storage is col major, although it can be changed with ColMajor() or RowMajor() functions.</p>
+<p class="H">&nbsp;</p>
+<p class="I">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="J"><colgroup><col width="100%"></colgroup>
+<tr><td class="K"><p class="L">Constructor Detail</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::MultiDimMatrixIndex(Args...)" class="M"><span class="N">template</span> &lt;<span class="N">typename</span> <span class="N">...</span>Args&gt; <span class="O">MultiDimMatrixIndex</span>(Args <span class="N">...</span><span class="P">args</span>)</p>
+<p class="D">Sets in <span class="P">args</span> the axis dimensions.</p>
+<p class="I">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="J"><colgroup><col width="100%"></colgroup>
+<tr><td class="K"><p class="L">Public Member List</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::SetNumAxis(int)" class="M"><span class="N">void</span>&nbsp;<span class="O">SetNumAxis</span>(<span class="N">int</span>&nbsp;<span class="P">numAxis</span>)</p>
+<p class="D">Sets the number of dimensions with <span class="P">numAxis</span>.</p>
+<p class="I">&nbsp;</p>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::SetAxisDim(int,int)" class="M"><span class="N">void</span>&nbsp;<span class="O">SetAxisDim</span>(<span class="N">int</span>&nbsp;<span class="P">axis</span>, <span class="N">int</span>&nbsp;<span class="P">dim</span>)</p>
+<p class="D">Sets the size <span class="P">dim </span>of the dimension <span class="P">axis</span>.</p>
+<p class="I">&nbsp;</p>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::SetAxis1D(int)" class="M"><span class="N">void</span>&nbsp;<span class="O">SetAxis1D</span>(<span class="N">int</span>&nbsp;<span class="P">dimX</span>)</p>
+<p class="D">Sets the size <span class="P">dimX</span> of unidimensional vector.</p>
+<p class="I">&nbsp;</p>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::SetAxis2D(int,int)" class="M"><span class="N">void</span>&nbsp;<span class="O">SetAxis2D</span>(<span class="N">int</span>&nbsp;<span class="P">dimX</span>, <span class="N">int</span>&nbsp;<span class="P">dimY</span>)</p>
+<p class="D">Sets with <span class="P">dimX</span> and <span class="P">dimY</span> the sizes of a bidimensional vector.</p>
+<p class="I">&nbsp;</p>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::GetAxisDim()" class="M"><a href="Upp::Vector"><u>Upp::Vector</u></a>&lt;<span class="N">int</span>&gt;&nbsp;&amp;<span class="O">GetAxisDim</span>()</p>
+<p class="D">Gets the array of dimensions including the size of each.</p>
+<p class="I">&nbsp;</p>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::GetIndex(const Upp::Vector<int>&)const" class="Q">int<span class="R">&nbsp;</span><span class="S">GetIndex</span><span class="R">(</span>const<span class="R">&nbsp;</span><a href="Upp::Vector"><span class="R"><u>Vector</u></span></a><span class="R">&lt;</span>int<span class="R">&gt;&nbsp;&amp;</span><span class="P">index</span><span class="R">)&nbsp;</span>const</p>
+<p class="D">Gets the index in the storage of a multidimensional matrix of index included in Vector <span class="P">index.</span>.</p>
+<p class="I">&nbsp;</p>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::GetIndex(T,Args...args)const" class="Q">template<span class="R">&nbsp;&lt;</span>typename<span class="R">&nbsp;</span><span class="T">T</span><span class="R">, </span>typename...<span class="R">&nbsp;</span><span class="T">Args</span><span class="R">&gt;&nbsp;</span>int<span class="R">&nbsp;</span><span class="S">GetIndex</span><span class="R">(</span><span class="T">T</span><span class="R">&nbsp;</span><span class="P">t</span><span class="R">, </span><span class="T">Args</span>...<span class="R">&nbsp;args)&nbsp;</span>const</p>
+<p class="U"><span class="V">Gets the index in the storage of a multidimensional matrix of indexes </span>t (t0, t1, ...).</p>
+<p class="I">&nbsp;</p>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::operator()(Args...args)const" class="Q">template<span class="R">&nbsp;&lt;</span>typename...<span class="R">&nbsp;</span><span class="T">Args</span><span class="R">&gt;&nbsp;</span>int<span class="R">&nbsp;</span><span class="S">operator()</span><span class="R">(</span><span class="T">Args</span>...<span class="R">&nbsp;args)&nbsp;</span>const</p>
+<p class="D">Operator to get the index in the storage given index of the columns.</p>
+<p class="I">&nbsp;</p>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::GetIndex(int,int)const" class="Q">int<span class="R">&nbsp;</span><span class="S">GetIndex</span><span class="R">(</span>int<span class="R">&nbsp;</span><span class="P">x</span><span class="R">, </span>int<span class="R">&nbsp;</span><span class="P">y</span><span class="R">)&nbsp;</span>const</p>
+<p class="D">Gets the index in the storage of a bidimensional matrix of index <span class="P">x</span> and <span class="P">y</span>.</p>
+<p class="I">&nbsp;</p>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::IsValid(int,int)const" class="Q">bool<span class="R">&nbsp;</span><span class="S">IsValid</span><span class="R">(</span>int<span class="R">&nbsp;</span><span class="P">x</span><span class="R">, </span>int<span class="R">&nbsp;</span><span class="P">y</span><span class="R">)&nbsp;</span>const</p>
+<p class="D">Gets if the bidimensional matrix index <span class="P">x</span> and <span class="P">y </span>is inside bounds..</p>
+<p class="I">&nbsp;</p>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::GetNumAxis()const" class="Q">int<span class="R">&nbsp;</span><span class="S">GetNumAxis</span><span class="R">()&nbsp;</span>const</p>
+<p class="D">Gets the number of dimensions.</p>
+<p class="I">&nbsp;</p>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::MultiDimMatrixIndex::size()const" class="Q">int<span class="R">&nbsp;</span><span class="S">size</span><span class="R">()&nbsp;</span>const</p>
+<p class="D">Returns the size of the storage.</p>
+<p class="I">&nbsp;</p>
+<p class="W">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="J"><colgroup><col width="100%"></colgroup>
+<tr><td class="K"><p class="L">Functions</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::RowMajorToColMajor(const T*,T*,const Vector&)" class="M"><span class="N">template</span> &lt;<span class="N">typename</span> T&gt; <span class="N">void</span> <span class="O">RowMajorToColMajor</span>(<span class="N">const</span> T <span class="N">*</span><span class="P">d_row</span>, T <span class="N">*</span><span class="P">d_col</span>, <span class="N">const</span> Vector&lt;<span class="N">int</span>&gt;<span class="N">&amp;</span> <span class="P">dims</span>)</p>
+<p class="D">Transforms an storage <span class="P">d_row</span> in row major, to the same data in <span class="P">d_col</span> in col major order. <span class="P">dims</span> includes the size of each dimension.</p>
+<p class="I">&nbsp;</p>
+<hr><p class="I">&nbsp;</p>
+<p id="Upp::ColMajorToRowMajor(const T*,T*,const Vector&)" class="M"><span class="N">template</span> &lt;<span class="N">typename</span> T&gt; <span class="N">void</span> <span class="O">ColMajorToRowMajor</span>(<span class="N">const</span> T <span class="N">*</span><span class="P">d_col</span>, T <span class="N">*</span><span class="P">d_row</span>, <span class="N">const</span> Vector&lt;<span class="N">int</span>&gt;<span class="N">&amp;</span> <span class="P">dims</span>)</p>
+<p class="D">Transforms an storage <span class="P">d_col</span> in col major, to the same data in <span class="P">d_row</span> in row major order. <span class="P">dims</span> includes the size of each dimension.</p>
+<p class="I">&nbsp;</p>
+<p class="I">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>

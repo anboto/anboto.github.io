@@ -9,8 +9,8 @@
 .B{margin:0px 0px 0px 0px;text-indent:0px;text-align:justify;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
 .C{margin:0px 0px 0px 0px;text-indent:0px;text-align:justify;color:#000000;font-family:monospace;font-size:10pt;font-weight:normal;font-style:normal;}
 .D{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:monospace;font-size:10pt;font-weight:normal;font-style:normal;}
-.E{margin:0px 0px 0px 0px;text-indent:0px;text-align:center;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
-.F{display:list-item;list-style-type:disc;margin:0px 0px 0px 20px;text-indent:0px;text-align:justify;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.E{display:list-item;list-style-type:disc;margin:0px 0px 0px 20px;text-indent:0px;text-align:justify;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.F{margin:0px 0px 0px 0px;text-indent:0px;text-align:center;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
 .G{margin:0px 0px 0px 0px;text-indent:0px;text-align:justify;color:#000000;font-family:sans-serif;font-size:9pt;font-weight:normal;font-style:italic;}
 a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
 a.l1:link    { color:#000000; }
@@ -45,24 +45,30 @@ a.l2:active  { color:#BC0024; }
 <p class="D">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7, 8;</p>
 <p class="D">&nbsp;&nbsp;&nbsp;&nbsp;Matrix2d res = a*b;&nbsp;&nbsp;&nbsp;&nbsp;// Just multiply them using *</p>
 <p class="B">&nbsp;</p>
+<p class="B">Starting from the 3.1.1 version, it is licensed under the <a href="http://www.mozilla.org/MPL/2.0/">MPL2</a>, which is a simple weak copyleft license. Common questions about the MPL2 are answered in the official <a href="http://www.mozilla.org/MPL/2.0/FAQ.html">MPL2 FAQ</a>.</p>
 <p class="B">&nbsp;</p>
-<p class="B">Eigen package is a wrapper of Eigen library, updated to commit fee5d60b (26/12/2023). It includes the library and helper functions to integrate better Eigen with U++. Starting from the 3.1.1 version, it is licensed under the <a href="http://www.mozilla.org/MPL/2.0/">MPL2</a>, which is a simple weak copyleft license. Common questions about the MPL2 are answered in the official <a href="http://www.mozilla.org/MPL/2.0/FAQ.html">MPL2 FAQ</a>.</p>
+<p class="B">Eigen package is a wrapper of Eigen library, updated to commit fee5d60b (26/12/2023). It includes the library and helper functions to integrate better Eigen with U++, like:</p>
+<p class="E"><a href="src$Eigen$NonLinear_en-us.html">Non linear equations solving</a></p>
+<p class="E"><a href="src$Eigen$MultiDimMatrix_en-us.html">MultiDimMatrix</a></p>
+<p class="E"><a href="src$Eigen$MultiDimMatrixRowMajor_en-us.html">MultiDimMatrixRowMajor</a></p>
+<p class="E"><a href="src$Eigen$MultiDimMatrixIndex_en-us.html">MultiDimMatrixIndex</a></p>
+<p class="E"><a href="src$Eigen$MultiDimMatrixIndexRowMajor_en-us.html">MultiDimMatrixRowMajor</a></p>
 <p class="B">&nbsp;</p>
-<p class="B">Bazaar/Eigen package includes a sample package (Eigen_demo) to ease its use for U++ users. It has many samples from Eigen library and nonlinear equation solving and optimization like <a href="http://www.itl.nist.gov/div898/strd/nls/data/eckerle4.shtml">Eckerle4</a> and <a href="http://www.itl.nist.gov/div898/strd/nls/data/thurber.shtml">Thurber</a> (see the graphs). To simplify access to these features, <a href="topic://plugin/Eigen/src/NonLinear_en-us">simple functions</a> have been added.</p>
+<p class="B">Anboto/Eigen package includes a sample package (Eigen_demo) to ease its use for U++ users. It has many samples from Eigen library and nonlinear equation solving and optimization like <a href="http://www.itl.nist.gov/div898/strd/nls/data/eckerle4.shtml">Eckerle4</a> and <a href="http://www.itl.nist.gov/div898/strd/nls/data/thurber.shtml">Thurber</a> (see the graphs). To simplify access to these features, <a href="topic://plugin/Eigen/src/NonLinear_en-us">simple functions</a> have been added.</p>
 <p class="B">&nbsp;</p>
-<p class="E"><a href="srcdoc$Eigen$Eigen$en-us.html_0.png"><img src="srcdoc$Eigen$Eigen$en-us.html_0.png" border="0" alt="" style="width: 268px; height: 233px"></a> &nbsp;&nbsp;<a href="srcdoc$Eigen$Eigen$en-us.html_1.png"><img src="srcdoc$Eigen$Eigen$en-us.html_1.png" border="0" alt="" style="width: 272px; height: 232px"></a></p>
+<p class="F"><a href="srcdoc$Eigen$Eigen$en-us.html_0.png"><img src="srcdoc$Eigen$Eigen$en-us.html_0.png" border="0" alt="" style="width: 268px; height: 233px"></a> &nbsp;&nbsp;<a href="srcdoc$Eigen$Eigen$en-us.html_1.png"><img src="srcdoc$Eigen$Eigen$en-us.html_1.png" border="0" alt="" style="width: 272px; height: 232px"></a></p>
 <p class="B">&nbsp;</p>
 <p class="B">It also includes a simple FFT (<a href="https://en.wikipedia.org/wiki/Fast_Fourier_transform">Fast Fourier Transform</a>) sample.that:</p>
-<p class="F">Generates a data series composed by three sinusoidal series of amplitude 2, 5 and 30, and frequencies 1/50, 1/30 and 1/10 Hz:</p>
+<p class="E">Generates a data series composed by three sinusoidal series of amplitude 2, 5 and 30, and frequencies 1/50, 1/30 and 1/10 Hz:</p>
 <p class="B">&nbsp;&nbsp;&nbsp;&nbsp;f(t) = 2*sin(2*PI*t/50 - PI/3) + 5*sin(2*PI*t/30 - PI/2) + 30*sin(2*PI*t/10 - PI/5)</p>
-<p class="F">Gets the FFT</p>
-<p class="F">Filters the frequencies between 1/25 and 1/35 Hz</p>
-<p class="F">Gets the filtered data series</p>
-<p class="F">Saves both FFT and series</p>
+<p class="E">Gets the FFT</p>
+<p class="E">Filters the frequencies between 1/25 and 1/35 Hz</p>
+<p class="E">Gets the filtered data series</p>
+<p class="E">Saves both FFT and series</p>
 <p class="B">&nbsp;</p>
-<p class="E"><a href="srcdoc$Eigen$Eigen$en-us.html_2.png"><img src="srcdoc$Eigen$Eigen$en-us.html_2.png" border="0" alt="" style="width: 546px; height: 273px"></a></p>
+<p class="F"><a href="srcdoc$Eigen$Eigen$en-us.html_2.png"><img src="srcdoc$Eigen$Eigen$en-us.html_2.png" border="0" alt="" style="width: 546px; height: 273px"></a></p>
 <p class="B">&nbsp;</p>
-<p class="E"><a href="srcdoc$Eigen$Eigen$en-us.html_3.png"><img src="srcdoc$Eigen$Eigen$en-us.html_3.png" border="0" alt="" style="width: 546px; height: 314px"></a></p>
+<p class="F"><a href="srcdoc$Eigen$Eigen$en-us.html_3.png"><img src="srcdoc$Eigen$Eigen$en-us.html_3.png" border="0" alt="" style="width: 546px; height: 314px"></a></p>
 <p class="B">&nbsp;</p>
 <p class="B">Eigen packages have been prepared by <a href="http://www.ultimatepp.org/forum/index.php?t=usrinfo&id=647&">dolik.rce</a> and <a href="http://www.ultimatepp.org/forum/index.php?t=usrinfo&id=648&">koldo</a>.</p>
 <p class="G">&nbsp;</p>
