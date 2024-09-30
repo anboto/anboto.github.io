@@ -329,7 +329,7 @@ a.l2:active  { color:#BC0024; }
 <p class="E">&nbsp;&nbsp;&nbsp;&nbsp;It is opposite to StringToSeconds()</p>
 <p class="H">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
-<p id="StringToSeconds(String)" class="I"><span class="J">double</span>&nbsp;<span class="K">StringToSeconds</span>(<a href="String"><u>String</u></a>&nbsp;<span class="L">str</span>)</p>
+<p id="StringToSeconds(const char*)" class="I"><span class="J">double</span>&nbsp;<span class="K">StringToSeconds</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>)</p>
 <p class="N">Converts a String <span class="L">str </span>formatted as HH:MM:SS to a returned amount of seconds.</p>
 <p class="E">&nbsp;&nbsp;&nbsp;&nbsp;It is opposite to SecondsToString()</p>
 <p class="H">&nbsp;</p>
@@ -340,8 +340,8 @@ a.l2:active  { color:#BC0024; }
 <p class="E">&nbsp;&nbsp;&nbsp;&nbsp;It is opposite to StringToHMS().</p>
 <p class="E">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
-<p id="StringToHMS(String,int&,int&,double&)" class="I"><span class="J">void</span>&nbsp;<span class="K">StringToHMS</span>(<a href="String"><u>String</u></a>&nbsp;<span class="L">durat</span>, <span class="J">int</span>&nbsp;&amp;<span class="L">hour</span>, <span class="J">int</span>&nbsp;&amp;<span class="L">min</span>, <span class="J">double</span>&nbsp;&amp;<span class="L">seconds</span>)</p>
-<p class="N">It converts a String <span class="L">durat </span>formatted as HH:MM:SS to get <span class="L">hour</span>, <span class="L">min </span>and <span class="L">seconds</span>.</p>
+<p id="StringToHMS(const char*,int&,int&,double&)" class="I"><span class="J">void</span>&nbsp;<span class="K">StringToHMS</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>, <span class="J">int</span>&nbsp;&amp;<span class="L">hour</span>, <span class="J">int</span>&nbsp;&amp;<span class="L">min</span>, <span class="J">double</span>&nbsp;&amp;<span class="L">seconds</span>)</p>
+<p class="N">It converts a String <span class="L">s </span>formatted as HH:MM:SS to get <span class="L">hour</span>, <span class="L">min </span>and <span class="L">seconds</span>.</p>
 <p class="E">&nbsp;&nbsp;&nbsp;&nbsp;It is opposite to HMSToString()</p>
 <p class="H">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
@@ -349,11 +349,11 @@ a.l2:active  { color:#BC0024; }
 <p class="N">Converts an amount of <span class="L">bytes </span>to a short String. If <span class="L">units</span> is true, they will appear like in 123.4 Kb</p>
 <p class="H">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
-<p id="StrToTime(const char*)" class="I"><a href="Time"><u>::Time</u></a>&nbsp;<span class="K">StrToTime</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>)</p>
+<p id="StringToTime(const char*)" class="I"><a href="Time"><u>::Time</u></a>&nbsp;<span class="K">StringToTime</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>)</p>
 <p class="N">Like <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="K">StrToTime</span>(<span class="J">struct</span>&nbsp;<a href="Time"><u>Upp::Time</u></a><span class="J">&amp;</span>&nbsp;<span class="L">d</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>), but returning directly a Time.</p>
 <p class="H">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
-<p id="StrToDate(const char*)" class="I"><a href="Date"><u>::Date</u></a>&nbsp;<span class="K">StrToDate</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>)</p>
+<p id="StringToDate(const char*)" class="I"><a href="Date"><u>::Date</u></a>&nbsp;<span class="K">StringToDate</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>)</p>
 <p class="N">Like <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="K">StrToDate</span>(<span class="J">struct</span>&nbsp;<a href="Time"><u>Upp::Date</u></a><span class="J">&amp;</span>&nbsp;<span class="L">d</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>), but returning directly a Date.</p>
 <p class="H">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
