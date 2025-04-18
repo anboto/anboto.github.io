@@ -694,10 +694,6 @@ a.l2:active  { color:#BC0024; }
 <p class="N">Returns a String from a Range (Vector&lt;&gt;, Array&lt;&gt;, ...) <span class="L">a</span> with elements separated with ';'.</p>
 <p class="H">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
-<p id="DamerauLevenshteinDistance(const char*,const char*,int)" class="I"><span class="J">int</span>&nbsp;<span class="K">DamerauLevenshteinDistance</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">t</span>, <span class="J">int</span>&nbsp;<span class="L">alphabetLength</span>&nbsp;=&nbsp;<span class="M">256</span>)</p>
-<p class="N">Calculates the Damerau Levenshtein distance between words <span class="L">s</span> and <span class="L">t</span> considering an alphabet of length <span class="L">alphabetLength</span>.</p>
-<p class="N">The algorithm is documented <a href="https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance">here</a> and <a href="https://stackoverflow.com/questions/6033631/levenshtein-to-damerau-levenshtein/6035519#6035519">here</a>.</p>
-<hr><p class="H">&nbsp;</p>
 <p id="Upp::GetPythonDeclaration(const Upp::String&)" class="I"><a href="Upp::String"><u>String</u></a>&nbsp;<span class="K">GetPythonDeclaration</span>(<span class="J">const</span>&nbsp;<a href="Upp::String"><u>String</u></a>&nbsp;&amp;<span class="L">include</span>)</p>
 <p class="N">Returns the Python ctypes declarations based on C declarations in <span class="L">include</span>.</p>
 <p class="H">&nbsp;</p>
@@ -705,6 +701,11 @@ a.l2:active  { color:#BC0024; }
 <p id="LevenshteinDistance(const char*,const char*)" class="I"><span class="J">int</span>&nbsp;<span class="K">LevenshteinDistance</span>(<span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">s</span>, <span class="J">const</span>&nbsp;<span class="J">char</span>&nbsp;*<span class="L">t</span>)</p>
 <p class="N">Calculates the Levenshtein distance between words <span class="L">s</span> and <span class="L">t</span>.</p>
 <p class="N">The algorithm is documented <a href="From https://en.wikipedia.org/wiki/Levenshtein_distance">here</a>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::DamerauLevenshteinDistance(const char*,const char*,size_t)" class="I"><span class="J">int</span> <span class="K">DamerauLevenshteinDistance</span>(<span class="J">const</span> <span class="J">char</span> <span class="J">*</span><span class="L">s</span>, <span class="J">const</span> <span class="J">char</span> <span class="J">*</span><span class="L">t</span>, size_t <span class="L">alphabetLength</span> <span class="J">=</span> <span class="M">256</span>)</p>
+<p class="N">Calculates the Damerau Levenshtein distance between words <span class="L">s</span> and <span class="L">t</span> considering an alphabet of length <span class="L">alphabetLength</span>.</p>
+<p class="N">The algorithm is documented <a href="https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance">here</a> and <a href="https://stackoverflow.com/questions/6033631/levenshtein-to-damerau-levenshtein/6035519#6035519">here</a>.</p>
 <p class="H">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
 <p id="GetRelativePath(Upp::String,Upp::String,Upp::String&,bool)" class="I"><span class="J">bool</span>&nbsp;<span class="K">GetRelativePath</span>(<a href="Upp::String"><u>String</u></a>&nbsp;<span class="L">from</span>, <a href="Upp::String"><u>String</u></a>&nbsp;<span class="L">path</span>, <a href="Upp::String"><u>String</u></a><span class="J">&amp;</span>&nbsp;<span class="L">ret</span>, <span class="J">bool</span>&nbsp;<span class="L">normalize</span>)</p>
