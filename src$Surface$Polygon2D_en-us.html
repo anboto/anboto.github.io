@@ -57,10 +57,18 @@ a.l2:active  { color:#BC0024; }
 </tr></table>
 <hr><p class="H">&nbsp;</p>
 <p id="Upp::ContainsPoint(const Vector&,const Upp::Pointf&)" class="I"><span class="J">enum</span> ContainsPointRes <span class="K">ContainsPoint</span>(<span class="J">const</span> Vector&lt;Pointf&gt;<span class="J">&amp;</span> <span class="L">polygon</span>, <span class="J">const</span> Pointf<span class="J">&amp;</span> <span class="L">pt</span>)</p>
-<p class="M">Checks if point <span class="L">pt</span> is inside or in the boundaries of polygon <span class="L">polygon</span>.</p>
+<p class="M">Checks if point <span class="L">pt</span> is inside or in the boundaries of counterclockwise polygon <span class="L">polygon</span>.</p>
 <p class="M">Returned ContainsPointRes is:</p>
 <p class="N">&gt;0 if <span class="L">pt</span> is inside</p>
 <p class="N">== 0 if <span class="L">pt</span> is in the boundary.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::ContainsPoint(const Point_&,const Point_&,const Point_&,const Point_&)" class="I"><span class="J">template</span> &lt;<span class="J">typename</span> T&gt; <span class="J">bool</span> <span class="K">ContainsPoint</span>(<span class="J">const</span> Point_&lt;T&gt;<span class="J">&amp;</span> <span class="L">a</span>, <span class="J">const</span> Point_&lt;T&gt;<span class="J">&amp;</span> <span class="L">b</span>, <span class="J">const</span> Point_&lt;T&gt;<span class="J">&amp;</span> <span class="L">c</span>, <span class="J">const</span> Point_&lt;T&gt;<span class="J">&amp;</span> <span class="L">p</span>)</p>
+<p class="M">Checks if the point <span class="L">p</span> is inside or in the boundaries of the counterclockwise triangle <span class="L">a</span>, <span class="L">b</span>, <span class="L">c</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::ContainsPoint(const Point_&,const Point_&,const Point_&,const Point_&,const Point_&)" class="I"><span class="J">template</span> &lt;<span class="J">typename</span> T&gt; <span class="J">bool</span> <span class="K">ContainsPoint</span>(<span class="J">const</span> Point_&lt;T&gt;<span class="J">&amp;</span> <span class="L">a</span>, <span class="J">const</span> Point_&lt;T&gt;<span class="J">&amp;</span> <span class="L">b</span>, <span class="J">const</span> Point_&lt;T&gt;<span class="J">&amp;</span> <span class="L">c</span>, <span class="J">const</span> Point_&lt;T&gt;<span class="J">&amp;</span> <span class="L">d</span>, <span class="J">const</span> Point_&lt;T&gt;<span class="J">&amp;</span> <span class="L">p</span>)</p>
+<p class="M">Checks if the point <span class="L">p</span> is inside or in the boundaries of the counterclockwise quadrangle <span class="L">a</span>, <span class="L">b</span>, <span class="L">c</span>, <span class="L">d</span>.</p>
 <p class="H">&nbsp;</p>
 <hr><p class="H">&nbsp;</p>
 <p id="Upp::PointInPoly(const UVector&,const Upp::Pointf&)" class="I"><span class="J">bool</span> <span class="K">PointInPoly</span>(<span class="J">const</span> Vector&lt;Pointf&gt;<span class="J">&amp;</span> <span class="L">xy</span>, <span class="J">const</span> Pointf<span class="J">&amp;</span> <span class="L">pxy</span>)</p>
