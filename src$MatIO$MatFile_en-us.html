@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>MatFile :: Anboto</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#800000;vertical-align:middle;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e5e5e5;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;}
+.D{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.E{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;}
+.F{color:#0000ff;font-weight:normal;}
+.G{font-weight:normal;}
+.H{margin:0px 0px 0px 0px;text-indent:0px;text-align:justify;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.I{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.J{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;}
+.K{border-collapse:collapse;table-layout:auto;border: 2px solid #808080;}
+.L{padding: 3px 5px 3px 5px;border-left: 1px solid #808080;border-top: 1px solid #808080;border-right: 1px solid #808080;border-bottom: 1px solid #808080;background-color:#C0C0C0;vertical-align:middle;}
+.M{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;}
+.N{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.O{color:#0000ff;}
+.P{font-weight:bold;}
+.Q{color:#800000;font-weight:bold;}
+.R{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#0000ff;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.S{color:#000000;}
+.T{color:#000000;font-weight:bold;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="B"><p class="C">MatFile</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="D">&nbsp;</p>
+<p id="Upp::MatFile" class="E"><span class="F">class</span><span class="G">&nbsp;</span>MatFile</p>
+<p class="D">&nbsp;</p>
+<p class="H">MatFile is an RAII wrapper that opens, creates, reads, and writes MATLAB .mat files using the MatIO library. It supports MAT4, MAT5, and MAT7.3 formats, and it provides convenience methods for writing scalar values, strings, matrices (double, int, and complex), U++ containers, and Eigen matrices. It also includes static reading helpers for extracting data in row-major buffers and Eigen-friendly forms, plus a nested StructNode for building and writing structured variables.</p>
+<p class="I">&nbsp;</p>
+<p class="J">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="K"><colgroup><col width="100%"></colgroup>
+<tr><td class="L"><p class="M">Public Member List</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::OpenRead(const char*)" class="N"><span class="O">bool</span> <span class="P">OpenRead</span>(<span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="Q">path</span>)</p>
+<p class="D">Opens a .mat file read-only; returns true if the file handle is valid.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::OpenReadWrite(const char*)" class="N"><span class="O">bool</span> <span class="P">OpenReadWrite</span>(<span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="Q">path</span>)</p>
+<p class="D">Opens a .mat file for read and write; returns true if the file handle is valid.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::OpenCreate(const char*,mat_ft)" class="N"><span class="O">bool</span> <span class="P">OpenCreate</span>(<span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="Q">path</span>, mat_ft ver <span class="O">=</span> <span class="O">enum</span> mat_ft<span class="O">::</span><span class="Q">MAT_FT_MAT5</span>)</p>
+<p class="D">Creates a new .mat file for the specified format version; returns true if the file handle is valid.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::GetVersion()" class="N">mat_ft <span class="P">GetVersion</span>()</p>
+<p class="D">Returns the format version of the open file; this method throws if the file is not open.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::GetVersionName()" class="N">String <span class="P">GetVersionName</span>()</p>
+<p class="D">Returns a human-readable version string (&quot;4&quot;, &quot;5&quot;, &quot;7.3&quot;, or &quot;unknown&quot;).</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::GetVarList()const" class="R"><span class="S">Vector&lt;String&gt; </span><span class="T">GetVarList</span><span class="S">() </span>const</p>
+<p class="D">Returns the list of top-level variable names in the open file.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::GetVarName(const char*)const" class="R"><span class="S">String </span><span class="T">GetVarName</span><span class="S">(</span>const<span class="S"> </span>char<span class="S"> </span>*<span class="Q">name</span><span class="S">) </span>const</p>
+<p class="D">Returns the real name of a variable, independently of its case.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::Mat_t()const" class="R"><span class="S">mat_t </span>*<span class="T">Mat_t</span><span class="S">() </span>const</p>
+<p class="D">Returns the raw mat_t* file handle for low-level operations.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::GetVar(const char*,bool)const" class="R"><span class="S">MatVar </span><span class="T">GetVar</span><span class="S">(</span>const<span class="S"> </span>char<span class="S"> </span>*<span class="Q">name</span><span class="S">, </span>bool<span class="S"> </span><span class="Q">nocase</span><span class="S"> </span>=<span class="S"> </span>false<span class="S">) </span>const</p>
+<p class="D"><span class="S">Reads a top-level variable by name and returns an owning MatVar; this method throws if the file is not open or the variable cannot be found. </span><span class="Q">nocase</span> <span class="S">allows to input variable name </span>independently of its case.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::GetVar(const Vector&,bool)const" class="R"><span class="S">MatVar </span><span class="T">GetVar</span><span class="S">(</span>const<span class="S"> Vector&lt;String&gt;</span>&amp;<span class="S"> </span><span class="Q">names</span><span class="S">, </span>bool<span class="S"> </span><span class="Q">nocase</span><span class="S"> </span>=<span class="S"> </span>false<span class="S">) </span>const</p>
+<p class="D"><span class="S">Reads a top-level variable from a list of synonym names and returns an owning MatVar; this method throws if the file is not open or the variable cannot be found. </span><span class="Q">nocase</span> <span class="S">allows to input variable name </span>independently of its case.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::Exist(const char*)const" class="R">bool<span class="S"> </span><span class="T">Exist</span><span class="S">(</span>const<span class="S"> </span>char<span class="S"> </span>*<span class="Q">name</span><span class="S">) </span>const</p>
+<p class="D">Returns true if the variable &nbsp;<span class="Q">name </span>exists.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::Write(const char*,int,matio_compression)" class="N"><span class="O">void</span> <span class="P">Write</span>(<span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="Q">name</span>, <span class="O">int</span> <span class="Q">v</span>, matio_compression compression <span class="O">=</span> <span class="Q">MAT_COMPRESSION_NONE</span>)</p>
+<p class="D">Writes an integer scalar to the file.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::Write(const char*,double,matio_compression)" class="N"><span class="O">void</span> <span class="P">Write</span>(<span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="Q">name</span>, <span class="O">double</span> <span class="Q">v</span>, matio_compression compression <span class="O">=</span> <span class="Q">MAT_COMPRESSION_NONE</span>)</p>
+<p class="D">Writes a double-precision scalar to the file.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::Write(const char*,const char*,matio_compression)" class="N"><span class="O">void</span> <span class="P">Write</span>(<span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="Q">name</span>, <span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="Q">s</span>, matio_compression compression <span class="O">=</span> <span class="Q">MAT_COMPRESSION_NONE</span>)</p>
+<p class="D">Writes a character vector using UTF‑8 (when available) or as uint8.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::WriteColMajor(const char*,size_t,size_t,const double*,matio_compression)" class="N"><span class="O">void</span> <span class="P">WriteColMajor</span>(<span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="Q">name</span>, size_t <span class="Q">rows</span>, size_t <span class="Q">cols</span>, <span class="O">const</span> <span class="O">double</span> <span class="O">*</span><span class="Q">colMajor</span>, matio_compression compression <span class="O">=</span> <span class="Q">MAT_COMPRESSION_NONE</span>)</p>
+<p class="D">Writes a double matrix from column-major memory.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::WriteColMajor(const char*,size_t,size_t,const int*,matio_compression)" class="N"><span class="O">void</span> <span class="P">WriteColMajor</span>(<span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="Q">name</span>, size_t <span class="Q">rows</span>, size_t <span class="Q">cols</span>, <span class="O">const</span> <span class="O">int</span> <span class="O">*</span><span class="Q">colMajor</span>, matio_compression compression <span class="O">=</span> <span class="Q">MAT_COMPRESSION_NONE</span>)</p>
+<p class="D"> <span class="Q">name</span> <span class="Q">rows</span> <span class="Q">cols</span> <span class="Q">colMajor</span> <span class="Q">MAT_COMPRESSION_NONE</span> .</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::WriteRowMajor(const char*,size_t,size_t,const T*,matio_compression)" class="N"><span class="O">template</span> &lt;<span class="O">class</span> T&gt; <span class="O">void</span> <span class="P">WriteRowMajor</span>(<span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="Q">name</span>, size_t <span class="Q">rows</span>, size_t <span class="Q">cols</span>, <span class="O">const</span> T <span class="O">*</span><span class="Q">rowMajor</span>, matio_compression compression <span class="O">=</span> <span class="Q">MAT_COMPRESSION_NONE</span>)</p>
+<p class="D"> Writes an integer matrix from column-major memory.</p>
+<p class="J">&nbsp;</p>
+<p class="J">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="K"><colgroup><col width="100%"></colgroup>
+<tr><td class="L"><p class="M">Constructor Detail</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="J">&nbsp;</p>
+<p id="Upp::MatFile::MatFile()" class="N"><span class="P">MatFile</span>()</p>
+<p class="D">Constructs an empty file wrapper.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::~()" class="N"><span class="P">~MatFile</span>()</p>
+<p class="D">Closes the file handle if it is open.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::MatFile(const MatFile&)=delete" class="N"><span class="P">MatFile</span>(<span class="O">const</span> <span class="P">MatFile</span><span class="O">&amp;</span>)</p>
+<p class="D">Copy operations are disabled to avoid double-close or shared handle issues.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatFile::MatFile(MatFile&&)" class="N"><span class="P">MatFile</span>(<span class="P">MatFile</span><span class="O">&amp;&amp;</span> o)</p>
+<p class="D">Move operations transfer ownership of the file handle and path..</p>
+<p class="J">&nbsp;</p>
+<p class="I">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>

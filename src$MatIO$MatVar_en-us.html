@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">	
+<META NAME="Generator" CONTENT="U++ HTML Package">	
+<TITLE>MatVar :: Anboto</TITLE>
+<STYLE TYPE="text/css"><!--
+.A{border-collapse:collapse;table-layout:auto;border: 2px solid #000000;}
+.B{padding: 3px 5px 3px 5px;border-left: 1px solid #000000;border-top: 1px solid #000000;border-right: 1px solid #000000;border-bottom: 1px solid #000000;background-color:#800000;vertical-align:middle;}
+.C{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#e5e5e5;font-family:sans-serif;font-size:16pt;font-weight:bold;font-style:normal;}
+.D{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.E{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;}
+.F{color:#0000ff;font-weight:normal;}
+.G{font-weight:normal;}
+.H{margin:0px 0px 0px 0px;text-indent:0px;text-align:justify;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.I{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.J{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:6pt;font-weight:normal;font-style:normal;}
+.K{border-collapse:collapse;table-layout:auto;border: 2px solid #808080;}
+.L{padding: 3px 5px 3px 5px;border-left: 1px solid #808080;border-top: 1px solid #808080;border-right: 1px solid #808080;border-bottom: 1px solid #808080;background-color:#C0C0C0;vertical-align:middle;}
+.M{margin:0px 0px 0px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:bold;font-style:normal;}
+.N{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.O{color:#0000ff;}
+.P{font-weight:bold;}
+.Q{margin:0px 0px 5px 0px;text-indent:0px;text-align:left;color:#0000ff;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.R{color:#000000;}
+.S{color:#000000;font-weight:bold;}
+.T{color:#800000;font-weight:bold;}
+a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
+a.l1:link    { color:#000000; }
+a.l1:visited { color:#000080; }
+a.l1:hover   { color:#9933CC; }
+a.l1:active  { color:#000000; }
+a.l2         { text-decoration:none; font-size: 12pt; font-family: sans-serif; font-variant: small-caps; }
+a.l2:link    { color:#0066FF; }
+a.l2:visited { color:#FF6600; }
+a.l2:hover   { color:#BC0624; }
+a.l2:active  { color:#BC0024; }
+
+-->
+</STYLE>
+<META NAME="keywords" CONTENT="framework, toolkit, widget, c++, visual, studio, dev-cpp, builder, ide, class, component,wxwidgets, qt, rapid, application, development, rad, mfc, linux, gui, sdl, directx, desktop"><META name="robots" content="index,follow">
+<LINK rel="alternate" type="application/rss+xml" title="SVN changes" href="svnchanges.xml">
+<LINK rel="shortcut icon" type="image/png" href="favicon.png">
+</HEAD><BODY BGCOLOR="#D2D9D2" ALINK="#800000" LINK="#000000" VLINK="#000080"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3"></TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD COLSPAN="3" BGCOLOR="#D2D9D2" HEIGHT="6"></TD>
+</TR>
+<TR><TD VALIGN="TOP" WIDTH="100%" BGCOLOR="#D2D9D2"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#FFFFFF" WIDTH="100%" style="border-style: solid; border-width: 1px; border-color: #6E89AE;padding: 10px;;"><TR><TD><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%"><TR><TD><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="A"><colgroup><col width="100%"></colgroup>
+<tr><td class="B"><p class="C">MatVar</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<p class="D">&nbsp;</p>
+<p id="Upp::MatVar" class="E"><span class="F">class</span><span class="G">&nbsp;</span>MatVar</p>
+<p class="D">&nbsp;</p>
+<p class="H">MatVar is an RAII-style wrapper around a matvar_t* that optionally owns the underlying resource and frees it on destruction. It provides convenient accessors for variable metadata (name, type, dimensions), total element counts, and struct field introspection and retrieval.</p>
+<p class="I">&nbsp;</p>
+<p class="J">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="K"><colgroup><col width="100%"></colgroup>
+<tr><td class="L"><p class="M">Public Member List</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::operator matvar_t*()" class="N">operator matvar_t <span class="O">*</span>()</p>
+<p class="D">Returns the underlying matvar_t*, allowing interoperation with MatIO functions.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::GetName()" class="N"><span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="P">GetName</span>()</p>
+<p class="D">Returns the variable’s name; this method throws if the variable has not been created.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::GetType()" class="N"><span class="O">enum</span> matio_classes <span class="P">GetType</span>()</p>
+<p class="D">Returns the MatIO class type (such as MAT_C_DOUBLE or MAT_C_STRUCT); this method throws if the variable is not valid.</p>
+<p class="I">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::GetDimCount()const" class="Q">int<span class="R"> </span><span class="S">GetDimCount</span><span class="R">() </span>const</p>
+<p class="D">Returns the number of dimensions (rank) of the variable; this method throws if the variable is not valid.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::GetDimCount(int)const" class="Q">int<span class="R"> </span><span class="S">GetDimCount</span><span class="R">(</span>int<span class="R"> </span><span class="T">dim</span><span class="R">) </span>const</p>
+<p class="D">Returns the size of the specified dimension; this method throws if the variable is not valid.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::GetTypeString()" class="N"><span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="P">GetTypeString</span>()</p>
+<p class="D">Returns a human-readable description of the MatIO class type; this method throws if the variable is not valid.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::GetCount()" class="N"><span class="O">int</span> <span class="P">GetCount</span>()</p>
+<p class="D">Returns the total number of elements, computed as the product of all dimensions; this method throws if the variable is not valid.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::GetFieldCount()" class="N"><span class="O">int</span> <span class="P">GetFieldCount</span>()</p>
+<p class="D">Returns the number of fields in a struct; this method throws if the variable is not valid or not a struct.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::GetFieldName(int)" class="N"><span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="P">GetFieldName</span>(<span class="O">int</span> <span class="T">id</span>)</p>
+<p class="D">Returns the name of a struct field by index; this method throws if the variable is not valid or not a struct.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::IsLoaded()" class="N"><span class="O">bool</span> <span class="P">IsLoaded</span>()</p>
+<p class="D">Returns true if the wrapper currently holds a non-null variable pointer.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::IsStruct()" class="N"><span class="O">bool</span> <span class="P">IsStruct</span>()</p>
+<p class="D">Returns true if the variable’s class type indicates a MATLAB struct.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::GetStructVar(const char*)" class="N">MatVar <span class="P">GetStructVar</span>(<span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="T">field_name</span>)</p>
+<p class="D">Returns a wrapper for the named struct field without taking ownership of the returned matvar_t*.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::ExistStructVar(const char*)" class="N"><span class="O">bool</span> <span class="P">ExistStructVar</span>(<span class="O">const</span> <span class="O">char</span> <span class="O">*</span><span class="T">field_name</span>)</p>
+<p class="D">Returns true if the variable <span class="T">field_name </span>exists.</p>
+<p class="J">&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td width="100%"><table width="100%" class="K"><colgroup><col width="100%"></colgroup>
+<tr><td class="L"><p class="M">Constructor Detail</p>
+</td>
+</tr>
+</table></td>
+</tr></table>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::MatVar()" class="N"><span class="P">MatVar</span>()</p>
+<p class="D">Constructs an empty wrapper that does not reference any variable</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::MatVar(matvar_t*,bool)" class="N"><span class="P">MatVar</span>(matvar_t <span class="O">*</span><span class="T">var_</span>, <span class="O">bool</span> <span class="T">del_</span> <span class="O">=</span> <span class="O">true</span>)</p>
+<p class="D">Wraps an existing variable pointer and optionally assumes ownership for freeing it.</p>
+<p class="J">&nbsp;</p>
+<hr><p class="J">&nbsp;</p>
+<p id="Upp::MatVar::~()" class="N"><span class="P">~MatVar</span>()</p>
+<p class="D">Frees the underlying matvar_t if the wrapper owns it .</p>
+<p class="J">&nbsp;</p>
+<p class="I">&nbsp;</p>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</BODY>
