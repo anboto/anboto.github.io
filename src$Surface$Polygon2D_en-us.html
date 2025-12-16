@@ -19,6 +19,7 @@
 .L{color:#800000;font-weight:bold;}
 .M{margin:0px 0px 0px 57px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
 .N{display:list-item;list-style-type:disc;margin:0px 0px 0px 77px;text-indent:0px;text-align:left;color:#000000;font-family:sans-serif;font-size:10pt;font-weight:normal;font-style:normal;}
+.O{color:#800000;}
 a.l1         { text-decoration:none; font-size: 8pt; font-family: sans-serif; font-weight: normal; }
 a.l1:link    { color:#000000; }
 a.l1:visited { color:#000080; }
@@ -92,6 +93,10 @@ a.l2:active  { color:#BC0024; }
 <hr><p class="H">&nbsp;</p>
 <p id="Upp::AngleNormal(const Pointf&,const Pointf&)" class="I"><span class="J">double</span> <span class="K">AngleNormal</span>(<span class="J">const</span> Pointf<span class="J">&amp;</span> <span class="L">a</span>, <span class="J">const</span> Pointf<span class="J">&amp;</span> <span class="L">b</span>)</p>
 <p class="M">Returns the angle between two normalized segments <span class="L">a</span> and <span class="L">b</span>.</p>
+<p class="H">&nbsp;</p>
+<hr><p class="H">&nbsp;</p>
+<p id="Upp::ConvexHull(const UVector&,bool,double)" class="I">UVector&lt;Pointf&gt; <span class="K">ConvexHull</span>(<span class="J">const</span> UVector&lt;Pointf&gt;<span class="J">&amp;</span> <span class="L">points</span>, <span class="J">bool</span> <span class="L">include_collinear</span> <span class="J">=</span> <span class="J">false</span>, <span class="J">double</span> <span class="L">distanceCollinear</span> <span class="J">=</span> <span class="O">1</span><span class="J">.</span><span class="O">0</span><span class="L">E</span><span class="J">-</span><span class="O">4</span>)</p>
+<p class="M">Obtains the clockwise convex hull with the Andrew's monotone chain algorithm. The <span class="L">points</span> do not need to be ordered. <span class="L">include_collinear</span> allows to remove the hull points that are collinear. <span class="L">distanceCollinear</span> indicates the maximum distance from a point to a line to be considered collinear.</p>
 <p class="H">&nbsp;</p>
 <p class="H">&nbsp;</p>
 </TD>
